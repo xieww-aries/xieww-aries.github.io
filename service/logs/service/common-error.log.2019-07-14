@@ -1,0 +1,14 @@
+2019-07-14 16:36:54,959 ERROR 11160 [-/::1/-/158ms GET /news] nodejs.TypeError: Cannot read property 'map' of undefined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:17:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 11160
+hostname: ali.local
+
+2019-07-14 16:37:06,127 ERROR 11160 [-/::1/-/78ms GET /news] nodejs.TypeError: Cannot read property 'map' of undefined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:17:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 11160
+hostname: ali.local
+

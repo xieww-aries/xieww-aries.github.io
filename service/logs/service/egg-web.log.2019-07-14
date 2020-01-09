@@ -1,0 +1,34 @@
+2019-07-14 00:00:00,958 INFO 11160 [egg-logrotator] app logger reload: got log-reload message
+2019-07-14 04:29:59,896 INFO 11160 [-/127.0.0.1/-/0ms SCHEDULE /__schedule?path=/Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false] [egg-multipart:CleanTmpdir] start clean tmpdir: "/var/folders/xg/rb44pkg90r38n5mlyq0fb6mh0000gn/T/egg-multipart-tmp/service"
+2019-07-14 04:29:59,903 INFO 11160 [-/127.0.0.1/-/7ms SCHEDULE /__schedule?path=/Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false] [egg-multipart:CleanTmpdir] end
+2019-07-14 16:39:01,603 INFO 16344 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-14 16:39:01,623 INFO 16344 [egg-multipart] stream mode enable
+2019-07-14 16:39:01,664 INFO 16344 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-14 16:39:01,666 INFO 16344 [egg-security] use csrf middleware
+2019-07-14 16:39:01,666 INFO 16344 [egg-security] use methodnoallow middleware
+2019-07-14 16:39:01,666 INFO 16344 [egg-security] use noopen middleware
+2019-07-14 16:39:01,667 INFO 16344 [egg-security] use nosniff middleware
+2019-07-14 16:39:01,667 INFO 16344 [egg-security] use xssProtection middleware
+2019-07-14 16:39:01,667 INFO 16344 [egg-security] use xframe middleware
+2019-07-14 16:39:01,670 INFO 16344 [egg-security] use dta middleware
+2019-07-14 16:39:01,670 INFO 16344 [egg-security] compose 7 middlewares into one security middleware
+2019-07-14 16:39:01,710 INFO 16344 [egg:core] dump config after load, 37ms
+2019-07-14 16:39:01,719 INFO 16344 [egg-watcher:application] watcher start success
+2019-07-14 16:39:01,740 INFO 16344 [egg:core] dump config after ready, 20ms
+2019-07-14 16:39:06,882 INFO 16368 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-14 16:39:06,902 INFO 16368 [egg-multipart] stream mode enable
+2019-07-14 16:39:06,928 INFO 16368 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-14 16:39:06,933 INFO 16368 [egg-security] use csrf middleware
+2019-07-14 16:39:06,933 INFO 16368 [egg-security] use methodnoallow middleware
+2019-07-14 16:39:06,933 INFO 16368 [egg-security] use noopen middleware
+2019-07-14 16:39:06,934 INFO 16368 [egg-security] use nosniff middleware
+2019-07-14 16:39:06,934 INFO 16368 [egg-security] use xssProtection middleware
+2019-07-14 16:39:06,934 INFO 16368 [egg-security] use xframe middleware
+2019-07-14 16:39:06,934 INFO 16368 [egg-security] use dta middleware
+2019-07-14 16:39:06,935 INFO 16368 [egg-security] compose 7 middlewares into one security middleware
+2019-07-14 16:39:06,954 INFO 16368 [egg:core] dump config after load, 16ms
+2019-07-14 16:39:06,962 INFO 16368 [egg-watcher:application] watcher start success
+2019-07-14 16:39:06,984 INFO 16368 [egg:core] dump config after ready, 20ms
+2019-07-14 23:59:59,911 INFO 16368 [egg-logrotator] clean all log before 31 days
+2019-07-15 00:00:00,910 INFO 16368 [egg-logrotator] broadcast log-reload
+2019-07-15 00:00:00,910 INFO 16368 [egg-logrotator] rotate files success by DayRotator, files ["/Users/xieww/Desktop/aries-web/service/logs/service/common-error.log -> /Users/xieww/Desktop/aries-web/service/logs/service/common-error.log.2019-07-14","/Users/xieww/Desktop/aries-web/service/logs/service/service-web.log -> /Users/xieww/Desktop/aries-web/service/logs/service/service-web.log.2019-07-14","/Users/xieww/Desktop/aries-web/service/logs/service/egg-web.log -> /Users/xieww/Desktop/aries-web/service/logs/service/egg-web.log.2019-07-14","/Users/xieww/Desktop/aries-web/service/logs/service/egg-schedule.log -> /Users/xieww/Desktop/aries-web/service/logs/service/egg-schedule.log.2019-07-14","/Users/xieww/Desktop/aries-web/service/logs/service/egg-agent.log -> /Users/xieww/Desktop/aries-web/service/logs/service/egg-agent.log.2019-07-14"]

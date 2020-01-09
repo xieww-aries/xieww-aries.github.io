@@ -1,0 +1,218 @@
+2019-08-01 13:00:11,202 INFO 30680 [egg-logrotator] app logger reload: got log-reload message
+2019-08-01 15:04:33,169 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-01 15:04:33,169 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-01 17:05:29,720 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-01 17:11:55,483 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-01 17:11:55,483 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-01 19:12:31,456 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-01 19:12:31,464 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-01 20:44:06,634 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-01 21:08:49,049 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-01 21:46:07,165 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-01 21:46:07,168 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-01 23:47:04,101 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 01:50:20,491 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-02 01:50:20,496 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 03:51:19,205 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 05:52:18,909 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 07:53:34,088 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-02 07:53:34,090 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 09:38:25,569 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 11:00:41,199 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-02 11:00:41,200 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 11:59:50,107 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 12:48:33,925 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-02 12:48:33,926 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 13:26:45,995 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-02 13:26:45,995 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 15:34:02,344 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 15:50:35,463 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-02 15:50:35,464 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 16:09:35,581 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-02 16:09:35,614 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 16:13:26,922 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 16:47:32,078 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-02 16:47:32,078 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 18:48:34,465 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-02 18:48:34,466 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 19:39:59,133 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 20:31:34,580 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-02 20:31:34,580 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 21:08:32,219 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-02 21:08:32,220 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 23:09:28,685 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-02 23:09:28,691 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-02 23:22:29,484 INFO 30680 [-/127.0.0.1/-/6ms SCHEDULE /__schedule?path=/Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false] [egg-multipart:CleanTmpdir] start clean tmpdir: "/var/folders/xg/rb44pkg90r38n5mlyq0fb6mh0000gn/T/egg-multipart-tmp/service"
+2019-08-02 23:22:29,496 INFO 30680 [-/127.0.0.1/-/20ms SCHEDULE /__schedule?path=/Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false] [egg-multipart:CleanTmpdir] end
+2019-08-03 01:39:45,334 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 03:40:42,799 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 05:41:58,947 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 07:43:14,892 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-03 07:43:14,893 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 09:38:24,848 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 11:00:47,335 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 11:30:32,560 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-03 11:30:32,561 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 12:14:10,041 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 12:54:51,413 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 14:55:47,299 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 15:38:08,788 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-03 15:38:08,796 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 16:09:43,151 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 16:40:41,894 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 17:03:39,432 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-03 17:03:39,433 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 17:25:49,939 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-03 17:25:49,940 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 17:32:29,250 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-03 17:32:29,250 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 17:43:32,740 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 18:15:49,809 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 18:23:43,978 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-03 18:23:43,978 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 19:04:18,554 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-03 19:04:18,557 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 21:34:17,879 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-03 21:34:17,891 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 23:36:52,861 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-03 23:36:52,871 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 23:42:19,479 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-03 23:58:19,027 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 01:59:14,968 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 04:00:11,936 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 06:01:12,055 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 08:02:09,348 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 10:03:07,003 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-04 10:03:07,005 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 12:04:04,259 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 12:37:34,921 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-04 12:37:34,929 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 14:08:27,293 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 16:09:25,051 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 16:30:41,984 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-04 16:30:41,984 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 18:31:39,544 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 19:22:54,422 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 19:38:32,723 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 21:40:09,690 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-04 21:40:09,692 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-04 23:41:29,672 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 01:42:27,041 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 03:43:26,178 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 03:43:26,180 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 05:44:24,915 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 07:45:02,916 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 07:45:02,929 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 09:45:59,943 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 10:46:41,161 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 11:20:44,154 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 11:20:44,154 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 12:00:19,522 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 12:00:19,522 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 12:33:12,032 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 12:33:12,032 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 13:12:26,535 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 13:12:26,535 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 13:48:08,917 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 13:58:49,214 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 13:58:49,216 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 14:33:44,169 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 15:11:55,553 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 15:11:55,554 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 15:30:41,584 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 16:08:30,205 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 16:08:30,205 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 16:14:47,704 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 16:52:23,541 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 16:52:23,541 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 18:13:09,457 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 18:13:09,457 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 19:17:37,481 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 19:34:32,366 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 19:34:32,368 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 19:41:39,667 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 19:41:39,667 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 20:16:38,593 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 20:16:38,599 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 20:45:11,030 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 20:59:20,674 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 20:59:20,674 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 21:16:01,699 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 21:16:01,699 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 21:51:12,114 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-05 21:51:12,118 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-05 22:22:33,384 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 00:52:55,569 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 00:52:55,572 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 02:54:15,332 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 04:56:22,216 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 06:57:16,915 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 08:57:56,120 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 08:57:56,125 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 09:31:00,769 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 10:59:56,693 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 11:53:39,313 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 11:53:39,314 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 12:31:49,280 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 12:31:49,280 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 13:40:32,629 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 13:40:32,629 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 14:21:02,092 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 14:21:02,092 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 16:21:39,241 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 16:21:39,251 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 17:01:00,390 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 17:07:53,560 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 17:29:59,769 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 17:33:32,904 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 18:10:39,752 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 18:43:47,003 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 18:43:47,003 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 19:17:05,404 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 19:17:05,405 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 19:44:03,198 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 19:52:31,158 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 19:52:31,158 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 20:30:34,173 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 20:37:34,747 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 20:37:34,747 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 21:15:21,565 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 21:15:21,565 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 21:53:43,336 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 21:53:43,343 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-06 22:27:39,315 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-06 22:27:39,328 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 00:28:39,038 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 00:41:05,941 INFO 30680 [-/127.0.0.1/-/7ms SCHEDULE /__schedule?path=/Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false] [egg-multipart:CleanTmpdir] start clean tmpdir: "/var/folders/xg/rb44pkg90r38n5mlyq0fb6mh0000gn/T/egg-multipart-tmp/service"
+2019-08-07 00:41:05,950 INFO 30680 [-/127.0.0.1/-/17ms SCHEDULE /__schedule?path=/Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false] [egg-multipart:CleanTmpdir] end
+2019-08-07 03:39:36,460 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 03:39:36,472 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 06:09:55,809 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 08:10:52,584 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 09:30:01,822 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 11:06:59,145 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 11:31:14,529 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 11:31:14,529 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 12:28:44,818 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 12:28:44,818 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 13:03:21,372 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 13:31:17,883 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 13:31:17,889 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 14:04:03,562 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 14:04:03,563 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 14:40:21,381 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 14:40:21,387 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 15:00:32,187 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 15:00:32,187 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 15:26:44,976 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 15:26:44,976 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 16:01:36,055 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 16:01:36,055 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 18:06:33,308 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 18:06:33,308 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 18:29:37,849 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 19:09:51,636 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 19:09:51,639 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 19:12:49,515 INFO 30680 [egg-logrotator] clean all log before 31 days
+2019-08-07 19:12:50,485 INFO 30680 [egg-logrotator] broadcast log-reload
+2019-08-07 19:12:50,485 INFO 30680 [egg-logrotator] rotate files success by DayRotator, files ["/Users/xieww/Desktop/aries-web/service/logs/service/common-error.log -> /Users/xieww/Desktop/aries-web/service/logs/service/common-error.log.2019-08-06","/Users/xieww/Desktop/aries-web/service/logs/service/service-web.log -> /Users/xieww/Desktop/aries-web/service/logs/service/service-web.log.2019-08-06","/Users/xieww/Desktop/aries-web/service/logs/service/egg-web.log -> /Users/xieww/Desktop/aries-web/service/logs/service/egg-web.log.2019-08-06","/Users/xieww/Desktop/aries-web/service/logs/service/egg-schedule.log -> /Users/xieww/Desktop/aries-web/service/logs/service/egg-schedule.log.2019-08-06","/Users/xieww/Desktop/aries-web/service/logs/service/egg-agent.log -> /Users/xieww/Desktop/aries-web/service/logs/service/egg-agent.log.2019-08-06"]

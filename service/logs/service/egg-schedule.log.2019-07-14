@@ -1,0 +1,15 @@
+2019-07-14 04:29:59,899 INFO 10898 [Timer] /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 86400104ms at 2019-07-15 04:30:00.003
+2019-07-14 04:29:59,896 INFO 11160 [Job#15630497998963224070708368962] /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js executing by app
+2019-07-14 04:29:59,903 INFO 11160 [Job#15630497998963224070708368962] /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js execute succeed, used 7ms
+2019-07-14 16:39:01,622 INFO 16344 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2019-07-14 16:39:01,622 INFO 16344 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-07-14 16:39:01,622 INFO 16344 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-07-14 16:39:06,901 INFO 16368 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2019-07-14 16:39:06,901 INFO 16368 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-07-14 16:39:06,901 INFO 16368 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-07-14 23:59:59,907 INFO 10898 [Timer] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 86400095ms at 2019-07-16 00:00:00.002
+2019-07-14 23:59:59,906 INFO 16368 [Job#156311999990532942701525765163] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
+2019-07-14 23:59:59,911 INFO 16368 [Job#156311999990532942701525765163] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 5ms
+2019-07-15 00:00:00,908 INFO 10898 [Timer] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 86400094ms at 2019-07-16 00:00:01.002
+2019-07-15 00:00:00,906 INFO 16368 [Job#156312000090532942711528688033] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
+2019-07-15 00:00:00,910 INFO 16368 [Job#156312000090532942711528688033] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 4ms

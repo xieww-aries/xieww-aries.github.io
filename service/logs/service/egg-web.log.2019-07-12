@@ -1,0 +1,523 @@
+2019-07-12 16:48:37,735 INFO 82803 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 16:48:37,760 INFO 82803 [egg-multipart] stream mode enable
+2019-07-12 16:48:37,790 INFO 82803 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 16:48:37,792 INFO 82803 [egg-security] use csrf middleware
+2019-07-12 16:48:37,794 INFO 82803 [egg-security] use methodnoallow middleware
+2019-07-12 16:48:37,794 INFO 82803 [egg-security] use noopen middleware
+2019-07-12 16:48:37,795 INFO 82803 [egg-security] use nosniff middleware
+2019-07-12 16:48:37,795 INFO 82803 [egg-security] use xssProtection middleware
+2019-07-12 16:48:37,796 INFO 82803 [egg-security] use xframe middleware
+2019-07-12 16:48:37,796 INFO 82803 [egg-security] use dta middleware
+2019-07-12 16:48:37,796 INFO 82803 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 16:48:37,822 INFO 82803 [egg:core] dump config after load, 16ms
+2019-07-12 16:48:37,833 INFO 82803 [egg-watcher:application] watcher start success
+2019-07-12 16:48:37,870 INFO 82803 [egg:core] dump config after ready, 35ms
+2019-07-12 16:49:03,593 INFO 82914 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 16:49:03,618 INFO 82914 [egg-multipart] stream mode enable
+2019-07-12 16:49:03,644 INFO 82914 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 16:49:03,646 INFO 82914 [egg-security] use csrf middleware
+2019-07-12 16:49:03,646 INFO 82914 [egg-security] use methodnoallow middleware
+2019-07-12 16:49:03,647 INFO 82914 [egg-security] use noopen middleware
+2019-07-12 16:49:03,649 INFO 82914 [egg-security] use nosniff middleware
+2019-07-12 16:49:03,649 INFO 82914 [egg-security] use xssProtection middleware
+2019-07-12 16:49:03,649 INFO 82914 [egg-security] use xframe middleware
+2019-07-12 16:49:03,649 INFO 82914 [egg-security] use dta middleware
+2019-07-12 16:49:03,649 INFO 82914 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 16:49:03,674 INFO 82914 [egg:core] dump config after load, 16ms
+2019-07-12 16:49:03,682 INFO 82914 [egg-watcher:application] watcher start success
+2019-07-12 16:49:03,710 INFO 82914 [egg:core] dump config after ready, 26ms
+2019-07-12 16:50:46,168 INFO 83295 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 16:50:46,215 INFO 83295 [egg-multipart] stream mode enable
+2019-07-12 16:50:46,284 INFO 83295 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 16:50:46,287 INFO 83295 [egg-security] use csrf middleware
+2019-07-12 16:50:46,287 INFO 83295 [egg-security] use methodnoallow middleware
+2019-07-12 16:50:46,288 INFO 83295 [egg-security] use noopen middleware
+2019-07-12 16:50:46,294 INFO 83295 [egg-security] use nosniff middleware
+2019-07-12 16:50:46,294 INFO 83295 [egg-security] use xssProtection middleware
+2019-07-12 16:50:46,295 INFO 83295 [egg-security] use xframe middleware
+2019-07-12 16:50:46,295 INFO 83295 [egg-security] use dta middleware
+2019-07-12 16:50:46,295 INFO 83295 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 16:50:57,221 INFO 83295 [egg:core] dump config after load, 11s
+2019-07-12 16:50:57,237 INFO 83295 [egg-watcher:application] watcher start success
+2019-07-12 16:50:57,254 INFO 83295 [egg:core] dump config after ready, 14ms
+2019-07-12 17:02:03,619 INFO 85560 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:02:03,645 INFO 85560 [egg-multipart] stream mode enable
+2019-07-12 17:02:03,682 INFO 85560 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:02:03,684 INFO 85560 [egg-security] use csrf middleware
+2019-07-12 17:02:03,684 INFO 85560 [egg-security] use methodnoallow middleware
+2019-07-12 17:02:03,684 INFO 85560 [egg-security] use noopen middleware
+2019-07-12 17:02:03,685 INFO 85560 [egg-security] use nosniff middleware
+2019-07-12 17:02:03,685 INFO 85560 [egg-security] use xssProtection middleware
+2019-07-12 17:02:03,685 INFO 85560 [egg-security] use xframe middleware
+2019-07-12 17:02:03,686 INFO 85560 [egg-security] use dta middleware
+2019-07-12 17:02:03,686 INFO 85560 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:02:03,705 INFO 85560 [egg:core] dump config after load, 16ms
+2019-07-12 17:02:03,717 INFO 85560 [egg-watcher:application] watcher start success
+2019-07-12 17:02:03,738 INFO 85560 [egg:core] dump config after ready, 19ms
+2019-07-12 17:04:40,847 INFO 86072 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:04:40,872 INFO 86072 [egg-multipart] stream mode enable
+2019-07-12 17:04:40,906 INFO 86072 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:04:40,908 INFO 86072 [egg-security] use csrf middleware
+2019-07-12 17:04:40,908 INFO 86072 [egg-security] use methodnoallow middleware
+2019-07-12 17:04:40,908 INFO 86072 [egg-security] use noopen middleware
+2019-07-12 17:04:40,909 INFO 86072 [egg-security] use nosniff middleware
+2019-07-12 17:04:40,909 INFO 86072 [egg-security] use xssProtection middleware
+2019-07-12 17:04:40,909 INFO 86072 [egg-security] use xframe middleware
+2019-07-12 17:04:40,909 INFO 86072 [egg-security] use dta middleware
+2019-07-12 17:04:40,909 INFO 86072 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:04:40,931 INFO 86072 [egg:core] dump config after load, 19ms
+2019-07-12 17:04:40,942 INFO 86072 [egg-watcher:application] watcher start success
+2019-07-12 17:04:40,965 INFO 86072 [egg:core] dump config after ready, 21ms
+2019-07-12 17:04:48,781 INFO 86072 [egg-view-nunjucks] loading templates from ["/Users/xieww/Desktop/aries-web/service/app/view"]
+2019-07-12 17:04:56,286 INFO 86132 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:04:56,307 INFO 86132 [egg-multipart] stream mode enable
+2019-07-12 17:04:56,334 INFO 86132 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:04:56,336 INFO 86132 [egg-security] use csrf middleware
+2019-07-12 17:04:56,337 INFO 86132 [egg-security] use methodnoallow middleware
+2019-07-12 17:04:56,337 INFO 86132 [egg-security] use noopen middleware
+2019-07-12 17:04:56,340 INFO 86132 [egg-security] use nosniff middleware
+2019-07-12 17:04:56,340 INFO 86132 [egg-security] use xssProtection middleware
+2019-07-12 17:04:56,340 INFO 86132 [egg-security] use xframe middleware
+2019-07-12 17:04:56,341 INFO 86132 [egg-security] use dta middleware
+2019-07-12 17:04:56,341 INFO 86132 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:04:56,361 INFO 86132 [egg:core] dump config after load, 17ms
+2019-07-12 17:04:56,370 INFO 86132 [egg-watcher:application] watcher start success
+2019-07-12 17:04:56,392 INFO 86132 [egg:core] dump config after ready, 20ms
+2019-07-12 17:05:38,377 INFO 86278 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:05:38,404 INFO 86278 [egg-multipart] stream mode enable
+2019-07-12 17:05:38,441 INFO 86278 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:05:38,443 INFO 86278 [egg-security] use csrf middleware
+2019-07-12 17:05:38,443 INFO 86278 [egg-security] use methodnoallow middleware
+2019-07-12 17:05:38,444 INFO 86278 [egg-security] use noopen middleware
+2019-07-12 17:05:38,444 INFO 86278 [egg-security] use nosniff middleware
+2019-07-12 17:05:38,444 INFO 86278 [egg-security] use xssProtection middleware
+2019-07-12 17:05:38,445 INFO 86278 [egg-security] use xframe middleware
+2019-07-12 17:05:38,445 INFO 86278 [egg-security] use dta middleware
+2019-07-12 17:05:38,445 INFO 86278 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:05:38,470 INFO 86278 [egg:core] dump config after load, 19ms
+2019-07-12 17:05:38,479 INFO 86278 [egg-watcher:application] watcher start success
+2019-07-12 17:05:38,506 INFO 86278 [egg:core] dump config after ready, 23ms
+2019-07-12 17:11:04,473 INFO 87297 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:11:04,493 INFO 87297 [egg-multipart] stream mode enable
+2019-07-12 17:11:04,524 INFO 87297 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:11:04,526 INFO 87297 [egg-security] use csrf middleware
+2019-07-12 17:11:04,526 INFO 87297 [egg-security] use methodnoallow middleware
+2019-07-12 17:11:04,526 INFO 87297 [egg-security] use noopen middleware
+2019-07-12 17:11:04,527 INFO 87297 [egg-security] use nosniff middleware
+2019-07-12 17:11:04,527 INFO 87297 [egg-security] use xssProtection middleware
+2019-07-12 17:11:04,527 INFO 87297 [egg-security] use xframe middleware
+2019-07-12 17:11:04,527 INFO 87297 [egg-security] use dta middleware
+2019-07-12 17:11:04,527 INFO 87297 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:11:04,547 INFO 87297 [egg:core] dump config after load, 17ms
+2019-07-12 17:11:04,557 INFO 87297 [egg-watcher:application] watcher start success
+2019-07-12 17:11:04,581 INFO 87297 [egg:core] dump config after ready, 22ms
+2019-07-12 17:11:13,112 INFO 87345 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:11:13,133 INFO 87345 [egg-multipart] stream mode enable
+2019-07-12 17:11:13,165 INFO 87345 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:11:13,168 INFO 87345 [egg-security] use csrf middleware
+2019-07-12 17:11:13,168 INFO 87345 [egg-security] use methodnoallow middleware
+2019-07-12 17:11:13,169 INFO 87345 [egg-security] use noopen middleware
+2019-07-12 17:11:13,169 INFO 87345 [egg-security] use nosniff middleware
+2019-07-12 17:11:13,169 INFO 87345 [egg-security] use xssProtection middleware
+2019-07-12 17:11:13,170 INFO 87345 [egg-security] use xframe middleware
+2019-07-12 17:11:13,170 INFO 87345 [egg-security] use dta middleware
+2019-07-12 17:11:13,170 INFO 87345 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:11:13,201 INFO 87345 [egg:core] dump config after load, 25ms
+2019-07-12 17:11:13,213 INFO 87345 [egg-watcher:application] watcher start success
+2019-07-12 17:11:13,235 INFO 87345 [egg:core] dump config after ready, 20ms
+2019-07-12 17:12:34,490 INFO 87345 [egg-view-nunjucks] loading templates from ["/Users/xieww/Desktop/aries-web/service/app/view"]
+2019-07-12 17:14:40,435 INFO 88033 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:14:40,455 INFO 88033 [egg-multipart] stream mode enable
+2019-07-12 17:14:40,483 INFO 88033 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:14:40,484 INFO 88033 [egg-security] use csrf middleware
+2019-07-12 17:14:40,485 INFO 88033 [egg-security] use methodnoallow middleware
+2019-07-12 17:14:40,485 INFO 88033 [egg-security] use noopen middleware
+2019-07-12 17:14:40,485 INFO 88033 [egg-security] use nosniff middleware
+2019-07-12 17:14:40,485 INFO 88033 [egg-security] use xssProtection middleware
+2019-07-12 17:14:40,486 INFO 88033 [egg-security] use xframe middleware
+2019-07-12 17:14:40,488 INFO 88033 [egg-security] use dta middleware
+2019-07-12 17:14:40,488 INFO 88033 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:14:40,509 INFO 88033 [egg:core] dump config after load, 17ms
+2019-07-12 17:14:40,517 INFO 88033 [egg-watcher:application] watcher start success
+2019-07-12 17:14:40,540 INFO 88033 [egg:core] dump config after ready, 21ms
+2019-07-12 17:15:27,172 INFO 88186 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:15:27,193 INFO 88186 [egg-multipart] stream mode enable
+2019-07-12 17:15:27,224 INFO 88186 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:15:27,226 INFO 88186 [egg-security] use csrf middleware
+2019-07-12 17:15:27,226 INFO 88186 [egg-security] use methodnoallow middleware
+2019-07-12 17:15:27,226 INFO 88186 [egg-security] use noopen middleware
+2019-07-12 17:15:27,227 INFO 88186 [egg-security] use nosniff middleware
+2019-07-12 17:15:27,227 INFO 88186 [egg-security] use xssProtection middleware
+2019-07-12 17:15:27,227 INFO 88186 [egg-security] use xframe middleware
+2019-07-12 17:15:27,228 INFO 88186 [egg-security] use dta middleware
+2019-07-12 17:15:27,228 INFO 88186 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:15:27,248 INFO 88186 [egg:core] dump config after load, 17ms
+2019-07-12 17:15:27,256 INFO 88186 [egg-watcher:application] watcher start success
+2019-07-12 17:15:27,277 INFO 88186 [egg:core] dump config after ready, 19ms
+2019-07-12 17:16:44,350 INFO 88448 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:16:44,370 INFO 88448 [egg-multipart] stream mode enable
+2019-07-12 17:16:44,403 INFO 88448 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:16:44,404 INFO 88448 [egg-security] use csrf middleware
+2019-07-12 17:16:44,405 INFO 88448 [egg-security] use methodnoallow middleware
+2019-07-12 17:16:44,405 INFO 88448 [egg-security] use noopen middleware
+2019-07-12 17:16:44,406 INFO 88448 [egg-security] use nosniff middleware
+2019-07-12 17:16:44,406 INFO 88448 [egg-security] use xssProtection middleware
+2019-07-12 17:16:44,406 INFO 88448 [egg-security] use xframe middleware
+2019-07-12 17:16:44,406 INFO 88448 [egg-security] use dta middleware
+2019-07-12 17:16:44,406 INFO 88448 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:16:44,434 INFO 88448 [egg:core] dump config after load, 24ms
+2019-07-12 17:16:44,447 INFO 88448 [egg-watcher:application] watcher start success
+2019-07-12 17:16:44,470 INFO 88448 [egg:core] dump config after ready, 22ms
+2019-07-12 17:18:40,582 INFO 88845 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:18:40,608 INFO 88845 [egg-multipart] stream mode enable
+2019-07-12 17:18:40,646 INFO 88845 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:18:40,647 INFO 88845 [egg-security] use csrf middleware
+2019-07-12 17:18:40,648 INFO 88845 [egg-security] use methodnoallow middleware
+2019-07-12 17:18:40,648 INFO 88845 [egg-security] use noopen middleware
+2019-07-12 17:18:40,648 INFO 88845 [egg-security] use nosniff middleware
+2019-07-12 17:18:40,649 INFO 88845 [egg-security] use xssProtection middleware
+2019-07-12 17:18:40,649 INFO 88845 [egg-security] use xframe middleware
+2019-07-12 17:18:40,649 INFO 88845 [egg-security] use dta middleware
+2019-07-12 17:18:40,649 INFO 88845 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:18:40,684 INFO 88845 [egg:core] dump config after load, 28ms
+2019-07-12 17:18:40,695 INFO 88845 [egg-watcher:application] watcher start success
+2019-07-12 17:18:40,722 INFO 88845 [egg:core] dump config after ready, 25ms
+2019-07-12 17:20:12,010 INFO 89138 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:20:12,030 INFO 89138 [egg-multipart] stream mode enable
+2019-07-12 17:20:12,060 INFO 89138 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:20:12,062 INFO 89138 [egg-security] use csrf middleware
+2019-07-12 17:20:12,062 INFO 89138 [egg-security] use methodnoallow middleware
+2019-07-12 17:20:12,062 INFO 89138 [egg-security] use noopen middleware
+2019-07-12 17:20:12,063 INFO 89138 [egg-security] use nosniff middleware
+2019-07-12 17:20:12,063 INFO 89138 [egg-security] use xssProtection middleware
+2019-07-12 17:20:12,063 INFO 89138 [egg-security] use xframe middleware
+2019-07-12 17:20:12,063 INFO 89138 [egg-security] use dta middleware
+2019-07-12 17:20:12,063 INFO 89138 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:20:12,087 INFO 89138 [egg:core] dump config after load, 17ms
+2019-07-12 17:20:12,096 INFO 89138 [egg-watcher:application] watcher start success
+2019-07-12 17:20:12,118 INFO 89138 [egg:core] dump config after ready, 20ms
+2019-07-12 17:20:13,855 INFO 89145 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:20:13,883 INFO 89145 [egg-multipart] stream mode enable
+2019-07-12 17:20:13,918 INFO 89145 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:20:13,921 INFO 89145 [egg-security] use csrf middleware
+2019-07-12 17:20:13,921 INFO 89145 [egg-security] use methodnoallow middleware
+2019-07-12 17:20:13,922 INFO 89145 [egg-security] use noopen middleware
+2019-07-12 17:20:13,922 INFO 89145 [egg-security] use nosniff middleware
+2019-07-12 17:20:13,923 INFO 89145 [egg-security] use xssProtection middleware
+2019-07-12 17:20:13,923 INFO 89145 [egg-security] use xframe middleware
+2019-07-12 17:20:13,923 INFO 89145 [egg-security] use dta middleware
+2019-07-12 17:20:13,923 INFO 89145 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:20:13,945 INFO 89145 [egg:core] dump config after load, 18ms
+2019-07-12 17:20:13,955 INFO 89145 [egg-watcher:application] watcher start success
+2019-07-12 17:20:13,977 INFO 89145 [egg:core] dump config after ready, 20ms
+2019-07-12 17:25:34,117 INFO 90137 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:25:34,138 INFO 90137 [egg-multipart] stream mode enable
+2019-07-12 17:25:34,166 INFO 90137 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:25:34,168 INFO 90137 [egg-security] use csrf middleware
+2019-07-12 17:25:34,171 INFO 90137 [egg-security] use methodnoallow middleware
+2019-07-12 17:25:34,171 INFO 90137 [egg-security] use noopen middleware
+2019-07-12 17:25:34,172 INFO 90137 [egg-security] use nosniff middleware
+2019-07-12 17:25:34,172 INFO 90137 [egg-security] use xssProtection middleware
+2019-07-12 17:25:34,173 INFO 90137 [egg-security] use xframe middleware
+2019-07-12 17:25:34,173 INFO 90137 [egg-security] use dta middleware
+2019-07-12 17:25:34,173 INFO 90137 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:25:34,193 INFO 90137 [egg:core] dump config after load, 17ms
+2019-07-12 17:25:34,202 INFO 90137 [egg-watcher:application] watcher start success
+2019-07-12 17:25:34,224 INFO 90137 [egg:core] dump config after ready, 21ms
+2019-07-12 17:25:38,589 INFO 90160 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:25:38,609 INFO 90160 [egg-multipart] stream mode enable
+2019-07-12 17:25:38,641 INFO 90160 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:25:38,644 INFO 90160 [egg-security] use csrf middleware
+2019-07-12 17:25:38,644 INFO 90160 [egg-security] use methodnoallow middleware
+2019-07-12 17:25:38,644 INFO 90160 [egg-security] use noopen middleware
+2019-07-12 17:25:38,645 INFO 90160 [egg-security] use nosniff middleware
+2019-07-12 17:25:38,645 INFO 90160 [egg-security] use xssProtection middleware
+2019-07-12 17:25:38,645 INFO 90160 [egg-security] use xframe middleware
+2019-07-12 17:25:38,646 INFO 90160 [egg-security] use dta middleware
+2019-07-12 17:25:38,646 INFO 90160 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:25:38,665 INFO 90160 [egg:core] dump config after load, 16ms
+2019-07-12 17:25:38,674 INFO 90160 [egg-watcher:application] watcher start success
+2019-07-12 17:25:38,695 INFO 90160 [egg:core] dump config after ready, 20ms
+2019-07-12 17:25:55,543 INFO 90219 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:25:55,563 INFO 90219 [egg-multipart] stream mode enable
+2019-07-12 17:25:55,590 INFO 90219 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:25:55,594 INFO 90219 [egg-security] use csrf middleware
+2019-07-12 17:25:55,595 INFO 90219 [egg-security] use methodnoallow middleware
+2019-07-12 17:25:55,595 INFO 90219 [egg-security] use noopen middleware
+2019-07-12 17:25:55,596 INFO 90219 [egg-security] use nosniff middleware
+2019-07-12 17:25:55,596 INFO 90219 [egg-security] use xssProtection middleware
+2019-07-12 17:25:55,596 INFO 90219 [egg-security] use xframe middleware
+2019-07-12 17:25:55,596 INFO 90219 [egg-security] use dta middleware
+2019-07-12 17:25:55,596 INFO 90219 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:25:55,616 INFO 90219 [egg:core] dump config after load, 17ms
+2019-07-12 17:25:55,624 INFO 90219 [egg-watcher:application] watcher start success
+2019-07-12 17:25:55,648 INFO 90219 [egg:core] dump config after ready, 21ms
+2019-07-12 17:27:46,671 INFO 90571 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:27:46,694 INFO 90571 [egg-multipart] stream mode enable
+2019-07-12 17:27:46,729 INFO 90571 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:27:46,731 INFO 90571 [egg-security] use csrf middleware
+2019-07-12 17:27:46,732 INFO 90571 [egg-security] use methodnoallow middleware
+2019-07-12 17:27:46,732 INFO 90571 [egg-security] use noopen middleware
+2019-07-12 17:27:46,732 INFO 90571 [egg-security] use nosniff middleware
+2019-07-12 17:27:46,732 INFO 90571 [egg-security] use xssProtection middleware
+2019-07-12 17:27:46,733 INFO 90571 [egg-security] use xframe middleware
+2019-07-12 17:27:46,733 INFO 90571 [egg-security] use dta middleware
+2019-07-12 17:27:46,733 INFO 90571 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:27:46,757 INFO 90571 [egg:core] dump config after load, 20ms
+2019-07-12 17:27:46,768 INFO 90571 [egg-watcher:application] watcher start success
+2019-07-12 17:27:46,798 INFO 90571 [egg:core] dump config after ready, 26ms
+2019-07-12 17:28:18,954 INFO 90679 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:28:18,973 INFO 90679 [egg-multipart] stream mode enable
+2019-07-12 17:28:19,000 INFO 90679 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:28:19,001 INFO 90679 [egg-security] use csrf middleware
+2019-07-12 17:28:19,002 INFO 90679 [egg-security] use methodnoallow middleware
+2019-07-12 17:28:19,002 INFO 90679 [egg-security] use noopen middleware
+2019-07-12 17:28:19,002 INFO 90679 [egg-security] use nosniff middleware
+2019-07-12 17:28:19,005 INFO 90679 [egg-security] use xssProtection middleware
+2019-07-12 17:28:19,006 INFO 90679 [egg-security] use xframe middleware
+2019-07-12 17:28:19,006 INFO 90679 [egg-security] use dta middleware
+2019-07-12 17:28:19,006 INFO 90679 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:28:19,025 INFO 90679 [egg:core] dump config after load, 16ms
+2019-07-12 17:28:19,033 INFO 90679 [egg-watcher:application] watcher start success
+2019-07-12 17:28:19,055 INFO 90679 [egg:core] dump config after ready, 20ms
+2019-07-12 17:28:49,279 INFO 90780 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:28:49,300 INFO 90780 [egg-multipart] stream mode enable
+2019-07-12 17:28:49,330 INFO 90780 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:28:49,332 INFO 90780 [egg-security] use csrf middleware
+2019-07-12 17:28:49,332 INFO 90780 [egg-security] use methodnoallow middleware
+2019-07-12 17:28:49,332 INFO 90780 [egg-security] use noopen middleware
+2019-07-12 17:28:49,333 INFO 90780 [egg-security] use nosniff middleware
+2019-07-12 17:28:49,333 INFO 90780 [egg-security] use xssProtection middleware
+2019-07-12 17:28:49,333 INFO 90780 [egg-security] use xframe middleware
+2019-07-12 17:28:49,333 INFO 90780 [egg-security] use dta middleware
+2019-07-12 17:28:49,333 INFO 90780 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:28:49,353 INFO 90780 [egg:core] dump config after load, 17ms
+2019-07-12 17:28:49,362 INFO 90780 [egg-watcher:application] watcher start success
+2019-07-12 17:28:49,383 INFO 90780 [egg:core] dump config after ready, 20ms
+2019-07-12 17:28:50,378 INFO 90784 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:28:50,398 INFO 90784 [egg-multipart] stream mode enable
+2019-07-12 17:28:50,430 INFO 90784 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:28:50,432 INFO 90784 [egg-security] use csrf middleware
+2019-07-12 17:28:50,433 INFO 90784 [egg-security] use methodnoallow middleware
+2019-07-12 17:28:50,433 INFO 90784 [egg-security] use noopen middleware
+2019-07-12 17:28:50,433 INFO 90784 [egg-security] use nosniff middleware
+2019-07-12 17:28:50,434 INFO 90784 [egg-security] use xssProtection middleware
+2019-07-12 17:28:50,434 INFO 90784 [egg-security] use xframe middleware
+2019-07-12 17:28:50,434 INFO 90784 [egg-security] use dta middleware
+2019-07-12 17:28:50,434 INFO 90784 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:28:50,456 INFO 90784 [egg:core] dump config after load, 18ms
+2019-07-12 17:28:50,465 INFO 90784 [egg-watcher:application] watcher start success
+2019-07-12 17:28:50,486 INFO 90784 [egg:core] dump config after ready, 20ms
+2019-07-12 17:28:55,300 INFO 90807 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:28:55,319 INFO 90807 [egg-multipart] stream mode enable
+2019-07-12 17:28:55,346 INFO 90807 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:28:55,348 INFO 90807 [egg-security] use csrf middleware
+2019-07-12 17:28:55,348 INFO 90807 [egg-security] use methodnoallow middleware
+2019-07-12 17:28:55,348 INFO 90807 [egg-security] use noopen middleware
+2019-07-12 17:28:55,349 INFO 90807 [egg-security] use nosniff middleware
+2019-07-12 17:28:55,349 INFO 90807 [egg-security] use xssProtection middleware
+2019-07-12 17:28:55,349 INFO 90807 [egg-security] use xframe middleware
+2019-07-12 17:28:55,349 INFO 90807 [egg-security] use dta middleware
+2019-07-12 17:28:55,349 INFO 90807 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:28:55,368 INFO 90807 [egg:core] dump config after load, 16ms
+2019-07-12 17:28:55,377 INFO 90807 [egg-watcher:application] watcher start success
+2019-07-12 17:28:55,397 INFO 90807 [egg:core] dump config after ready, 19ms
+2019-07-12 17:34:48,397 INFO 91948 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:34:48,417 INFO 91948 [egg-multipart] stream mode enable
+2019-07-12 17:34:48,445 INFO 91948 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:34:48,447 INFO 91948 [egg-security] use csrf middleware
+2019-07-12 17:34:48,447 INFO 91948 [egg-security] use methodnoallow middleware
+2019-07-12 17:34:48,448 INFO 91948 [egg-security] use noopen middleware
+2019-07-12 17:34:48,448 INFO 91948 [egg-security] use nosniff middleware
+2019-07-12 17:34:48,448 INFO 91948 [egg-security] use xssProtection middleware
+2019-07-12 17:34:48,448 INFO 91948 [egg-security] use xframe middleware
+2019-07-12 17:34:48,449 INFO 91948 [egg-security] use dta middleware
+2019-07-12 17:34:48,449 INFO 91948 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:34:48,472 INFO 91948 [egg:core] dump config after load, 21ms
+2019-07-12 17:34:48,480 INFO 91948 [egg-watcher:application] watcher start success
+2019-07-12 17:34:48,502 INFO 91948 [egg:core] dump config after ready, 20ms
+2019-07-12 17:36:35,623 INFO 92314 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:36:35,647 INFO 92314 [egg-multipart] stream mode enable
+2019-07-12 17:36:35,682 INFO 92314 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:36:35,684 INFO 92314 [egg-security] use csrf middleware
+2019-07-12 17:36:35,685 INFO 92314 [egg-security] use methodnoallow middleware
+2019-07-12 17:36:35,685 INFO 92314 [egg-security] use noopen middleware
+2019-07-12 17:36:35,685 INFO 92314 [egg-security] use nosniff middleware
+2019-07-12 17:36:35,686 INFO 92314 [egg-security] use xssProtection middleware
+2019-07-12 17:36:35,686 INFO 92314 [egg-security] use xframe middleware
+2019-07-12 17:36:35,686 INFO 92314 [egg-security] use dta middleware
+2019-07-12 17:36:35,686 INFO 92314 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:36:35,706 INFO 92314 [egg:core] dump config after load, 17ms
+2019-07-12 17:36:35,718 INFO 92314 [egg-watcher:application] watcher start success
+2019-07-12 17:36:35,739 INFO 92314 [egg:core] dump config after ready, 20ms
+2019-07-12 17:43:34,407 INFO 93652 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 17:43:34,428 INFO 93652 [egg-multipart] stream mode enable
+2019-07-12 17:43:34,460 INFO 93652 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 17:43:34,462 INFO 93652 [egg-security] use csrf middleware
+2019-07-12 17:43:34,463 INFO 93652 [egg-security] use methodnoallow middleware
+2019-07-12 17:43:34,463 INFO 93652 [egg-security] use noopen middleware
+2019-07-12 17:43:34,463 INFO 93652 [egg-security] use nosniff middleware
+2019-07-12 17:43:34,467 INFO 93652 [egg-security] use xssProtection middleware
+2019-07-12 17:43:34,468 INFO 93652 [egg-security] use xframe middleware
+2019-07-12 17:43:34,468 INFO 93652 [egg-security] use dta middleware
+2019-07-12 17:43:34,468 INFO 93652 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 17:43:34,498 INFO 93652 [egg:core] dump config after load, 24ms
+2019-07-12 17:43:34,510 INFO 93652 [egg-watcher:application] watcher start success
+2019-07-12 17:43:34,532 INFO 93652 [egg:core] dump config after ready, 20ms
+2019-07-12 19:06:08,043 INFO 9365 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 19:06:08,063 INFO 9365 [egg-multipart] stream mode enable
+2019-07-12 19:06:08,103 INFO 9365 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 19:06:08,106 INFO 9365 [egg-security] use csrf middleware
+2019-07-12 19:06:08,107 INFO 9365 [egg-security] use methodnoallow middleware
+2019-07-12 19:06:08,107 INFO 9365 [egg-security] use noopen middleware
+2019-07-12 19:06:08,107 INFO 9365 [egg-security] use nosniff middleware
+2019-07-12 19:06:08,107 INFO 9365 [egg-security] use xssProtection middleware
+2019-07-12 19:06:08,108 INFO 9365 [egg-security] use xframe middleware
+2019-07-12 19:06:08,108 INFO 9365 [egg-security] use dta middleware
+2019-07-12 19:06:08,108 INFO 9365 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 19:06:08,133 INFO 9365 [egg:core] dump config after load, 19ms
+2019-07-12 19:06:08,142 INFO 9365 [egg-watcher:application] watcher start success
+2019-07-12 19:06:08,188 INFO 9365 [egg:core] dump config after ready, 45ms
+2019-07-12 19:08:29,151 INFO 9808 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 19:08:29,170 INFO 9808 [egg-multipart] stream mode enable
+2019-07-12 19:08:29,205 INFO 9808 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 19:08:29,206 INFO 9808 [egg-security] use csrf middleware
+2019-07-12 19:08:29,207 INFO 9808 [egg-security] use methodnoallow middleware
+2019-07-12 19:08:29,207 INFO 9808 [egg-security] use noopen middleware
+2019-07-12 19:08:29,210 INFO 9808 [egg-security] use nosniff middleware
+2019-07-12 19:08:29,210 INFO 9808 [egg-security] use xssProtection middleware
+2019-07-12 19:08:29,211 INFO 9808 [egg-security] use xframe middleware
+2019-07-12 19:08:29,211 INFO 9808 [egg-security] use dta middleware
+2019-07-12 19:08:29,211 INFO 9808 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 19:08:29,233 INFO 9808 [egg:core] dump config after load, 19ms
+2019-07-12 19:08:29,241 INFO 9808 [egg-watcher:application] watcher start success
+2019-07-12 19:08:29,270 INFO 9808 [egg:core] dump config after ready, 26ms
+2019-07-12 19:09:23,797 INFO 9989 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 19:09:23,820 INFO 9989 [egg-multipart] stream mode enable
+2019-07-12 19:09:23,853 INFO 9989 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 19:09:23,855 INFO 9989 [egg-security] use csrf middleware
+2019-07-12 19:09:23,856 INFO 9989 [egg-security] use methodnoallow middleware
+2019-07-12 19:09:23,856 INFO 9989 [egg-security] use noopen middleware
+2019-07-12 19:09:23,857 INFO 9989 [egg-security] use nosniff middleware
+2019-07-12 19:09:23,857 INFO 9989 [egg-security] use xssProtection middleware
+2019-07-12 19:09:23,857 INFO 9989 [egg-security] use xframe middleware
+2019-07-12 19:09:23,857 INFO 9989 [egg-security] use dta middleware
+2019-07-12 19:09:23,857 INFO 9989 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 19:09:23,877 INFO 9989 [egg:core] dump config after load, 17ms
+2019-07-12 19:09:23,886 INFO 9989 [egg-watcher:application] watcher start success
+2019-07-12 19:09:23,924 INFO 9989 [egg:core] dump config after ready, 35ms
+2019-07-12 19:09:45,622 INFO 10076 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 19:09:45,643 INFO 10076 [egg-multipart] stream mode enable
+2019-07-12 19:09:45,673 INFO 10076 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 19:09:45,675 INFO 10076 [egg-security] use csrf middleware
+2019-07-12 19:09:45,676 INFO 10076 [egg-security] use methodnoallow middleware
+2019-07-12 19:09:45,676 INFO 10076 [egg-security] use noopen middleware
+2019-07-12 19:09:45,676 INFO 10076 [egg-security] use nosniff middleware
+2019-07-12 19:09:45,677 INFO 10076 [egg-security] use xssProtection middleware
+2019-07-12 19:09:45,677 INFO 10076 [egg-security] use xframe middleware
+2019-07-12 19:09:45,677 INFO 10076 [egg-security] use dta middleware
+2019-07-12 19:09:45,677 INFO 10076 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 19:09:45,697 INFO 10076 [egg:core] dump config after load, 17ms
+2019-07-12 19:09:45,705 INFO 10076 [egg-watcher:application] watcher start success
+2019-07-12 19:09:45,727 INFO 10076 [egg:core] dump config after ready, 21ms
+2019-07-12 19:10:32,104 INFO 10229 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 19:10:32,125 INFO 10229 [egg-multipart] stream mode enable
+2019-07-12 19:10:32,158 INFO 10229 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 19:10:32,160 INFO 10229 [egg-security] use csrf middleware
+2019-07-12 19:10:32,160 INFO 10229 [egg-security] use methodnoallow middleware
+2019-07-12 19:10:32,161 INFO 10229 [egg-security] use noopen middleware
+2019-07-12 19:10:32,161 INFO 10229 [egg-security] use nosniff middleware
+2019-07-12 19:10:32,161 INFO 10229 [egg-security] use xssProtection middleware
+2019-07-12 19:10:32,162 INFO 10229 [egg-security] use xframe middleware
+2019-07-12 19:10:32,162 INFO 10229 [egg-security] use dta middleware
+2019-07-12 19:10:32,162 INFO 10229 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 19:10:32,182 INFO 10229 [egg:core] dump config after load, 17ms
+2019-07-12 19:10:32,190 INFO 10229 [egg-watcher:application] watcher start success
+2019-07-12 19:10:32,212 INFO 10229 [egg:core] dump config after ready, 20ms
+2019-07-12 19:11:34,831 INFO 10429 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 19:11:34,852 INFO 10429 [egg-multipart] stream mode enable
+2019-07-12 19:11:34,881 INFO 10429 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 19:11:34,883 INFO 10429 [egg-security] use csrf middleware
+2019-07-12 19:11:34,883 INFO 10429 [egg-security] use methodnoallow middleware
+2019-07-12 19:11:34,884 INFO 10429 [egg-security] use noopen middleware
+2019-07-12 19:11:34,884 INFO 10429 [egg-security] use nosniff middleware
+2019-07-12 19:11:34,884 INFO 10429 [egg-security] use xssProtection middleware
+2019-07-12 19:11:34,884 INFO 10429 [egg-security] use xframe middleware
+2019-07-12 19:11:34,887 INFO 10429 [egg-security] use dta middleware
+2019-07-12 19:11:34,887 INFO 10429 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 19:11:34,908 INFO 10429 [egg:core] dump config after load, 18ms
+2019-07-12 19:11:34,917 INFO 10429 [egg-watcher:application] watcher start success
+2019-07-12 19:11:34,938 INFO 10429 [egg:core] dump config after ready, 20ms
+2019-07-12 19:12:03,763 INFO 10539 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 19:12:03,790 INFO 10539 [egg-multipart] stream mode enable
+2019-07-12 19:12:03,823 INFO 10539 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 19:12:03,824 INFO 10539 [egg-security] use csrf middleware
+2019-07-12 19:12:03,825 INFO 10539 [egg-security] use methodnoallow middleware
+2019-07-12 19:12:03,825 INFO 10539 [egg-security] use noopen middleware
+2019-07-12 19:12:03,828 INFO 10539 [egg-security] use nosniff middleware
+2019-07-12 19:12:03,828 INFO 10539 [egg-security] use xssProtection middleware
+2019-07-12 19:12:03,829 INFO 10539 [egg-security] use xframe middleware
+2019-07-12 19:12:03,829 INFO 10539 [egg-security] use dta middleware
+2019-07-12 19:12:03,829 INFO 10539 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 19:12:03,849 INFO 10539 [egg:core] dump config after load, 16ms
+2019-07-12 19:12:03,860 INFO 10539 [egg-watcher:application] watcher start success
+2019-07-12 19:12:03,885 INFO 10539 [egg:core] dump config after ready, 23ms
+2019-07-12 19:12:50,236 INFO 10693 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 19:12:50,256 INFO 10693 [egg-multipart] stream mode enable
+2019-07-12 19:12:50,287 INFO 10693 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 19:12:50,289 INFO 10693 [egg-security] use csrf middleware
+2019-07-12 19:12:50,290 INFO 10693 [egg-security] use methodnoallow middleware
+2019-07-12 19:12:50,290 INFO 10693 [egg-security] use noopen middleware
+2019-07-12 19:12:50,290 INFO 10693 [egg-security] use nosniff middleware
+2019-07-12 19:12:50,291 INFO 10693 [egg-security] use xssProtection middleware
+2019-07-12 19:12:50,291 INFO 10693 [egg-security] use xframe middleware
+2019-07-12 19:12:50,291 INFO 10693 [egg-security] use dta middleware
+2019-07-12 19:12:50,291 INFO 10693 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 19:12:50,310 INFO 10693 [egg:core] dump config after load, 16ms
+2019-07-12 19:12:50,319 INFO 10693 [egg-watcher:application] watcher start success
+2019-07-12 19:12:50,339 INFO 10693 [egg:core] dump config after ready, 19ms
+2019-07-12 19:13:46,334 INFO 10899 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 19:13:46,365 INFO 10899 [egg-multipart] stream mode enable
+2019-07-12 19:13:46,398 INFO 10899 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 19:13:46,400 INFO 10899 [egg-security] use csrf middleware
+2019-07-12 19:13:46,401 INFO 10899 [egg-security] use methodnoallow middleware
+2019-07-12 19:13:46,401 INFO 10899 [egg-security] use noopen middleware
+2019-07-12 19:13:46,401 INFO 10899 [egg-security] use nosniff middleware
+2019-07-12 19:13:46,402 INFO 10899 [egg-security] use xssProtection middleware
+2019-07-12 19:13:46,402 INFO 10899 [egg-security] use xframe middleware
+2019-07-12 19:13:46,402 INFO 10899 [egg-security] use dta middleware
+2019-07-12 19:13:46,402 INFO 10899 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 19:13:46,422 INFO 10899 [egg:core] dump config after load, 17ms
+2019-07-12 19:13:46,434 INFO 10899 [egg-watcher:application] watcher start success
+2019-07-12 19:13:46,455 INFO 10899 [egg:core] dump config after ready, 19ms
+2019-07-12 19:13:51,989 INFO 10929 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 19:13:52,011 INFO 10929 [egg-multipart] stream mode enable
+2019-07-12 19:13:52,046 INFO 10929 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 19:13:52,048 INFO 10929 [egg-security] use csrf middleware
+2019-07-12 19:13:52,048 INFO 10929 [egg-security] use methodnoallow middleware
+2019-07-12 19:13:52,049 INFO 10929 [egg-security] use noopen middleware
+2019-07-12 19:13:52,049 INFO 10929 [egg-security] use nosniff middleware
+2019-07-12 19:13:52,049 INFO 10929 [egg-security] use xssProtection middleware
+2019-07-12 19:13:52,049 INFO 10929 [egg-security] use xframe middleware
+2019-07-12 19:13:52,050 INFO 10929 [egg-security] use dta middleware
+2019-07-12 19:13:52,050 INFO 10929 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 19:13:52,069 INFO 10929 [egg:core] dump config after load, 16ms
+2019-07-12 19:13:52,078 INFO 10929 [egg-watcher:application] watcher start success
+2019-07-12 19:13:52,099 INFO 10929 [egg:core] dump config after ready, 20ms
+2019-07-12 19:15:04,451 INFO 11160 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-07-12 19:15:04,470 INFO 11160 [egg-multipart] stream mode enable
+2019-07-12 19:15:04,500 INFO 11160 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-07-12 19:15:04,501 INFO 11160 [egg-security] use csrf middleware
+2019-07-12 19:15:04,502 INFO 11160 [egg-security] use methodnoallow middleware
+2019-07-12 19:15:04,502 INFO 11160 [egg-security] use noopen middleware
+2019-07-12 19:15:04,502 INFO 11160 [egg-security] use nosniff middleware
+2019-07-12 19:15:04,502 INFO 11160 [egg-security] use xssProtection middleware
+2019-07-12 19:15:04,503 INFO 11160 [egg-security] use xframe middleware
+2019-07-12 19:15:04,503 INFO 11160 [egg-security] use dta middleware
+2019-07-12 19:15:04,503 INFO 11160 [egg-security] compose 7 middlewares into one security middleware
+2019-07-12 19:15:04,522 INFO 11160 [egg:core] dump config after load, 16ms
+2019-07-12 19:15:04,531 INFO 11160 [egg-watcher:application] watcher start success
+2019-07-12 19:15:04,551 INFO 11160 [egg:core] dump config after ready, 19ms
+2019-07-12 23:59:59,968 INFO 11160 [egg-logrotator] clean all log before 31 days
+2019-07-13 00:00:00,960 INFO 11160 [egg-logrotator] broadcast log-reload
+2019-07-13 00:00:00,960 INFO 11160 [egg-logrotator] rotate files success by DayRotator, files ["/Users/xieww/Desktop/aries-web/service/logs/service/common-error.log -> /Users/xieww/Desktop/aries-web/service/logs/service/common-error.log.2019-07-12","/Users/xieww/Desktop/aries-web/service/logs/service/service-web.log -> /Users/xieww/Desktop/aries-web/service/logs/service/service-web.log.2019-07-12","/Users/xieww/Desktop/aries-web/service/logs/service/egg-web.log -> /Users/xieww/Desktop/aries-web/service/logs/service/egg-web.log.2019-07-12","/Users/xieww/Desktop/aries-web/service/logs/service/egg-schedule.log -> /Users/xieww/Desktop/aries-web/service/logs/service/egg-schedule.log.2019-07-12","/Users/xieww/Desktop/aries-web/service/logs/service/egg-agent.log -> /Users/xieww/Desktop/aries-web/service/logs/service/egg-agent.log.2019-07-12"]

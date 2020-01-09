@@ -1,0 +1,241 @@
+2019-07-15 11:09:48,527 ERROR 22335 [-/::1/-/13ms GET /news] nodejs.TypeError: dataList.map is not a function
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:19:21)
+    at NewsController.list (/Users/xieww/Desktop/aries-web/service/app/controller/news.js:7:46)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:45:18)
+    at /Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:44:32)
+
+pid: 22335
+hostname: ali.local
+
+2019-07-15 11:20:09,253 ERROR 24401 [-/::1/-/139ms GET /news] nodejs.TypeError: Cannot read property 'subjects' of undefined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:19:26)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 24401
+hostname: ali.local
+
+2019-07-15 11:21:02,940 ERROR 24577 [-/::1/-/141ms GET /news] nodejs.TypeError: Cannot read property 'map' of undefined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:19:26)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 24577
+hostname: ali.local
+
+2019-07-15 11:21:29,529 ERROR 24656 [-/::1/-/180ms GET /news] nodejs.TypeError: Cannot read property 'map' of undefined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:18:26)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 24656
+hostname: ali.local
+
+2019-07-15 11:21:30,577 ERROR 24656 [-/::1/-/47ms GET /news] nodejs.TypeError: Cannot read property 'map' of undefined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:18:26)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 24656
+hostname: ali.local
+
+2019-07-15 11:22:10,733 ERROR 24802 [-/::1/-/11ms GET /news] nodejs.TypeError: Cannot create property 'ctx' on string '{"type":"movie","tag":"热门","page_limit":50,"page_start":0}'
+    at ContextHttpClient.curl (/Users/xieww/Desktop/aries-web/service/node_modules/egg/lib/core/context_httpclient.js:19:17)
+    at Object.curl (/Users/xieww/Desktop/aries-web/service/node_modules/egg/app/extend/context.js:48:28)
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:11:56)
+    at NewsController.list (/Users/xieww/Desktop/aries-web/service/app/controller/news.js:7:46)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:45:18)
+
+pid: 24802
+hostname: ali.local
+
+2019-07-15 11:22:59,027 ERROR 24954 [-/::1/-/8ms GET /news] nodejs.TypeError: Cannot create property 'ctx' on string 'type: 'movie', tag: '热门', page_limit: 50, page_start: 0'
+    at ContextHttpClient.curl (/Users/xieww/Desktop/aries-web/service/node_modules/egg/lib/core/context_httpclient.js:19:17)
+    at Object.curl (/Users/xieww/Desktop/aries-web/service/node_modules/egg/app/extend/context.js:48:28)
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:11:56)
+    at NewsController.list (/Users/xieww/Desktop/aries-web/service/app/controller/news.js:7:46)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:45:18)
+
+pid: 24954
+hostname: ali.local
+
+2019-07-15 11:23:01,074 ERROR 24954 [-/::1/-/1ms GET /news] nodejs.TypeError: Cannot create property 'ctx' on string 'type: 'movie', tag: '热门', page_limit: 50, page_start: 0'
+    at ContextHttpClient.curl (/Users/xieww/Desktop/aries-web/service/node_modules/egg/lib/core/context_httpclient.js:19:17)
+    at Object.curl (/Users/xieww/Desktop/aries-web/service/node_modules/egg/app/extend/context.js:48:28)
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:11:56)
+    at NewsController.list (/Users/xieww/Desktop/aries-web/service/app/controller/news.js:7:46)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:45:18)
+
+pid: 24954
+hostname: ali.local
+
+2019-07-15 11:23:18,818 ERROR 25037 [-/::1/-/126ms GET /news] nodejs.TypeError: Cannot read property 'map' of undefined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:18:26)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 25037
+hostname: ali.local
+
+2019-07-15 11:23:39,600 ERROR 25109 [-/::1/-/153ms GET /news] nodejs.TypeError: Cannot read property 'map' of undefined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:19:26)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 25109
+hostname: ali.local
+
+2019-07-15 11:24:15,792 ERROR 25242 [-/::1/-/131ms GET /news] nodejs.TypeError: Cannot read property 'map' of undefined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:19:26)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 25242
+hostname: ali.local
+
+2019-07-15 11:24:49,232 ERROR 25362 [-/::1/-/158ms GET /news] nodejs.TypeError: Cannot read property 'map' of undefined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:19:26)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 25362
+hostname: ali.local
+
+2019-07-15 11:27:03,060 ERROR 25825 [-/::1/-/154ms GET /news] nodejs.ReferenceError: movieList is not defined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:18:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 25825
+hostname: ali.local
+
+2019-07-15 11:34:32,628 ERROR 27223 [-/::1/-/165ms GET /news] nodejs.ReferenceError: movieList is not defined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:19:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 27223
+hostname: ali.local
+
+2019-07-15 11:35:35,300 ERROR 27430 [-/::1/-/492ms GET /news] nodejs.ReferenceError: movieList is not defined
+    at NewsService.list (/Users/xieww/Desktop/aries-web/service/app/service/news.js:21:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 27430
+hostname: ali.local
+
+2019-07-16 11:40:07,987 ERROR 99097 [-/::1/-/6ms GET /news] nodejs.TypeError: Cannot read property 'getMovieList' of undefined
+    at NewsController.list (/Users/xieww/Desktop/aries-web/service/app/controller/news.js:7:46)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:45:18)
+    at /Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:44:32)
+    at /Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:36:12
+
+pid: 99097
+hostname: ali.local
+
+2019-07-16 11:46:51,597 ERROR 724 [-/::1/-/3400ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find view/list.tpl from /Users/xieww/Desktop/aries-web/service/app/view
+    at Map.resolve (/Users/xieww/Desktop/aries-web/service/node_modules/egg-view/lib/view_manager.js:74:5)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 724
+hostname: ali.local
+
+2019-07-16 15:43:17,846 ERROR 28724 [-/::1/-/1ms GET /movie/douban?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0] nodejs.ReferenceError: serverUrl is not defined
+    at NewsService.getDoubanData (/Users/xieww/Desktop/aries-web/service/app/service/movie.js:22:36)
+    at NewsController.getMovieList (/Users/xieww/Desktop/aries-web/service/app/controller/movie.js:12:46)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:45:18)
+    at /Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:44:32)
+
+pid: 28724
+hostname: ali.local
+
+2019-07-16 15:48:24,260 ERROR 28748 [-/::1/-/10ms GET /movie/douban?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0] nodejs.ReferenceError: serverUrl is not defined
+    at NewsService.getDoubanData (/Users/xieww/Desktop/aries-web/service/app/service/movie.js:22:36)
+    at NewsController.getMovieList (/Users/xieww/Desktop/aries-web/service/app/controller/movie.js:12:46)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xieww/Desktop/aries-web/service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:45:18)
+    at /Users/xieww/Desktop/aries-web/service/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xieww/Desktop/aries-web/service/node_modules/koa-compose/index.js:44:32)
+
+pid: 28748
+hostname: ali.local
+
+2019-07-16 15:49:36,926 ERROR 28787 [-/::1/-/453ms GET /movie/douban?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0] nodejs.TypeError: this.success is not a function
+    at NewsController.getMovieList (/Users/xieww/Desktop/aries-web/service/app/controller/movie.js:14:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 28787
+hostname: ali.local
+
+2019-07-16 15:49:39,567 ERROR 28787 [-/::1/-/275ms GET /movie/douban?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0] nodejs.TypeError: this.success is not a function
+    at NewsController.getMovieList (/Users/xieww/Desktop/aries-web/service/app/controller/movie.js:14:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 28787
+hostname: ali.local
+
+2019-07-16 15:51:05,105 ERROR 28832 [-/::1/-/429ms GET /movie/douban?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0] nodejs.TypeError: this.success is not a function
+    at NewsController.getMovieList (/Users/xieww/Desktop/aries-web/service/app/controller/movie.js:14:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 28832
+hostname: ali.local
+
+2019-07-16 15:51:25,982 ERROR 28846 [-/::1/-/392ms GET /movie/douban?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0] nodejs.TypeError: this.success is not a function
+    at NewsController.getMovieList (/Users/xieww/Desktop/aries-web/service/app/controller/movie.js:14:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 28846
+hostname: ali.local
+
+2019-07-16 16:05:14,117 ERROR 28902 [-/::1/-/1ms GET /public/dist/main.min.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat '/Users/xieww/Desktop/aries-web/service/app/public/dist/main.min.css'
+ENOENTError: ENOENT: no such file or directory, stat '/Users/xieww/Desktop/aries-web/service/app/public/dist/main.min.css'
+errno: -2
+code: "ENOENT"
+syscall: "stat"
+path: "/Users/xieww/Desktop/aries-web/service/app/public/dist/main.min.css"
+name: "ENOENTError"
+pid: 28902
+hostname: ali.local
+
+2019-07-16 16:05:14,166 ERROR 28902 [-/::1/-/51ms GET /public/dist/bundle.js] nodejs.ENOENTError: ENOENT: no such file or directory, stat '/Users/xieww/Desktop/aries-web/service/app/public/dist/bundle.js'
+ENOENTError: ENOENT: no such file or directory, stat '/Users/xieww/Desktop/aries-web/service/app/public/dist/bundle.js'
+errno: -2
+code: "ENOENT"
+syscall: "stat"
+path: "/Users/xieww/Desktop/aries-web/service/app/public/dist/bundle.js"
+name: "ENOENTError"
+pid: 28902
+hostname: ali.local
+

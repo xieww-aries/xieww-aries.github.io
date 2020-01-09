@@ -1,0 +1,9 @@
+2019-07-23 16:31:29,354 INFO 30679 [Timer] /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 43110651ms at 2019-07-24 04:30:00.005
+2019-07-23 16:31:29,365 INFO 30680 [Job#156387068934235300929719522363] /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js executing by app
+2019-07-23 16:31:29,374 INFO 30680 [Job#156387068934235300929719522363] /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js execute succeed, used 6ms
+2019-08-01 13:00:10,226 INFO 30679 [Timer] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 39589797ms at 2019-08-02 00:00:00.023
+2019-08-01 13:00:10,218 INFO 30680 [Job#156463561020135612617567570624] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
+2019-08-01 13:00:10,251 INFO 30680 [Job#156463561020135612617567570624] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 28ms
+2019-08-01 13:00:11,196 INFO 30680 [Job#156463561118835612627493411634] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
+2019-08-01 13:00:11,199 INFO 30680 [Job#156463561118835612627493411634] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 3ms
+2019-08-01 13:00:11,204 INFO 30679 [Timer] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 39589806ms at 2019-08-02 00:00:01.010

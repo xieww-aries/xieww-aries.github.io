@@ -1,0 +1,56 @@
+2019-08-07 19:12:50,493 INFO 30680 [egg-logrotator] app logger reload: got log-reload message
+2019-08-07 20:36:18,715 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 20:36:18,729 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 20:45:13,957 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 21:06:58,073 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 21:06:58,073 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 21:43:31,917 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-07 21:43:31,919 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-07 23:44:26,758 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 01:45:44,817 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-08 01:45:44,822 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 02:04:03,015 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 02:20:04,685 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 04:21:01,826 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 06:22:19,658 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 08:23:35,664 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-08 08:23:35,666 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 09:36:48,940 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 11:09:25,788 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 12:16:59,679 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-08 12:16:59,680 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 14:15:45,606 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 15:19:34,545 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 15:39:37,607 WARN 30680 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-08 15:39:37,608 WARN 30680 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 15:59:15,312 INFO 43352 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-08 15:59:15,333 INFO 43352 [egg-multipart] stream mode enable
+2019-08-08 15:59:15,401 INFO 43352 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-08-08 15:59:15,403 INFO 43352 [egg-security] use csrf middleware
+2019-08-08 15:59:15,403 INFO 43352 [egg-security] use methodnoallow middleware
+2019-08-08 15:59:15,403 INFO 43352 [egg-security] use noopen middleware
+2019-08-08 15:59:15,404 INFO 43352 [egg-security] use nosniff middleware
+2019-08-08 15:59:15,404 INFO 43352 [egg-security] use xssProtection middleware
+2019-08-08 15:59:15,404 INFO 43352 [egg-security] use xframe middleware
+2019-08-08 15:59:15,405 INFO 43352 [egg-security] use dta middleware
+2019-08-08 15:59:15,405 INFO 43352 [egg-security] compose 7 middlewares into one security middleware
+2019-08-08 15:59:15,427 INFO 43352 [egg:core] dump config after load, 17ms
+2019-08-08 15:59:15,437 INFO 43352 [egg-watcher:application] watcher start success
+2019-08-08 15:59:15,461 INFO 43352 [egg:core] dump config after ready, 22ms
+2019-08-08 15:59:32,382 INFO 43352 [egg-view-nunjucks] loading templates from ["/Users/xieww/Desktop/aries-web/service/app/view"]
+2019-08-08 16:02:34,192 INFO 43516 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/aries-web/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-08 16:02:34,214 INFO 43516 [egg-multipart] stream mode enable
+2019-08-08 16:02:34,248 INFO 43516 [egg-static] starting static serve /public/ -> /Users/xieww/Desktop/aries-web/service/app/public
+2019-08-08 16:02:34,251 INFO 43516 [egg-security] use csrf middleware
+2019-08-08 16:02:34,252 INFO 43516 [egg-security] use methodnoallow middleware
+2019-08-08 16:02:34,252 INFO 43516 [egg-security] use noopen middleware
+2019-08-08 16:02:34,253 INFO 43516 [egg-security] use nosniff middleware
+2019-08-08 16:02:34,253 INFO 43516 [egg-security] use xssProtection middleware
+2019-08-08 16:02:34,253 INFO 43516 [egg-security] use xframe middleware
+2019-08-08 16:02:34,254 INFO 43516 [egg-security] use dta middleware
+2019-08-08 16:02:34,254 INFO 43516 [egg-security] compose 7 middlewares into one security middleware
+2019-08-08 16:02:34,274 INFO 43516 [egg:core] dump config after load, 17ms
+2019-08-08 16:02:34,285 INFO 43516 [egg-watcher:application] watcher start success
+2019-08-08 16:02:34,308 INFO 43516 [egg:core] dump config after ready, 20ms
+2019-08-08 17:09:34,892 WARN 43516 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-08-08 17:45:02,063 WARN 43516 [ClusterClient:Watcher] follower closed, and try to init it again

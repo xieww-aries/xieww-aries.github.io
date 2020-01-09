@@ -1,0 +1,12 @@
+2019-08-08 15:59:15,467 INFO 43346 [Timer] /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 45044536ms at 2019-08-09 04:30:00.003
+2019-08-08 15:59:15,468 INFO 43346 [Timer] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 28844532ms at 2019-08-09 00:00:00.000
+2019-08-08 15:59:15,468 INFO 43346 [Timer] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 28845532ms at 2019-08-09 00:00:01.000
+2019-08-08 15:59:15,332 INFO 43352 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2019-08-08 15:59:15,332 INFO 43352 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-08-08 15:59:15,332 INFO 43352 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-08-08 16:02:34,313 INFO 43515 [Timer] /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 44845689ms at 2019-08-09 04:30:00.002
+2019-08-08 16:02:34,313 INFO 43515 [Timer] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 28645687ms at 2019-08-09 00:00:00.000
+2019-08-08 16:02:34,313 INFO 43515 [Timer] /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 28646687ms at 2019-08-09 00:00:01.000
+2019-08-08 16:02:34,213 INFO 43516 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2019-08-08 16:02:34,213 INFO 43516 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-08-08 16:02:34,213 INFO 43516 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js

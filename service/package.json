@@ -1,0 +1,22 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "node server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "egg-bin dev"
+  },
+  "author": "xieww",
+  "license": "ISC",
+  "dependencies": {
+    "egg": "^2.22.2",
+    "egg-view-nunjucks": "^2.2.0",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.13.0",
+    "egg-static": "^2.2.0"
+  }
+}
