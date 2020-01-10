@@ -86,26 +86,26 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-session/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-security/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-jsonp/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-onerror/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-i18n/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-watcher/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-schedule/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-development/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-static/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-view/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg-view-nunjucks/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/locales",
-        "/Users/xieww/Desktop/aries-web/service/config/locales"
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-session/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-security/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-jsonp/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-onerror/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-i18n/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-watcher/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-schedule/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-multipart/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-development/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-logrotator/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-static/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-view/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-view-nunjucks/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/locales",
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/config/locales"
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -116,8 +116,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -140,7 +140,7 @@
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
-      "tmpdir": "/var/folders/xg/rb44pkg90r38n5mlyq0fb6mh0000gn/T/egg-multipart-tmp/service",
+      "tmpdir": "/var/folders/0z/zc7y2p5n1fd95kt471589jyc0000gn/T/egg-multipart-tmp/service",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
@@ -163,7 +163,7 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/xieww/Desktop/aries-web/service/app/public",
+      "dir": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
@@ -171,7 +171,7 @@
     },
     "view": {
       "root": [
-        "/Users/xieww/Desktop/aries-web/service/app/view"
+        "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/app/view"
       ],
       "cache": false,
       "defaultExtension": ".html",
@@ -217,9 +217,9 @@
         "egg-static": "^2.2.0"
       }
     },
-    "baseDir": "/Users/xieww/Desktop/aries-web/service",
-    "HOME": "/Users/xieww",
-    "rundir": "/Users/xieww/Desktop/aries-web/service/run",
+    "baseDir": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service",
+    "HOME": "/Users/xieweiwei",
+    "rundir": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -250,7 +250,7 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "/Users/xieww/Desktop/aries-web/service/logs/service",
+      "dir": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/logs/service",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -346,8 +346,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-session",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -359,8 +359,8 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-security",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-security",
       "version": "2.5.0"
     },
     "jsonp": {
@@ -372,8 +372,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-jsonp",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -385,8 +385,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-onerror",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -396,8 +396,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-i18n",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -407,8 +407,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-watcher",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -418,8 +418,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-schedule",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -431,8 +431,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-multipart",
       "version": "2.7.1"
     },
     "development": {
@@ -446,8 +446,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-development",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -459,8 +459,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -470,8 +470,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-static",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -481,8 +481,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/aries-web/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-view",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-view",
       "version": "2.1.2"
     },
     "nunjucks": {
@@ -495,8 +495,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/aries-web/service/config/plugin.js",
-      "path": "/Users/xieww/Desktop/aries-web/service/node_modules/egg-view-nunjucks",
+      "from": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/config/plugin.js",
+      "path": "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-view-nunjucks",
       "version": "2.2.0"
     }
   }

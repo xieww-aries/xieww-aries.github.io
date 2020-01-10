@@ -10,3 +10,9 @@
 2019-08-08 16:02:34,213 INFO 43516 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
 2019-08-08 16:02:34,213 INFO 43516 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/clean_log.js
 2019-08-08 16:02:34,213 INFO 43516 [egg-schedule]: register schedule /Users/xieww/Desktop/aries-web/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-10 17:52:23,823 INFO 8592 [Timer] /Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 38256180ms at 2020-01-11 04:30:00.003
+2020-01-10 17:52:23,824 INFO 8592 [Timer] /Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 22056177ms at 2020-01-11 00:00:00.001
+2020-01-10 17:52:23,824 INFO 8592 [Timer] /Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 22057176ms at 2020-01-11 00:00:01.000
+2020-01-10 17:52:23,747 INFO 8593 [egg-schedule]: register schedule /Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-10 17:52:23,747 INFO 8593 [egg-schedule]: register schedule /Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-10 17:52:23,747 INFO 8593 [egg-schedule]: register schedule /Users/xieweiwei/Desktop/xieww-aries.github.io/service/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
