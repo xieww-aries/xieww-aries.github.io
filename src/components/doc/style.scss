@@ -1,0 +1,13 @@
+.doc {
+    display: flex;
+
+    .doc-nav {
+        flex: 1;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .doc-title {
+        flex: 3;
+    }
+}

@@ -12,6 +12,21 @@
                 "style": "css"
             }
         ],
-        "@babel/plugin-proposal-class-properties"
+        "@babel/plugin-proposal-class-properties",
+        [
+            "react-css-modules",
+            {
+                "generateScopedName": "[name]__[local]___[hash:base64:5]",
+                "filetypes": {
+                    ".css": {
+                        "syntax": "postcss-scss"
+                    },
+                    ".scss": {
+                        "syntax": "postcss-scss"
+                    }
+                },
+                "autoResolveMultipleImports": true
+            }
+        ]
     ]
 }

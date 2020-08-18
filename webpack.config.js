@@ -42,13 +42,21 @@ module.exports = {
             },
             {
                 test: /\.(scss|css)$/,
-                exclude: /node_modules/,
+                exclude: [
+                    path.resolve(__dirname, '..', 'node_modules'),
+                    path.resolve(__dirname, '../src/resource')
+                ],
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader
                     },
                     {
-                        loader: 'css-loader'
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                            sourceMap: true,
+                            localIdentName: '[name]__[local]___[hash:base64:5]'
+                        }
                     },
                     {
                         loader: 'postcss-loader'
@@ -58,9 +66,10 @@ module.exports = {
                     }
                 ]
             },
+            // 处理非 css module / node_modules下样式的 配置
             {
                 test: /\.(scss|css)$/,
-                include: /node_modules/,
+                include: [path.resolve(__dirname, '../node_modules'), path.resolve(__dirname, '../src/resource')],
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader
@@ -69,7 +78,7 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             modules: false,
-                            sourceMap: false
+                            sourceMap: true
                         }
                     },
                     {

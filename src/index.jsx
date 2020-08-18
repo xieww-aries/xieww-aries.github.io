@@ -9,10 +9,6 @@ import Intro from './components/intro/index.jsx';
 import Header from './components/common/Header/index.jsx';
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
     render() {
         return (
             <div>

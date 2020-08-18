@@ -231,3 +231,53 @@ hostname: ali.local
 2020-01-10 17:52:23,147 INFO 8592 [egg-watcher] Start watching: "/Users/xieweiwei/Desktop/xieww-aries.github.io/service/app.js"
 2020-01-10 17:52:23,147 INFO 8592 [egg-watcher:agent] watcher start success
 2020-01-10 17:52:23,171 INFO 8592 [egg:core] dump config after ready, 4ms
+2020-08-18 11:40:51,266 INFO 13376 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/xww/xieww-aries.github.io/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-08-18 11:40:51,275 INFO 13376 [egg:core] dump config after load, 3ms
+2020-08-18 11:40:51,315 INFO 13376 [egg-watcher] Start watching: ["/Users/xieww/Desktop/xww/xieww-aries.github.io/service/app","/Users/xieww/Desktop/xww/xieww-aries.github.io/service/config","/Users/xieww/Desktop/xww/xieww-aries.github.io/service/mocks","/Users/xieww/Desktop/xww/xieww-aries.github.io/service/mocks_proxy","/Users/xieww/Desktop/xww/xieww-aries.github.io/service/app.js"]
+2020-08-18 11:40:51,315 INFO 13376 [egg-watcher] Start watching: "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/app"
+2020-08-18 11:40:51,316 INFO 13376 [egg-watcher] Start watching: "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/config"
+2020-08-18 11:40:51,316 INFO 13376 [egg-watcher] Start watching: "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/mocks"
+2020-08-18 11:40:51,316 INFO 13376 [egg-watcher] Start watching: "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/mocks_proxy"
+2020-08-18 11:40:51,316 INFO 13376 [egg-watcher] Start watching: "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/app.js"
+2020-08-18 11:40:51,316 INFO 13376 [egg-watcher:agent] watcher start success
+2020-08-18 11:40:51,329 INFO 13376 [egg:core] dump config after ready, 4ms
+2020-08-18 12:33:10,736 ERROR 13376 nodejs.ClusterClientNoResponseError: client no response in 2318304ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 13376
+hostname: ali.local
+
+2020-08-18 12:34:57,082 INFO 15085 [egg:logger] init all loggers with options: {"dir":"/Users/xieww/Desktop/xww/xieww-aries.github.io/service/logs/service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-08-18 12:34:57,091 INFO 15085 [egg:core] dump config after load, 3ms
+2020-08-18 12:34:57,125 INFO 15085 [egg-watcher] Start watching: ["/Users/xieww/Desktop/xww/xieww-aries.github.io/service/app","/Users/xieww/Desktop/xww/xieww-aries.github.io/service/config","/Users/xieww/Desktop/xww/xieww-aries.github.io/service/mocks","/Users/xieww/Desktop/xww/xieww-aries.github.io/service/mocks_proxy","/Users/xieww/Desktop/xww/xieww-aries.github.io/service/app.js"]
+2020-08-18 12:34:57,125 INFO 15085 [egg-watcher] Start watching: "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/app"
+2020-08-18 12:34:57,126 INFO 15085 [egg-watcher] Start watching: "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/config"
+2020-08-18 12:34:57,126 INFO 15085 [egg-watcher] Start watching: "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/mocks"
+2020-08-18 12:34:57,126 INFO 15085 [egg-watcher] Start watching: "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/mocks_proxy"
+2020-08-18 12:34:57,126 INFO 15085 [egg-watcher] Start watching: "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/app.js"
+2020-08-18 12:34:57,126 INFO 15085 [egg-watcher:agent] watcher start success
+2020-08-18 12:34:57,138 INFO 15085 [egg:core] dump config after ready, 3ms
+2020-08-18 13:09:01,813 ERROR 15085 nodejs.ClusterClientNoResponseError: client no response in 1923930ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 15085
+hostname: ali.local
+
+2020-08-18 14:10:23,065 ERROR 15085 nodejs.ClusterClientNoResponseError: client no response in 3641910ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 15085
+hostname: ali.local
+

@@ -3,7 +3,7 @@ import './style.scss';
 
 export default function Title(props) {
     return (
-        <p className="common-title">
+        <p styleName="common-title">
             { props.title }
         </p>
     )

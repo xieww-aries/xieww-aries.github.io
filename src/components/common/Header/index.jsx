@@ -5,6 +5,8 @@ import { Menu } from 'antd/lib';
 import 'antd/dist/antd.css';
 import './style.scss';
 
+import '../../../resource/reset.css';
+
 export default function() {
     return (
         <div>

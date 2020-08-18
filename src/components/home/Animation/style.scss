@@ -1,25 +1,115 @@
-* {margin:0; padding:0;}
-ul li {list-style:none;}
-.stage {width:800px; height:600px; background:#001529; margin:0 auto; position:relative; perspective:2000px;}
-.container {width:300px; height:300px; position:absolute; left:0; top:0; bottom:0; right:0; margin:auto; transform-style:preserve-3d; transition:all 5s;}
-.container li {width:300px; height:300px; text-align:center; line-height:300px; font-size:72px; position:absolute; left:0; top:0; bottom:0; right:0; margin:auto;}
-.before {background:rgba(255,0,0,.3); transform:translateZ(150px); }
-.after {background:rgba(0,0,255,.3); transform:translateZ(-150px) rotateY(180deg);}
-.left {background:rgba(0,255,0,.3); transform:translateX(-150px) rotateY(-90deg);}
-.right {background:rgba(0,255,255,.3); transform:translateX(150px) rotateY(90deg);}
-.up {background:rgba(255,255,0,.3); transform:translateY(-150px) rotateX(90deg);}
-.down {background:rgba(255,0,255,.3); transform:translateY(150px) rotateX(-90deg);}
-.container p {width:100px; height:100px; text-align:center; line-height:100px; font-size:24px; position:absolute; left:0; top:0; bottom:0; right:0; margin:auto;}
-.before_little {background:rgba(255,0,0,.5); transform:translateZ(50px);}
-.after_little {background:rgba(0,0,255,.5); transform:translateZ(-50px) rotateY(180deg);}
-.left_little {background:rgba(0,255,0,.5); transform:translateX(-50px) rotateY(-90deg);}
-.right_little {background:rgba(0,255,255,.5); transform:translateX(50px) rotateY(90deg);}
-.up_little {background:rgba(255,255,0,.5); transform:translateY(-50px) rotateX(90deg);}
-.down_little {background:rgba(255,0,255,.5); transform:translateY(50px) rotateX(-90deg);}
-.container:hover {transform:rotateY(360deg) rotateX(360deg);}
-.container:hover .before {transform:translateZ(200px);}
-.container:hover .after {transform:translateZ(-200px);}
-.container:hover .left {transform:translateX(-150px) rotateY(-90deg) translateZ(50px);}
-.container:hover .right {transform:translateX(150px) rotateY(90deg) translateZ(50px);}
-.container:hover .up {transform:translateY(-150px) rotateX(90deg) translateZ(50px);}
-.container:hover .down {transform:translateY(150px) rotateX(-90deg) translateZ(50px);}
+.stage {
+  width: 800px;
+  height: 600px;
+  background: #001529;
+  margin: 0 auto;
+  position: relative;
+  perspective: 2000px;
+}
+.container {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transform-style: preserve-3d;
+  transition: all 5s;
+}
+.container li {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  font-size: 72px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.before {
+  background: rgba(255, 0, 0, 0.3);
+  transform: translateZ(150px);
+}
+.after {
+  background: rgba(0, 0, 255, 0.3);
+  transform: translateZ(-150px) rotateY(180deg);
+}
+.left {
+  background: rgba(0, 255, 0, 0.3);
+  transform: translateX(-150px) rotateY(-90deg);
+}
+.right {
+  background: rgba(0, 255, 255, 0.3);
+  transform: translateX(150px) rotateY(90deg);
+}
+.up {
+  background: rgba(255, 255, 0, 0.3);
+  transform: translateY(-150px) rotateX(90deg);
+}
+.down {
+  background: rgba(255, 0, 255, 0.3);
+  transform: translateY(150px) rotateX(-90deg);
+}
+.container p {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.before_little {
+  background: rgba(255, 0, 0, 0.5);
+  transform: translateZ(50px);
+}
+.after_little {
+  background: rgba(0, 0, 255, 0.5);
+  transform: translateZ(-50px) rotateY(180deg);
+}
+.left_little {
+  background: rgba(0, 255, 0, 0.5);
+  transform: translateX(-50px) rotateY(-90deg);
+}
+.right_little {
+  background: rgba(0, 255, 255, 0.5);
+  transform: translateX(50px) rotateY(90deg);
+}
+.up_little {
+  background: rgba(255, 255, 0, 0.5);
+  transform: translateY(-50px) rotateX(90deg);
+}
+.down_little {
+  background: rgba(255, 0, 255, 0.5);
+  transform: translateY(50px) rotateX(-90deg);
+}
+.container:hover {
+  transform: rotateY(360deg) rotateX(360deg);
+}
+.container:hover .before {
+  transform: translateZ(200px);
+}
+.container:hover .after {
+  transform: translateZ(-200px);
+}
+.container:hover .left {
+  transform: translateX(-150px) rotateY(-90deg) translateZ(50px);
+}
+.container:hover .right {
+  transform: translateX(150px) rotateY(90deg) translateZ(50px);
+}
+.container:hover .up {
+  transform: translateY(-150px) rotateX(90deg) translateZ(50px);
+}
+.container:hover .down {
+  transform: translateY(150px) rotateX(-90deg) translateZ(50px);
+}

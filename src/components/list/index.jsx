@@ -43,9 +43,9 @@ export default class List extends React.Component {
         return (
             <div>
                 <Title title="电影列表" />
-                <ul className="movie-box">
+                <ul styleName="movie-box">
                     {
-                        movieList.length && movieList.map(item => (
+                        movieList.length > 0 && movieList.map(item => (
                             <li key={item.id} onClick={this.goToDetail.bind(this, item.url)}>
                                 <img src={item.cover} />
                                 <p>电影名称：{item.title}</p>

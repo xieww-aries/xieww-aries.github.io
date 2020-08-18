@@ -32,7 +32,7 @@ export default class Home extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div className="home">
+                <div styleName="home">
                     我是首页
                 </div>
             </BrowserRouter>

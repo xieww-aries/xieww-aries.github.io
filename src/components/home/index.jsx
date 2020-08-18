@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './style.scss';
 import $ from 'jquery';
-import '../../resource/reset.css';
 
 import Animation from './Animation/index.jsx';
 
@@ -33,7 +32,7 @@ export default class Home extends Component {
     }
     render() {
         return (
-            <div className="home">
+            <div styleName="home">
                 <Title title={'我是首页'} />
                 <Animation />
             </div>
