@@ -16,7 +16,7 @@ export default class Home extends Component {
         // this.getDouBanData();
     }
     panelChange = (value, mode) => {
-        console.log('value',value)
+        console.log('value',value);
         console.log('mode', mode);
     }
     getDouBanData = () => {

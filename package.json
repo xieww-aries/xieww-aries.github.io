@@ -9,17 +9,6 @@
     "build": "webpack --progress",
     "dev": "npm run build && webpack-dev-server --open --progress --colors"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "author": "Aries",
   "license": "ISC",
   "dependencies": {
@@ -35,6 +24,7 @@
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "@commitlint/cli": "^9.1.2",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-import": "^1.12.0",
