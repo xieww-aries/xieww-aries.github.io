@@ -1,13 +1,24 @@
 .doc {
     display: flex;
+    border-radius: 3px;
 
     .doc-nav {
         flex: 1;
         padding: 0;
         margin-bottom: 0;
+        border-right: 3px solid #F00;
+
+        .nav-item {
+            border-bottom: 2px solid #000000;
+            text-align: center;
+
+            &:first-child {
+                border-top: 2px solid #000000;
+            }
+        }
     }
 
     .doc-title {
-        flex: 3;
+        flex: 5;
     }
 }

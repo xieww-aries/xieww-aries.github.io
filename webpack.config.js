@@ -17,7 +17,8 @@ module.exports = {
             index: 'dist/index.html',
             list: 'dist/index.html',
             document: 'dist/index.html',
-            introduce: 'dist/index.html'
+            introduce: 'dist/index.html',
+            loginRegiste: 'dist/index.html'
         }
     },
     module: {
