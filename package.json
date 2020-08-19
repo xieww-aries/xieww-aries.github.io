@@ -4,10 +4,21 @@
   "description": "this is Aries personal website",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .jsx,.js . --max-warnings 50",
+    "lint": "eslint src/**/*.js . --max-warnings 50",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress",
     "dev": "npm run build && webpack-dev-server --open --progress --colors"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "author": "Aries",
   "license": "ISC",
@@ -35,6 +46,8 @@
     "eslint-loader": "^4.0.2",
     "eslint-plugin-react": "^7.20.6",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
     "postcss-cssnext": "^3.1.0",
