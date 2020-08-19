@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import { Menu } from 'antd/lib';
-import 'antd/dist/antd.css';
 import './style.scss';
 
-import '../../../resource/reset.css';
+// antd Menu 组件
+import { Menu } from 'antd/lib';
+import 'antd/dist/antd.css';
 
 export default function() {
     return (
         <div>
-            <Menu theme="dark">
+            <Menu theme="dark" mode="horizontal">
                 <Menu.Item>
                     <Link to="/index">首页</Link>
                 </Menu.Item>

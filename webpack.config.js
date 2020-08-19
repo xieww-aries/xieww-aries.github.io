@@ -26,37 +26,24 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 use: [
                     {
-                        loader: 'babel-loader',
-                        options: {
-                            plugins: [
-                                ["import", {
-                                  "libraryName": "antd",
-                                  "libraryDirectory": "es",
-                                  "style": "css" // `style: true` 会加载 less 文件
-                                }]
-                            ]
-                        }
+                        loader: 'babel-loader'
                     }
                 ],
                 exclude: /node_modules/
             },
+            // 处理非 css module / node_modules下样式的 配置
             {
                 test: /\.(scss|css)$/,
-                exclude: [
-                    path.resolve(__dirname, '..', 'node_modules'),
-                    path.resolve(__dirname, '../src/resource')
+                include: [
+                    path.resolve(__dirname, 'node_modules'),
+                    path.resolve(__dirname, 'src/resource')
                 ],
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader
                     },
                     {
-                        loader: 'css-loader',
-                        options: {
-                            modules: true,
-                            sourceMap: true,
-                            localIdentName: '[name]__[local]___[hash:base64:5]'
-                        }
+                        loader: 'css-loader'
                     },
                     {
                         loader: 'postcss-loader'
@@ -66,10 +53,13 @@ module.exports = {
                     }
                 ]
             },
-            // 处理非 css module / node_modules下样式的 配置
+            // css module 配置
             {
                 test: /\.(scss|css)$/,
-                include: [path.resolve(__dirname, '../node_modules'), path.resolve(__dirname, '../src/resource')],
+                exclude: [
+                    path.resolve(__dirname, 'node_modules'),
+                    path.resolve(__dirname, 'src/resource')
+                ],
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader
@@ -77,7 +67,10 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            modules: false,
+                            modules: {
+                                mode: 'local',
+                                localIdentName: '[name]__[local]___[hash:base64:5]'
+                            },
                             sourceMap: true
                         }
                     },
