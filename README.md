@@ -3,10 +3,10 @@
   - static page add
   - css modules            🐶
   - eslint                 🐶
+  - husky
   - typescript
   - webpack optimization
   - node optimization
-  - husky
 
 + React scss 中 CSS modules 的实现
   - 使用 `babel-plugin-react-css-modules` 插件
