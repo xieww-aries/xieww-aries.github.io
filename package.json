@@ -4,7 +4,7 @@
   "description": "this is Aries personal website",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src/**/*.js . --max-warnings 50",
+    "lint": "eslint --ext .jsx,.js,.tsx,.ts . --max-warnings 50",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress",
     "dev": "npm run build && webpack-dev-server --open --progress --colors"
