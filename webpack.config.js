@@ -16,7 +16,7 @@ module.exports = {
         historyApiFallback: {
             index: 'dist/index.html',
             list: 'dist/index.html',
-            document: 'dist/index.html',
+            array: 'dist/index.html',
             introduce: 'dist/index.html',
             loginRegiste: 'dist/index.html'
         }

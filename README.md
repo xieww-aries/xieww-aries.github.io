@@ -1,13 +1,5 @@
 # aries-web
-+ Todo
-  - static page add
-  - css modules            🐶
-  - eslint                 🐶
-  - husky                  🐶
-  - typescript
-  - webpack optimization
-  - node optimization
-
+## 工程化
 + React scss 中 CSS modules 的实现
   - 使用 `babel-plugin-react-css-modules` 插件
   - 配置教程：https://segmentfault.com/a/1190000015715538
@@ -33,3 +25,17 @@
       - .huskyrc.json
       - .lintstagedrc.json
       - commitlint.config.js(commit提交规范)
+
++ react-router
+  - 依赖包
+    - `react-router`
+    - `react-router-dom`
+
+## Todo
+  - static page add
+  - css modules            🐶
+  - eslint                 🐶
+  - husky                  🐶
+  - typescript
+  - webpack optimization
+  - node optimization

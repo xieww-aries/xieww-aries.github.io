@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './style.scss';
 import $ from 'jquery';
 
-import Animation from './Animation/index.jsx';
+import Animation from '../../components/Home/3DAnimation/index.jsx';
 
-import Title from '../common/Title/index.jsx';
+import Title from '../../components/common/Title/index.jsx';
 
 export default class Home extends Component {
     constructor(props) {
