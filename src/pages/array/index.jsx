@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Title from '../../components/common/Title/index.jsx'
+import Title from '../../components/common/Title/index.jsx';
+import ArrayIndex from '../../components/Array/Index/index.jsx';
 import './style.scss';
 
 // antd Menu 组件
@@ -45,8 +46,9 @@ export default class ArrayDoc extends Component {
                         ))
                     }
                 </Menu>
-                <div styleName="doc-title">
+                <div styleName="doc-main">
                     <Title title={`${currentArrayFunction}方法`} />
+                    <ArrayIndex />
                 </div>
             </div>
         );
