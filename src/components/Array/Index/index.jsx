@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
+import Title from '../../common/Title/index.jsx';
+
 import './style.scss';
 
 export default class ArrayIndex extends Component {
     render() {
         return (
             <div>
-                <table border="3">
+                <table border="2">
                     <tr>
                         <th>名称</th>
                         <th>方法</th>
@@ -153,10 +155,8 @@ export default class ArrayIndex extends Component {
                         <td>否</td>
                     </tr>
                 </table>
+                <Title title={'ES6+ 方法'} />
                 <table border="2">
-                    <tr>
-                        <th colspan="6">ES6+ 方法</th>
-                    </tr>
                     <tr>
                         <th>名称</th>
                         <th>方法</th>
@@ -165,21 +165,96 @@ export default class ArrayIndex extends Component {
                         <th>返回值</th>
                         <th>是否影响原数组</th>
                     </tr>
-                    {/* 增 */}
                     <tr>
-                        <td rowspan="2">增</td>
-                        <td>copyWithin()()</td>
-                        <td>在数组前面增加元素</td>
-                        <td>arr.copyWithin()</td>
-                        <td>前增后数组的长度</td>
+                        <td></td>
+                        <td>copyWithin()</td>
+                        <td>从数组的指定位置拷贝元素到元素的另一个指定位置中</td>
+                        <td>arr.copyWithin(target,start[,end])</td>
+                        <td>操作后的数组</td>
                         <td>是</td>
                     </tr>
                     <tr>
-                        <td>push()</td>
-                        <td>在数组后面增加元素</td>
-                        <td>arr.push()</td>
-                        <td>后增后数组的长度</td>
+                        <td></td>
+                        <td>includes()</td>
+                        <td>判断一个数组是否包含一个指定的值</td>
+                        <td>arr.includes(searchElement[,fromIndex])</td>
+                        <td>true / false</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>keys()</td>
+                        <td>返回一个新的Array迭代器，它包含数组中每个索引值的键</td>
+                        <td>arr.keys()</td>
+                        <td>返回新的Array迭代器</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>fill()</td>
+                        <td>用一个固定值填充一个数组中从其实索引到终止索引的全部元素</td>
+                        <td>arr.fill(value, start, end)</td>
+                        <td>返回操作后的数组</td>
                         <td>是</td>
+                    </tr>
+                    {/* 迭代/遍历 */}
+                    <tr>
+                        <td rowspan="7">迭代/遍历</td>
+                        <td>every()</td>
+                        <td>用于检测数组中所有元素是否都符合指定的条件</td>
+                        <td>arr.every(function(currentValue,index,arr)..., thisArg)</td>
+                        <td>true / false</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>some()</td>
+                        <td>用户检测数组中的某些元素是否符合指定的条件</td>
+                        <td>arr.some(function(currentValue,index,arr)..., thisArg)</td>
+                        <td>true / false</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>foreach()</td>
+                        <td>调用数组的每个元素，并将元素传递给回调函数</td>
+                        <td>arr.forEach(function(currentValue,index,arr)...,thisAtg)</td>
+                        <td>undefined</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>filter()</td>
+                        <td>创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。</td>
+                        <td>arr.filter(function(currentValue,index,arr)...,thisArg)</td>
+                        <td>过滤后的新数组</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>map()</td>
+                        <td>返回一个新数组，数组中的元素为原始数组远足调用函数处理后的值。</td>
+                        <td>arr.map(function(currentValue,index,arr)...,thisArg)</td>
+                        <td>操作过后的新数组</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>find()</td>
+                        <td>返回数组中满足测试函数的第一个元素的值，否则返回undefined。</td>
+                        <td>arr.find(function(currentValue,index,arr)...,thisArg)</td>
+                        <td>满足回调函数的第一个元素的值</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>findIndex()</td>
+                        <td>返回数组中满足测试函数的第一个元素的位置，否则返回 -1</td>
+                        <td>arr.findIndex(function(currentValue,index,arr)...,thisArg)</td>
+                        <td>满足测试函数的第一个元素的位置</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>es8</td>
+                        <td>entries()</td>
+                        <td>返回一个新的Array Iterator对象，该对象包括数组中每个索引的 键 / 值 对。</td>
+                        <td>arr.entries()</td>
+                        <td>新的Array Iterator对象</td>
+                        <td>否</td>
                     </tr>
                 </table>
             </div>

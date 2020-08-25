@@ -15,10 +15,10 @@ module.exports = {
         contentBase: './',
         historyApiFallback: {
             index: 'dist/index.html',
-            list: 'dist/index.html',
             array: 'dist/index.html',
-            introduce: 'dist/index.html',
-            loginRegiste: 'dist/index.html'
+            webpack: 'dist/index.html',
+            react: 'dist/index.html',
+            list: 'dist/index.html'
         }
     },
     module: {

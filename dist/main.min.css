@@ -23487,7 +23487,71 @@ div.ant-typography-edit-content {
   font-size: 25px;
   line-height: 50px;
   margin-bottom: 0;
-  text-align: center; }
+  text-align: center;
+  font-weight: bold;
+  font-style: italic; }
+
+table {
+  margin-bottom: 20px; }
+  table th {
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    font-style: italic; }
+  table td {
+    padding: 5px;
+    text-align: center; }
+
+.style__doc___1cpGI {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 3px; }
+  .style__doc___1cpGI .style__doc-nav___2flmL {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0;
+    margin-bottom: 0; }
+    .style__doc___1cpGI .style__doc-nav___2flmL .style__nav-item___1wE_a {
+      border-bottom: 2px solid #000000;
+      text-align: center; }
+      .style__doc___1cpGI .style__doc-nav___2flmL .style__nav-item___1wE_a:first-child {
+        border-top: 2px solid #000000; }
+  .style__doc___1cpGI .style__doc-main___HBX8z {
+    -webkit-box-flex: 5;
+    -webkit-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    padding: 20px; }
+
+.style__doc___1yVfi {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 3px; }
+  .style__doc___1yVfi .style__doc-nav___172iF {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0;
+    margin-bottom: 0; }
+    .style__doc___1yVfi .style__doc-nav___172iF .style__nav-item___1DFLs {
+      border-bottom: 2px solid #000000;
+      text-align: center; }
+      .style__doc___1yVfi .style__doc-nav___172iF .style__nav-item___1DFLs:first-child {
+        border-top: 2px solid #000000; }
+  .style__doc___1yVfi .style__doc-main___3qeFV {
+    -webkit-box-flex: 5;
+    -webkit-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    padding: 20px; }
 
 .style__movie-title___3sDfE {
   font-size: 25px;
@@ -23510,28 +23574,4 @@ div.ant-typography-edit-content {
     .style__movie-box___1WVX5 li p {
       margin-top: 20px;
       text-align: center; }
-
-.style__doc___DZ9NP {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 3px; }
-  .style__doc___DZ9NP .style__doc-nav___25J48 {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding: 0;
-    margin-bottom: 0; }
-    .style__doc___DZ9NP .style__doc-nav___25J48 .style__nav-item___1_DEu {
-      border-bottom: 2px solid #000000;
-      text-align: center; }
-      .style__doc___DZ9NP .style__doc-nav___25J48 .style__nav-item___1_DEu:first-child {
-        border-top: 2px solid #000000; }
-  .style__doc___DZ9NP .style__doc-title___1Pm5P {
-    -webkit-box-flex: 5;
-    -webkit-flex: 5;
-        -ms-flex: 5;
-            flex: 5; }
 

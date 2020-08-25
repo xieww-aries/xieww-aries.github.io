@@ -13,14 +13,14 @@ export default class Head extends Component {
             default:
             case '/index':
                 return ['index'];
-            case '/list':
-                return ['list'];
             case '/array':
                 return ['array'];
-            case '/introduce':
-                return ['intro'];
-            case '/loginRegiste':
-                return ['login'];
+            case '/webpack':
+                return ['webpack'];
+            case '/react':
+                return ['react'];
+            case '/list':
+                return ['list'];
         }
     }
     render() {
@@ -35,17 +35,17 @@ export default class Head extends Component {
                     <Menu.Item key='index'>
                         <Link to="/index">首页</Link>
                     </Menu.Item>
+                    <Menu.Item key='array'>
+                        <Link to="/array">Array</Link>
+                    </Menu.Item>
+                    <Menu.Item key='webpack'>
+                        <Link to="/webpack">Webpack</Link>
+                    </Menu.Item>
+                    <Menu.Item key='react'>
+                        <Link to="/react">React</Link>
+                    </Menu.Item>
                     <Menu.Item key='list'>
                         <Link to="/list">视频列表</Link>
-                    </Menu.Item>
-                    <Menu.Item key='array'>
-                        <Link to="/array">数组</Link>
-                    </Menu.Item>
-                    <Menu.Item key='intro'>
-                        <Link to="/introduce">介绍</Link>
-                    </Menu.Item>
-                    <Menu.Item key='login'>
-                        <Link to="/loginRegiste">登陆/注册</Link>
                     </Menu.Item>
                 </Menu>
             </div>

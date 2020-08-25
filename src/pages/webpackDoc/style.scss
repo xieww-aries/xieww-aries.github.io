@@ -1,0 +1,24 @@
+.doc {
+    display: flex;
+    border-radius: 3px;
+
+    .doc-nav {
+        flex: 2;
+        padding: 0;
+        margin-bottom: 0;
+
+        .nav-item {
+            border-bottom: 2px solid #000000;
+            text-align: center;
+
+            &:first-child {
+                border-top: 2px solid #000000;
+            }
+        }
+    }
+
+    .doc-main {
+        flex: 6;
+        padding: 20px;
+    }
+}

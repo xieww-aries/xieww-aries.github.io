@@ -49,5 +49,41 @@ export const arrayFunctionList = [
     },
     {
         name: 'reduceRight'
+    },
+    {
+        name: 'copyWithin'
+    },
+    {
+        name: 'includes'
+    },
+    {
+        name: 'keys'
+    },
+    {
+        name: 'fill'
+    },
+    {
+        name: 'every'
+    },
+    {
+        name: 'some'
+    },
+    {
+        name: 'foreach'
+    },
+    {
+        name: 'filter'
+    },
+    {
+        name: 'map'
+    },
+    {
+        name: 'find'
+    },
+    {
+        name: 'findIndex'
+    },
+    {
+        name: 'entries'
     }
 ];
