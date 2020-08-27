@@ -13,7 +13,7 @@ import List from './pages/list/index.jsx';
 class App extends Component {
     render() {
         return (
-            <div>
+            <div style={{ 'height': '100%' }}>
                 <Head />
                 <Switch>
                     <Route exact path="/" component={Home} />

@@ -5,7 +5,108 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.exports = {
+const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
+const smp = new SpeedMeasurePlugin();
+
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+
+const rules = [
+    {
+        enforce: 'pre',
+        test: /\.js[x]?$/,
+        exclude: /node_modules/,
+        use: [{
+            loader: 'eslint-loader', 
+            options: {
+                cache: true,
+                emitError: true,
+                emitWarning: true,
+                fix: true
+            }
+        }]
+    },
+    {
+        test: /\.(js|jsx)$/,
+        use: [
+            {
+                loader: 'babel-loader'
+            }
+        ],
+        exclude: /node_modules/
+    },
+    // 处理非 css module / node_modules下样式的 配置
+    {
+        test: /\.(scss|css)$/,
+        include: [
+            path.resolve(__dirname, 'node_modules'),
+            path.resolve(__dirname, 'src/resource')
+        ],
+        use: [
+            {
+                loader: MiniCssExtractPlugin.loader
+            },
+            {
+                loader: 'css-loader'
+            },
+            {
+                loader: 'postcss-loader'
+            },
+            {
+                loader: 'sass-loader'
+            }
+        ]
+    },
+    // css module 配置
+    {
+        test: /\.(scss|css)$/,
+        exclude: [
+            path.resolve(__dirname, 'node_modules'),
+            path.resolve(__dirname, 'src/resource')
+        ],
+        use: [
+            {
+                loader: MiniCssExtractPlugin.loader
+            },
+            {
+                loader: 'css-loader',
+                options: {
+                    modules: {
+                        mode: 'local',
+                        localIdentName: '[name]__[local]___[hash:base64:5]'
+                    },
+                    sourceMap: true
+                }
+            },
+            {
+                loader: 'postcss-loader'
+            },
+            {
+                loader: 'sass-loader'
+            }
+        ]
+    }
+];
+
+const plugins = [
+    new ProgressBarPlugin(),
+    // new CleanWebpackPlugin(),
+    // 提取样式
+    new MiniCssExtractPlugin({
+        filename: '[name].min.css'
+    }),
+    new HTMLWebpackPlugin({
+        title: 'development',   
+        template: 'demo/index.html'
+    }),
+    new CopyWebpackPlugin([
+        {
+            from: path.resolve(__dirname, 'dist/**/*'),
+            to: path.resolve(__dirname, 'service/app/public')
+        }
+    ])
+]
+
+module.exports = smp.wrap({
     entry: path.resolve(__dirname, 'src/index.jsx'),
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -22,98 +123,7 @@ module.exports = {
         }
     },
     module: {
-        rules: [
-            {
-                enforce: 'pre',
-                test: /\.js[x]?$/,
-                exclude: /node_modules/,
-                use: [{
-                    loader: 'eslint-loader', 
-                    options: {
-                        cache: true,
-                        emitError: true,
-                        emitWarning: true,
-                        fix: true
-                    }
-                }]
-            },
-            {
-                test: /\.(js|jsx)$/,
-                use: [
-                    {
-                        loader: 'babel-loader'
-                    }
-                ],
-                exclude: /node_modules/
-            },
-            // 处理非 css module / node_modules下样式的 配置
-            {
-                test: /\.(scss|css)$/,
-                include: [
-                    path.resolve(__dirname, 'node_modules'),
-                    path.resolve(__dirname, 'src/resource')
-                ],
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader
-                    },
-                    {
-                        loader: 'css-loader'
-                    },
-                    {
-                        loader: 'postcss-loader'
-                    },
-                    {
-                        loader: 'sass-loader'
-                    }
-                ]
-            },
-            // css module 配置
-            {
-                test: /\.(scss|css)$/,
-                exclude: [
-                    path.resolve(__dirname, 'node_modules'),
-                    path.resolve(__dirname, 'src/resource')
-                ],
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader
-                    },
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            modules: {
-                                mode: 'local',
-                                localIdentName: '[name]__[local]___[hash:base64:5]'
-                            },
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'postcss-loader'
-                    },
-                    {
-                        loader: 'sass-loader'
-                    }
-                ]
-            }
-        ]
+        rules
     },
-    plugins: [
-        // new CleanWebpackPlugin(),
-        // 提取样式
-        new MiniCssExtractPlugin({
-            filename: '[name].min.css'
-        }),
-        new HTMLWebpackPlugin({
-            title: 'development',   
-            template: 'demo/index.html'
-        }),
-        new CopyWebpackPlugin([
-            {
-                from: path.resolve(__dirname, 'dist/**/*'),
-                to: path.resolve(__dirname, 'service/app/public')
-            }
-        ])
-    ]
-}
+    plugins
+})
