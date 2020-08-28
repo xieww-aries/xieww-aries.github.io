@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 
 import Title from '../../components/common/Title/index.jsx';
 import Principle from '../../components/WebpackDoc/Principle/index.jsx';
+import Loaders from '../../components/WebpackDoc/Loaders/index.jsx';
+import Babel from '../../components/WebpackDoc/Babel/index.jsx';
+import PluginDoc from '../../components/WebpackDoc/PluginDoc/index.jsx';
 
 import './style.scss';
 
@@ -14,7 +17,6 @@ const { SubMenu } = Menu;
 const webpackList = ['babel', 'loader', 'plugin', 'webpack优化']
 
 import { babelData } from './babelData';
-import { loaderData } from './loaderData';
 
 export default class WebpackDoc extends Component {
     constructor(props) {
@@ -25,95 +27,95 @@ export default class WebpackDoc extends Component {
             // 当前loader已选择的项
             currentLoaderValue: '',
             // 当前plugins已选择的项
-            currentPluginValue: ''
+            currentPluginValue: '',
+            // 当前列表选择项
+            currentSelectedValue: 'Principle'
         };
     }
-    handleSeletItem = e => {
-        console.log(111222, e);
+    handleSeletItem = ({ key: currentSelectedValue }) => {
+        this.setState({ currentSelectedValue });
+    }
+    get mainContent() {
+        const { currentSelectedValue } = this.state;
+        switch (currentSelectedValue) {
+            default:
+            case 'Principle':
+                return <Principle />;
+            case 'Loaders':
+                return <Loaders />;
+            case 'Babel':
+                return <Babel />;
+            case 'Plugins':
+                return <PluginDoc />;
+        }
     }
     render() {
+        const { mainContent } = this;
         return (
             <div styleName="doc">
-                <Menu
-                    theme="dark"
-                    mode="vertical"
-                    styleName="doc-nav"
-                    onSelect={this.handleSeletItem}
-                    mode="inline"
-                >
-                    {/* webpack编译原理 */}
-                    <SubMenu title="webpack原理">
-                        <Menu.Item
-                            key={'compile'}
-                            styleName="nav-item"
-                        >
-                            <Link to={`/webpack/compile`}>编译原理</Link>
+                <div styleName="doc-nav">
+                    <Menu
+                        theme="dark"
+                        mode="vertical"
+                        onSelect={this.handleSeletItem}
+                        mode="inline"
+                    >
+                        {/* About */}
+                        <Menu.Item key={'Principle'} styleName="nav-item">
+                            <Link to={`/webpack/principle`}>Principle</Link>
                         </Menu.Item>
-                        <Menu.Item
-                            key={'pack'}
-                            styleName="nav-item"
-                        >
-                            <Link to={`/webpack/pack`}>打包原理</Link>
+
+                        {/* Loaders */}
+                        <Menu.Item key={'Loaders'} styleName="nav-item">
+                            <Link to={`/webpack/loaders`}>Loaders</Link>
                         </Menu.Item>
-                    </SubMenu>
-                    {/* webpack优化 */}
-                    <SubMenu title="webpack优化">
-                        <Menu.Item
-                            key={'speed'}
-                            styleName="nav-item"
-                        >
-                            <Link to={`/webpack/speed`}>优化打包速度</Link>
+
+                        {/* plugins */}
+                        <Menu.Item key={'Plugins'} styleName="nav-item">
+                            <Link to={`/webpack/plugin`}>Plugins</Link>
                         </Menu.Item>
-                        <Menu.Item
-                            key={'size'}
-                            styleName="nav-item"
-                        >
-                            <Link to={`/webpack/size`}>优化打包体积</Link>
+
+                        {/* babel */}
+                        <Menu.Item key={'Babel'} styleName="nav-item">
+                            <Link to={`/webpack/babel`}>Babel</Link>
                         </Menu.Item>
-                    </SubMenu>
-                    {/* babel */}
-                    <SubMenu title="Babel" onTitleClick={this.handleSeletItem}>
-                        {
-                            babelData.map(({ name }) => (
-                                <Menu.Item
-                                    key={name}
-                                    styleName="nav-item"
-                                >
-                                    <Link to={`/webpack/${name}`}>{name}</Link>
-                                </Menu.Item>
-                            ))
-                        }
-                    </SubMenu>
-                    {/* loader */}
-                    <SubMenu title="Loaders">
-                        {
-                            loaderData.map(({ name }) => (
-                                <Menu.Item
-                                    key={name}
-                                    styleName="nav-item"
-                                >
-                                    <Link to={`/webpack/${name}`}>{name}</Link>
-                                </Menu.Item>
-                            ))
-                        }
-                    </SubMenu>
-                    {/* plugins */}
-                    <SubMenu title="Plugins">
-                        {
-                            webpackList.map(name => (
-                                <Menu.Item
-                                    key={name}
-                                    styleName="nav-item"
-                                >
-                                    <Link to={`/webpack/${name}`}>{name}</Link>
-                                </Menu.Item>
-                            ))
-                        }
-                    </SubMenu>
-                </Menu>
+
+                        {/* webpack编译原理 */}
+                        <SubMenu title="webpack原理">
+                            <Menu.Item
+                                key={'compile'}
+                                styleName="nav-item"
+                            >
+                                <Link to={`/webpack/compile`}>编译原理</Link>
+                            </Menu.Item>
+                            <Menu.Item
+                                key={'pack'}
+                                styleName="nav-item"
+                            >
+                                <Link to={`/webpack/pack`}>打包原理</Link>
+                            </Menu.Item>
+                        </SubMenu>
+
+                        {/* webpack优化 */}
+                        <SubMenu title="webpack优化">
+                            <Menu.Item
+                                key={'speed'}
+                                styleName="nav-item"
+                            >
+                                <Link to={`/webpack/speed`}>优化打包速度</Link>
+                            </Menu.Item>
+                            <Menu.Item
+                                key={'size'}
+                                styleName="nav-item"
+                            >
+                                <Link to={`/webpack/size`}>优化打包体积</Link>
+                            </Menu.Item>
+                        </SubMenu>
+                    </Menu>
+                </div>
                 <div styleName="doc-main">
                     <Title title={'Webpack知识点梳理'} />
-                    <Principle />
+                    { this.mainContent }
                 </div>
             </div>
         )
