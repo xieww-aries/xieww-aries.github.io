@@ -35,10 +35,10 @@
     - `react-router-dom`
 
 ## Todo
-  - static page add
   - [x] css modules            🐶
   - [x] eslint                 🐶
   - [x] husky                  🐶
-  - typescript
-  - webpack optimization
-  - node optimization
+  - [ ] static page add
+  - [ ]typescript
+  - [ ]webpack optimization
+  - [ ]node optimization
