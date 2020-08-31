@@ -8,6 +8,7 @@ import Home from './pages/home/index.jsx';
 import ArrayDoc from './pages/arrayDoc/index.jsx';
 import WebpackDoc from './pages/webpackDoc/index.jsx';
 import ReactDoc from './pages/reactDoc/index.jsx';
+import Game from './pages/Game/index.jsx';
 import List from './pages/list/index.jsx';
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
                     <Route path="/array" component={ArrayDoc} />
                     <Route path="/webpack" component={WebpackDoc} />
                     <Route path="/react" component={ReactDoc} />
+                    <Route path="/game" component={Game} />
                     <Route path="/list" component={List} />
                 </Switch>
             </div>

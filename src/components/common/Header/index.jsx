@@ -19,6 +19,8 @@ export default class Head extends Component {
                 return ['webpack'];
             case '/react':
                 return ['react'];
+            case '/game':
+                return ['game'];
             case '/list':
                 return ['list'];
         }
@@ -43,6 +45,9 @@ export default class Head extends Component {
                     </Menu.Item>
                     <Menu.Item key='react'>
                         <Link to="/react">React</Link>
+                    </Menu.Item>
+                    <Menu.Item>
+                        <Link to="/game">Game</Link>
                     </Menu.Item>
                     <Menu.Item key='list'>
                         <Link to="/list">视频列表</Link>

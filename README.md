@@ -1,5 +1,7 @@
 # aries-web
+
 ## 页面地址: https://xieww-aries.github.io
+
 ## 工程化
 + React scss 中 CSS modules 的实现
   - 使用 `babel-plugin-react-css-modules` 插件
@@ -34,9 +36,9 @@
 
 ## Todo
   - static page add
-  - css modules            🐶
-  - eslint                 🐶
-  - husky                  🐶
+  - [x] css modules            🐶
+  - [x] eslint                 🐶
+  - [x] husky                  🐶
   - typescript
   - webpack optimization
   - node optimization
