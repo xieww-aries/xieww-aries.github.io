@@ -39,6 +39,6 @@
   - [x] eslint                 🐶
   - [x] husky                  🐶
   - [ ] static page add
-  - [ ]typescript
-  - [ ]webpack optimization
-  - [ ]node optimization
+  - [ ] typescript
+  - [ ] webpack optimization
+  - [ ] node optimization
