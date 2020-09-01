@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Title from '../../components/common/Title/index.jsx';
-import Principle from '../../components/WebpackDoc/Principle/index.jsx';
+import Index from '../../components/WebpackDoc/Index/index.jsx';
 import Loaders from '../../components/WebpackDoc/Loaders/index.jsx';
 import Babel from '../../components/WebpackDoc/Babel/index.jsx';
 import PluginDoc from '../../components/WebpackDoc/PluginDoc/index.jsx';
@@ -14,9 +13,6 @@ import { Menu } from 'antd/lib';
 import 'antd/dist/antd.css';
 
 const { SubMenu } = Menu;
-const webpackList = ['babel', 'loader', 'plugin', 'webpack优化']
-
-import { babelData } from './babelData';
 
 export default class WebpackDoc extends Component {
     constructor(props) {
@@ -29,7 +25,7 @@ export default class WebpackDoc extends Component {
             // 当前plugins已选择的项
             currentPluginValue: '',
             // 当前列表选择项
-            currentSelectedValue: 'Principle'
+            currentSelectedValue: 'Index'
         };
     }
     handleSeletItem = ({ key: currentSelectedValue }) => {
@@ -39,8 +35,8 @@ export default class WebpackDoc extends Component {
         const { currentSelectedValue } = this.state;
         switch (currentSelectedValue) {
             default:
-            case 'Principle':
-                return <Principle />;
+            case 'Index':
+                return <Index />;
             case 'Loaders':
                 return <Loaders />;
             case 'Babel':
@@ -61,8 +57,8 @@ export default class WebpackDoc extends Component {
                         mode="inline"
                     >
                         {/* About */}
-                        <Menu.Item key={'Principle'} styleName="nav-item">
-                            <Link to={`/webpack/principle`}>Principle</Link>
+                        <Menu.Item key={'Index'} styleName="nav-item">
+                            <Link to={`/webpack/index`}>Index</Link>
                         </Menu.Item>
 
                         {/* Loaders */}
@@ -114,8 +110,7 @@ export default class WebpackDoc extends Component {
                     </Menu>
                 </div>
                 <div styleName="doc-main">
-                    <Title title={'Webpack知识点梳理'} />
-                    { this.mainContent }
+                    { mainContent }
                 </div>
             </div>
         )

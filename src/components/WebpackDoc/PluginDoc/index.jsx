@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Title from '../../common/Title/index.jsx';
+
 export default class PluginDoc extends Component {
     constructor(props) {
         super(props);
@@ -8,6 +10,7 @@ export default class PluginDoc extends Component {
     render() {
         return (
             <div>
+                <Title title={'Plugin 知识点'} />
                 {/* Plugin 简介 */}
                 <h2>Plugin</h2>
                 <p>· plugin 功能更强大。它的主要功能要更加丰富，从打包优化和压缩，从重新定义环境变量，功能强大到可以用来处理各种各样的任务。</p>

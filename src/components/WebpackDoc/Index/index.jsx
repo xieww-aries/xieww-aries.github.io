@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 
-export default class Principle extends Component {
+import Title from '../../common/Title/index.jsx';
+
+export default class Index extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
     }
+
+    state = {}
 
     render() {
         return (
             <div>
+                <Title title={'webpack 知识点'} />
                 {/* 什么是 webpack */}
                 <h2>什么是 Webpack？</h2>
                 <p>webpack 是一个打包模块化 Javascript 的工具，它将一切文件都视为模块，通过 loader 编译转换文件，通过 plugin 注入钩子，最后将输出的资源模块组合成文件。</p>

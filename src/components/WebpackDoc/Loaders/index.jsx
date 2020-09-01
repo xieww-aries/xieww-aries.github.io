@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import './style.scss';
 
+import Title from '../../common/Title/index.jsx';
+
 import { loaderData } from './loaderData';
 
 export default class Loaders extends Component {
@@ -12,6 +14,7 @@ export default class Loaders extends Component {
     render() {
         return (
             <ul>
+                <Title title={'Loaders 知识点'} />
                 {/* Loader 简介 */}
                 <h2>Loader 简介</h2>
                 <p>· Loader 是文件加载器，能够加载资源文件，并对这些文件进行一些处理，诸如编译、压缩等，最终一起打包到制定文件中，处理一个文件可以使用多个 Loader ，Loader 的执行顺序和配置中的顺序是相反的，即最后一个 Loader 最先执行，第一个 loader 最后执行，第一个执行的 loader 接收源文件内容作为参数，其它 loader 接收前一个执行的 loader 的返回值作为参数，最后执行的 loader 会返回此模块的 Javascript 源码。</p>
