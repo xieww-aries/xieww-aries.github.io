@@ -96,7 +96,6 @@ export function removeQuerys(...args) {
  * @param {boolean} ignoreCase 是否忽略大小写，默认不忽略
  * @return {String}
  */
-// eslint-disable-next-line max-len
 export function getParamFromUrl(
     key,
     defaultVal,

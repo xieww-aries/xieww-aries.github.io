@@ -13,8 +13,8 @@ export default class Head extends Component {
             default:
             case '/index':
                 return ['index'];
-            case '/array':
-                return ['array'];
+            case '/js':
+                return ['js'];
             case '/webpack':
                 return ['webpack'];
             case '/react':
@@ -35,10 +35,10 @@ export default class Head extends Component {
                     defaultSelectedKeys={defaultSelectedKeyList}
                 >
                     <Menu.Item key='index'>
-                        <Link to="/index">首页</Link>
+                        <Link to="/index">Index</Link>
                     </Menu.Item>
-                    <Menu.Item key='array'>
-                        <Link to="/array">Array</Link>
+                    <Menu.Item key='js'>
+                        <Link to="/js">Javascript</Link>
                     </Menu.Item>
                     <Menu.Item key='webpack'>
                         <Link to="/webpack">Webpack</Link>

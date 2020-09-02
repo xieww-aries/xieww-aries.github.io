@@ -10,7 +10,7 @@ export default class Lifecycle extends Component {
         return (
             <div>
                 <Title title={'React Lifecycle'} />
-                I'm lifecycle
+                <p>文档地址：<a href="https://segmentfault.com/a/1190000016617400">https://segmentfault.com/a/1190000016617400</a></p>
             </div>
         );
     }

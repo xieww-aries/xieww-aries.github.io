@@ -116,7 +116,7 @@ module.exports = smp.wrap({
         contentBase: './',
         historyApiFallback: {
             index: 'dist/index.html',
-            array: 'dist/index.html',
+            js: 'dist/index.html',
             webpack: 'dist/index.html',
             react: 'dist/index.html',
             list: 'dist/index.html'

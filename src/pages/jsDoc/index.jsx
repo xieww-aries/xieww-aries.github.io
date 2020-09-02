@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import Title from '../../components/common/Title/index.jsx';
-import ArrayIndex from '../../components/Array/Index/index.jsx';
+import ArrayIndex from '../../components/JsDoc/Index/index.jsx';
 import './style.scss';
 
 // antd Menu 组件
@@ -11,7 +11,7 @@ import 'antd/dist/antd.css';
 
 import { arrayFunctionList } from './content';
 
-export default class ArrayDoc extends Component {
+export default class JsDoc extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -34,17 +34,18 @@ export default class ArrayDoc extends Component {
                     styleName="doc-nav"
                     onSelect={this.handleSeletItem}
                 >
-                    {
-                        arrayFunctionList.map(({ name }) => (
-                            <Menu.Item
-                                key={name}
-                                styleName="nav-item"
-                                defaultSelectedKeys={[name === currentArrayFunction && name]}
-                            >
-                                <Link to={`/array/${name}`}>{name}</Link>
-                            </Menu.Item>
-                        ))
-                    }
+                    <Menu.Item
+                        key={'array'}
+                        styleName="nav-item"
+                    >
+                        <Link to={`/js/array`}>Array</Link>
+                    </Menu.Item>
+                    <Menu.Item
+                        key={'object'}
+                        styleName="nav-item"
+                    >
+                        <Link to={`/js/object`}>Object</Link>
+                    </Menu.Item>
                 </Menu>
                 <div styleName="doc-main">
                     <Title title={`${currentArrayFunction}方法`} />
