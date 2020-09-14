@@ -19,14 +19,17 @@ export default class Head extends Component {
                 return ['webpack'];
             case '/react':
                 return ['react'];
-            case '/game':
-                return ['game'];
+            case '/interview':
+                return ['interview'];
             case '/list':
                 return ['list'];
+            case '/game':
+                return ['game'];
         }
     }
     render() {
         const { defaultSelectedKeyList } = this;
+        console.log('111', defaultSelectedKeyList);
         return (
             <div styleName="head">
                 <Menu
@@ -46,11 +49,14 @@ export default class Head extends Component {
                     <Menu.Item key='react'>
                         <Link to="/react">React</Link>
                     </Menu.Item>
-                    <Menu.Item>
-                        <Link to="/game">Game</Link>
+                    <Menu.Item key='interview'>
+                        <Link to="/interview">Interview</Link>
                     </Menu.Item>
                     <Menu.Item key='list'>
-                        <Link to="/list">视频列表</Link>
+                        <Link to="/list">List</Link>
+                    </Menu.Item>
+                    <Menu.Item>
+                        <Link to="/game">Game</Link>
                     </Menu.Item>
                 </Menu>
             </div>

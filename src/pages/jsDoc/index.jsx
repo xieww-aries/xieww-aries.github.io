@@ -12,12 +12,9 @@ import 'antd/dist/antd.css';
 import { arrayFunctionList } from './content';
 
 export default class JsDoc extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            // 当前选中的数组方法，初始化默认为第一项
-            currentArrayFunction: 'array'
-        };
+    state = {
+        // 当前选中的数组方法，初始化默认为第一项
+        currentArrayFunction: 'array'
     }
     handleSeletItem = ({ key: currentArrayFunction }) => {
         this.setState({
