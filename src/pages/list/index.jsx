@@ -4,7 +4,7 @@ import $ from 'jquery';
 import './style.scss';
 import { listData } from './mockData';
 
-import Title from '../../components/common/Title/index.jsx';
+import Title from '../../components/common/Title';
 
 export default class List extends React.Component {
     constructor(props) {

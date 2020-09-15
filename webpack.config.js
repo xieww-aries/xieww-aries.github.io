@@ -26,7 +26,7 @@ const rules = [
         }]
     },
     {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         use: [
             {
                 loader: 'babel-loader'
@@ -107,10 +107,14 @@ const plugins = [
 ]
 
 module.exports = smp.wrap({
-    entry: path.resolve(__dirname, 'src/index.jsx'),
+    entry: path.resolve(__dirname, 'src/index.tsx'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
+    },
+    resolve: {
+        // 以下配置可以在引用文件时省略后缀名
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.css', '.scss']
     },
     devServer: {
         contentBase: './',

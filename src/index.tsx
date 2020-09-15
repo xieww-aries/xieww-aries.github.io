@@ -2,19 +2,20 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Head from './components/common/Header/index.jsx';
+import Head from './components/common/Header';
 
-import Home from './pages/home/index.jsx';
-import JsDoc from './pages/jsDoc/index.jsx';
-import WebpackDoc from './pages/webpackDoc/index.jsx';
-import ReactDoc from './pages/reactDoc/index.jsx';
-import Game from './pages/Game/index.jsx';
-import List from './pages/list/index.jsx';
-import Interview from './pages/interview/index.jsx';
+import Home from './pages/home';
+import JsDoc from './pages/jsDoc';
+import WebpackDoc from './pages/webpackDoc';
+import ReactDoc from './pages/reactDoc';
+import Game from './pages/Game';
+import List from './pages/list';
+
+import Interview from './pages/interview';
 
 export default function App() {
     return (
-        <div style={{ 'height': '100%' }}>
+        <div>
             <Head />
             <Switch>
                 <Route exact path="/" component={Home} />

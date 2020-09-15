@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import Index from '../../components/ReactDoc/Index/index.jsx';
-import Lifecycle from '../../components/ReactDoc/Lifecycle/index.jsx';
-import Hooks from '../../components/ReactDoc/Hooks/index.jsx';
+import Index from '../../components/ReactDoc/Index';
+import Lifecycle from '../../components/ReactDoc/Lifecycle';
+import Hooks from '../../components/ReactDoc/Hooks';
 
 import './style.scss';
 

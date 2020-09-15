@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Title from '../../components/common/Title/index.jsx';
-import ArrayIndex from '../../components/JsDoc/Index/index.jsx';
+import Title from '../../components/common/Title';
+import ArrayIndex from '../../components/JsDoc/Index';
 import './style.scss';
 
 // antd Menu 组件

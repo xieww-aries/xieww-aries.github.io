@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './style.scss';
 
-import Title from '../../common/Title/index.jsx';
+import Title from '../../common/Title';
 
 import { loaderData } from './loaderData';
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Title from '../../common/Title/index.jsx';
+import Title from '../../common/Title';
 
 export default class PluginDoc extends Component {
     constructor(props) {

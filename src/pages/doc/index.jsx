@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Title from '../../components/common/Title/index.jsx'
+import Title from '../../components/common/Title'
 import './style.scss';
 
 // antd Menu 组件

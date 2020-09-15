@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import ThrottleDebounce from '../../components/Interview/ThrottleDebounce/index.jsx';
-import Fiber from '../../components/Interview/Fiber/index.jsx';
+import ThrottleDebounce from '../../components/Interview/ThrottleDebounce';
+import Fiber from '../../components/Interview/Fiber';
 
 import './style.scss';
 
@@ -29,13 +29,13 @@ export default function interview() {
                     mode="vertical"
                     onSelect={({ key }) => handleSeletItem(key)}
                 >
-                    {/* 节流和防抖 */}
-                    <Menu.Item key={'ThrottleDebounce'} styleName="nav-item">
-                        <Link to={`/interview/throttledebounce`}>throttle and debounce</Link>
-                    </Menu.Item>
                     {/* 继承 */}
                     <Menu.Item key={'Inherit'} styleName="nav-item">
                         <Link to={`/interview/inherit`}>Inherit(继承)</Link>
+                    </Menu.Item>
+                    {/* 节流和防抖 */}
+                    <Menu.Item key={'ThrottleDebounce'} styleName="nav-item">
+                        <Link to={`/interview/throttledebounce`}>throttle and debounce</Link>
                     </Menu.Item>
                     {/* 事件循环 */}
                     <Menu.Item key={'Eventloop'} styleName="nav-item">

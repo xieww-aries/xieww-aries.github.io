@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Title from '../../common/Title/index.jsx';
+import Title from '../../common/Title';
 
 export default class Lifecycle extends Component {
     constructor(props) {

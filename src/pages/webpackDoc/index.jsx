@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Index from '../../components/WebpackDoc/Index/index.jsx';
-import Loaders from '../../components/WebpackDoc/Loaders/index.jsx';
-import Babel from '../../components/WebpackDoc/Babel/index.jsx';
-import PluginDoc from '../../components/WebpackDoc/PluginDoc/index.jsx';
+import Index from '../../components/WebpackDoc/Index';
+import Loaders from '../../components/WebpackDoc/Loaders';
+import Babel from '../../components/WebpackDoc/Babel';
+import PluginDoc from '../../components/WebpackDoc/PluginDoc';
 
 import './style.scss';
 

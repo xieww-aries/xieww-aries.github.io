@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './style.scss';
 import $ from 'jquery';
 
-import Animation from '../../components/Home/3DAnimation/index.jsx';
+import Animation from '../../components/Home/3DAnimation';
 
-import Title from '../../components/common/Title/index.jsx';
+import Title from '../../components/common/Title';
 
 export default class Home extends Component {
     constructor(props) {

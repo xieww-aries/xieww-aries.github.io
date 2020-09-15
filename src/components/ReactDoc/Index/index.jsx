@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Title from '../../common/Title/index.jsx';
+import Title from '../../common/Title';
 import './style.scss';
 
 export default class Index extends Component {
