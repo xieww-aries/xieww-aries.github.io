@@ -13,6 +13,8 @@ import List from './pages/list';
 
 import Interview from './pages/interview';
 
+import './resource/reset.css';
+
 export default function App() {
     return (
         <div>

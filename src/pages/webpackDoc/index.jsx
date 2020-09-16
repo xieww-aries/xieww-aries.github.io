@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Index from '../../components/WebpackDoc/Index';
@@ -8,111 +8,85 @@ import PluginDoc from '../../components/WebpackDoc/PluginDoc';
 
 import './style.scss';
 
-// antd Menu 组件
-import { Menu } from 'antd/lib';
-import 'antd/dist/antd.css';
-
-const { SubMenu } = Menu;
-
-export default class WebpackDoc extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            // 当前babel已选择的项
-            currentBabelValue: '',
-            // 当前loader已选择的项
-            currentLoaderValue: '',
-            // 当前plugins已选择的项
-            currentPluginValue: '',
-            // 当前列表选择项
-            currentSelectedValue: 'Index'
-        };
+export default function WebpackDoc() {
+    // 当前列表选择项
+    const [currentSelectedValue, handleSelectItem] = useState('Index');
+    let mainContent = null;
+    switch (currentSelectedValue) {
+        default:
+        case 'Index':
+            mainContent = <Index />;
+            break;
+        case 'Loaders':
+            mainContent = <Loaders />;
+            break;
+        case 'Plugins':
+            mainContent = <PluginDoc />;
+            break;
+        case 'Babel':
+            mainContent = <Babel />;
+            break;
     }
-    handleSeletItem = ({ key: currentSelectedValue }) => {
-        this.setState({ currentSelectedValue });
-    }
-    get mainContent() {
-        const { currentSelectedValue } = this.state;
-        switch (currentSelectedValue) {
-            default:
-            case 'Index':
-                return <Index />;
-            case 'Loaders':
-                return <Loaders />;
-            case 'Babel':
-                return <Babel />;
-            case 'Plugins':
-                return <PluginDoc />;
-        }
-    }
-    render() {
-        const { mainContent } = this;
-        return (
-            <div styleName="doc">
-                <div styleName="doc-nav">
-                    <Menu
-                        theme="dark"
-                        mode="vertical"
-                        onSelect={this.handleSeletItem}
-                        mode="inline"
-                    >
-                        {/* About */}
-                        <Menu.Item key={'Index'} styleName="nav-item">
-                            <Link to={`/webpack/index`}>Index</Link>
-                        </Menu.Item>
+    return (
+        <div styleName="doc">
+            <div styleName="doc-nav">
+                <ul>
+                    {/* About */}
+                    <li key={'Index'} styleName="nav-item" onClick={() => handleSelectItem('Index')}>
+                        <Link to={`/webpack/index`}>Index</Link>
+                    </li>
 
-                        {/* Loaders */}
-                        <Menu.Item key={'Loaders'} styleName="nav-item">
-                            <Link to={`/webpack/loaders`}>Loaders</Link>
-                        </Menu.Item>
+                    {/* Loaders */}
+                    <li key={'Loaders'} styleName="nav-item" onClick={() => handleSelectItem('Loaders')}>
+                        <Link to={`/webpack/loaders`}>Loaders</Link>
+                    </li>
 
-                        {/* plugins */}
-                        <Menu.Item key={'Plugins'} styleName="nav-item">
-                            <Link to={`/webpack/plugin`}>Plugins</Link>
-                        </Menu.Item>
+                    {/* plugins */}
+                    <li key={'Plugins'} styleName="nav-item" onClick={() => handleSelectItem('Plugins')}>
+                        <Link to={`/webpack/plugin`}>Plugins</Link>
+                    </li>
 
-                        {/* babel */}
-                        <Menu.Item key={'Babel'} styleName="nav-item">
-                            <Link to={`/webpack/babel`}>Babel</Link>
-                        </Menu.Item>
+                    {/* babel */}
+                    <li key={'Babel'} styleName="nav-item" onClick={() => handleSelectItem('Babel')}>
+                        <Link to={`/webpack/babel`}>Babel</Link>
+                    </li>
 
-                        {/* webpack编译原理 */}
-                        <SubMenu title="webpack原理">
-                            <Menu.Item
-                                key={'compile'}
-                                styleName="nav-item"
-                            >
-                                <Link to={`/webpack/compile`}>编译原理</Link>
-                            </Menu.Item>
-                            <Menu.Item
-                                key={'pack'}
-                                styleName="nav-item"
-                            >
-                                <Link to={`/webpack/pack`}>打包原理</Link>
-                            </Menu.Item>
-                        </SubMenu>
+                    {/* webpack编译原理 */}
+                    <li title="webpack原理">
+                        <p
+                            key={'compile'}
+                            styleName="nav-item"
+                        >
+                            <Link to={`/webpack/compile`}>编译原理</Link>
+                        </p>
+                        <p
+                            key={'pack'}
+                            styleName="nav-item"
+                        >
+                            <Link to={`/webpack/pack`}>打包原理</Link>
+                        </p>
+                    </li>
 
-                        {/* webpack优化 */}
-                        <SubMenu title="webpack优化">
-                            <Menu.Item
-                                key={'speed'}
-                                styleName="nav-item"
-                            >
-                                <Link to={`/webpack/speed`}>优化打包速度</Link>
-                            </Menu.Item>
-                            <Menu.Item
-                                key={'size'}
-                                styleName="nav-item"
-                            >
-                                <Link to={`/webpack/size`}>优化打包体积</Link>
-                            </Menu.Item>
-                        </SubMenu>
-                    </Menu>
-                </div>
-                <div styleName="doc-main">
-                    { mainContent }
-                </div>
+                    {/* webpack优化 */}
+                    <li title="webpack优化">
+                        <p
+                            key={'speed'}
+                            styleName="nav-item"
+                        >
+                            <Link to={`/webpack/speed`}>优化打包速度</Link>
+                        </p>
+                        <p
+                            key={'size'}
+                            styleName="nav-item"
+                        >
+                            <Link to={`/webpack/size`}>优化打包体积</Link>
+                        </p>
+                    </li>
+                </ul>
             </div>
-        )
-    }
+            <div styleName="doc-main">
+                { mainContent }
+            </div>
+        </div>
+    )
 }

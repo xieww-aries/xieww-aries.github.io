@@ -7,10 +7,6 @@ import Hooks from '../../components/ReactDoc/Hooks';
 
 import './style.scss';
 
-// antd Menu 组件
-import { Menu } from 'antd/lib';
-import 'antd/dist/antd.css';
-
 export default function ReactDoc() {
     // 当前列表选择项
     const [currentSelectedValue, handleSeletItem] = useState('index');
@@ -18,7 +14,7 @@ export default function ReactDoc() {
     let mainContent = null;
     switch(currentSelectedValue) {
         default:
-        case 'index':
+        case 'Index':
             mainContent = <Index />;
             break;
         case 'Lifecycle':
@@ -32,24 +28,20 @@ export default function ReactDoc() {
     return (
         <div styleName="doc">
             <div styleName="doc-nav">
-                <Menu
-                    theme="dark"
-                    mode="vertical"
-                    onSelect={({ key }) => handleSeletItem(key)}
-                >
+                <ul>
                     {/* 首页 */}
-                    <Menu.Item key={'index'} styleName="nav-item">
+                    <li key={'Index'} styleName="nav-item" onClick={() => handleSeletItem('Index')}>
                         <Link to={`/react/index`}>Index</Link>
-                    </Menu.Item>
+                    </li>
                     {/* 生命周期 */}
-                    <Menu.Item key={'Lifecycle'} styleName="nav-item">
+                    <li key={'Lifecycle'} styleName="nav-item" onClick={() => handleSeletItem('Lifecycle')}>
                         <Link to={`/react/lifecycle`}>Lifecycle</Link>
-                    </Menu.Item>
+                    </li>
                     {/* Hooks */}
-                    <Menu.Item key={'Hooks'} styleName="nav-item">
+                    <li key={'Hooks'} styleName="nav-item" onClick={() => handleSeletItem('Hooks')}>
                         <Link to={`/react/hooks`}>Hooks</Link>
-                    </Menu.Item>
-                </Menu>
+                    </li>
+                </ul>
             </div>
             <div styleName="doc-main">
                 { mainContent }

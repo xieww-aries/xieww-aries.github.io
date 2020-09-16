@@ -4,13 +4,6 @@
         "@babel/preset-react"
     ],
     "plugins": [
-        [
-            "import",
-            {
-                "libraryName": "antd",
-                "style": "css"
-            }
-        ],
         "@babel/plugin-proposal-class-properties",
         [
             "react-css-modules",

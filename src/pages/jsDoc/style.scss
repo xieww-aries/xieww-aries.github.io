@@ -7,14 +7,10 @@
         flex: 1;
         padding: 0;
         margin-bottom: 0;
+        box-shadow: 2px 0 5px #CCC;  
 
         .nav-item {
-            border-bottom: 2px solid #000000;
             text-align: center;
-
-            &:first-child {
-                border-top: 2px solid #000000;
-            }
         }
     }
 
