@@ -6,5 +6,5 @@ export default function Title(props) {
         <p styleName="common-title">
             { props.title }
         </p>
-    )
+    );
 }

@@ -1,6 +1,6 @@
-var path = require('path');
-var webpack = require('webpack');
-var MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -104,7 +104,7 @@ const plugins = [
             to: path.resolve(__dirname, 'service/app/public')
         }
     ])
-]
+];
 
 module.exports = smp.wrap({
     entry: path.resolve(__dirname, 'src/index.tsx'),
@@ -130,4 +130,4 @@ module.exports = smp.wrap({
         rules
     },
     plugins
-})
+});

@@ -22,30 +22,46 @@ export default function Head() {
             case '/game':
                 return ['game'];
         }
-    }
+    };
+    const headerData = [
+        {
+            name: 'Index',
+            route: 'index'
+        },
+        {
+            name: 'Javascript',
+            route: 'js'
+        },
+        {
+            name: 'Webpack',
+            route: 'webpack'
+        },
+        {
+            name: 'React',
+            route: 'react'
+        },
+        {
+            name: 'Interview',
+            route: 'interview'
+        },
+        {
+            name: 'List',
+            route: 'list'
+        },
+        {
+            name: 'Game',
+            route: 'game'
+        }
+    ];
     return (
-        <div styleName="head">
-            <p>
-                <Link to="/index">Index</Link>
-            </p>
-            <p>
-                <Link to="/js">Javascript</Link>
-            </p>
-            <p>
-                <Link to="/webpack">Webpack</Link>
-            </p>
-            <p>
-                <Link to="/react">React</Link>
-            </p>
-            <p>
-                <Link to="/interview">Interview</Link>
-            </p>
-            <p>
-                <Link to="/list">List</Link>
-            </p>
-            <p>
-                <Link to="/game">Game</Link>
-            </p>
-        </div>
+        <ul styleName="head">
+            {
+                headerData.map(({ name, route }) => (
+                    <li>
+                        <Link to={`/${route}`}>{name}</Link>
+                    </li>
+                ))
+            }
+        </ul>
     );
 }

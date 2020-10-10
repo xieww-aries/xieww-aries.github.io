@@ -2,9 +2,10 @@
     //文件名 .eslintrc.json
     "env": {
         "browser": true,
-        "es6": true,
         "node": true,
-        "commonjs": true
+        "commonjs": true,
+        "amd": true,
+        "es6": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
@@ -19,15 +20,13 @@
         "sourceType": "module"
     },
     "parser": "babel-eslint",
-    "plugins": [
-        "react"
-    ],
+    "plugins": ["react"],
     "rules": {
         "linebreak-style": [
             "error",
             "unix"
         ],
-        //"semi": ["error", "always"],
+        "semi": ["error", "always"],
         "no-empty": 0,
         "comma-dangle": 0,
         "no-unused-vars": 0,
@@ -51,6 +50,7 @@
         "no-array-constructor": 2,
         "no-class-assign": 2,
         "no-cond-assign": 2,
-        "no-mixed-spaces-and-tabs": 0
+        "no-mixed-spaces-and-tabs": 0,
+        "no-var": 2
     }
 }

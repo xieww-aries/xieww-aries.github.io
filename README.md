@@ -34,11 +34,26 @@
     - `react-router`
     - `react-router-dom`
 
++ Typescript
+  - 依赖包
+    - `typescript`
+    - eslint 相关包
+      - `@typescript-eslint/eslint-plugin`
+      - `@typescript-eslint/parser`
+    - devDependencies增加 @types 相关包
+      - `@types/react`
+      - `@types/react-dom`
+      - `@types/react-router-dom`
+    - react css module依赖包
+      - `@types/react-css-modules`
+  - 配置文件
+    - tsconfig.json
+
 ## Todo
   - [x] css modules
   - [x] eslint
   - [x] husky
-  - [ ] static page add
   - [ ] typescript
+  - [ ] static page add
   - [ ] webpack optimization
   - [ ] node optimization
