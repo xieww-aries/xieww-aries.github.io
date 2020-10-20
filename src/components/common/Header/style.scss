@@ -5,12 +5,14 @@
     top: 0;
     z-index: 50;
     box-shadow: 0 4px 16px -4px rgba(69,88,115,.2);
+    padding: 10px;
 
-    ul {
-        padding: 10px;
+    li {
+        margin-right: 20px;
+        font-size: 16px;
 
-        li {
-            margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
         }
     }
 }
