@@ -9,11 +9,13 @@
   top: 0;
   z-index: 50;
   -webkit-box-shadow: 0 4px 16px -4px rgba(69, 88, 115, .2);
-          box-shadow: 0 4px 16px -4px rgba(69, 88, 115, .2); }
-  .style__head___2je9Z ul {
-    padding: 10px; }
-    .style__head___2je9Z ul li {
-      margin-right: 20px; }
+          box-shadow: 0 4px 16px -4px rgba(69, 88, 115, .2);
+  padding: 10px; }
+  .style__head___2je9Z li {
+    margin-right: 20px;
+    font-size: 16px; }
+    .style__head___2je9Z li:last-child {
+      margin-right: 0; }
 
 .style__home___Xx4NI {
   background: #FFFFFF; }
