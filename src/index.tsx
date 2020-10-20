@@ -30,7 +30,7 @@ export default function App() {
                 <Route path="/game" component={Game} />
             </Switch>
         </div>
-    )
+    );
 }
 
 ReactDom.render(
@@ -38,5 +38,4 @@ ReactDom.render(
         <App />
     </BrowserRouter>,
     document.querySelector('#app')
-)
-
+);

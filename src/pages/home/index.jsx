@@ -27,7 +27,7 @@ export default class Home extends Component {
             error: err => {
                 console.log('err', err);
             }
-        })
+        });
     }
     render() {
         return (
@@ -35,6 +35,6 @@ export default class Home extends Component {
                 <Title title={'我是首页'} />
                 <Animation />
             </div>
-        )
+        );
     }
 }

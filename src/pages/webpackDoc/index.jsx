@@ -88,5 +88,5 @@ export default function WebpackDoc() {
                 { mainContent }
             </div>
         </div>
-    )
+    );
 }

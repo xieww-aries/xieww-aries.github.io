@@ -41,4 +41,4 @@ export const data = [
         name: 'Fiber',
         key: 'Fiber'
     }
-]
+];

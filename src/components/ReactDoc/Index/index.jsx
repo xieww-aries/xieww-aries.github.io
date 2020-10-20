@@ -13,6 +13,6 @@ export default class Index extends Component {
             <div>
                 <Title title={'React 知识点梳理'} />
             </div>
-        )
+        );
     }
 }

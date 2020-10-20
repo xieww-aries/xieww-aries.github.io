@@ -10,7 +10,7 @@ exports.view = {
 
 exports.static = {
     prefix: '/public/'
-}
+};
 
 // 添加 news 的配置项
 exports.news = {

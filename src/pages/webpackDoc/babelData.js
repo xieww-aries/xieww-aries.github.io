@@ -35,4 +35,4 @@ export const babelData = [
         name: 'babel-preset-stage-0',
         content: '把浏览器不支持的js转译成浏览器支持的js（这也是babel的核心意义）'
     }
-]
+];

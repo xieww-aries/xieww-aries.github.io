@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Title from '../../components/common/Title'
+import Title from '../../components/common/Title';
 import './style.scss';
 
 import { arrayFunctionList } from './content';
@@ -21,5 +21,5 @@ export default function Doc() {
                 <Title title={'我是doc页面'} />
             </div>
         </div>
-    )
+    );
 }

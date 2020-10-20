@@ -19,5 +19,5 @@ export default function Animation() {
                 <p styleName="down_little">下</p>
             </ul>
         </div>
-    )
+    );
 }

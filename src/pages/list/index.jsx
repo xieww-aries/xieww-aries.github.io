@@ -33,7 +33,7 @@ export default class List extends React.Component {
             error: err => {
                 console.error(222, err);
             }
-        })
+        });
     }
     goToDetail = url => location.href = url;
     render() {
@@ -53,6 +53,6 @@ export default class List extends React.Component {
                     }
                 </ul>
             </div>
-        )
+        );
     }
 }

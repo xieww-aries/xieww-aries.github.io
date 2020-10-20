@@ -19,6 +19,6 @@ export default class PluginDoc extends Component {
                 <p>· Webpack 启动后，在读取配置的过程中会先执行 new BasicPlugin(options) 初始化一个 BasicPlugin 获得其实例。在初始化 compoler 对象后，再调用 basicPlugin.apply(compiler) 给插件传入 compiler 对项。插件的实例在获取到 compiler 对象后，就可以通过 compiler.plugin(事件名称， 回调函数) 监听到 Webpack 广播出来的事件。并且可以通过 compiler 对象去操作 Webpack。</p>
                 <p>· 开发 Plugin 最主要的就是理解 compiler 和 compilation，它们是 Plugin 和 Webpack 之间的桥梁。这两者提供的各种 hooks 和 api ，则是开发 plugin 所必不可少的材料，通过 compiler 和 compilation 的生命周期 hooks，也可以更好地深入了解 Webpack 的整个构建工作是如何进行的。</p>
             </div>
-        )
+        );
     }
 }

@@ -15,6 +15,6 @@ export default class Babel extends Component {
                 <Title title={'Babel 知识点梳理'} />
                 I'm babel
             </div>
-        )
+        );
     }
 }

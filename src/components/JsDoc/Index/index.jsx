@@ -263,6 +263,6 @@ export default class ArrayIndex extends Component {
                     </tbody>
                 </table>
             </div>
-        )
+        );
     }
 }
