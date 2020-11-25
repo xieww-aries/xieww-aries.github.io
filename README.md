@@ -53,7 +53,7 @@
   - [x] css modules
   - [x] eslint
   - [x] husky
-  - [ ] typescript
+  - [x] typescript
   - [ ] static page add
   - [ ] webpack optimization
   - [ ] node optimization
