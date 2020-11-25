@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import ThrottleDebounce from '../../components/Interview/ThrottleDebounce';
 import Fiber from '../../components/Interview/Fiber';
+import PromiseDoc from '../../components/Interview/PromiseDoc';
 
 import './style.scss';
 
@@ -19,6 +20,9 @@ export default function interview() {
             break;
         case 'Fiber':
             mainContent = <Fiber />;
+            break;
+        case 'Promise':
+            mainContent = <PromiseDoc />;
             break;
     }
 

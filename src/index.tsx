@@ -9,6 +9,7 @@ import JsDoc from './pages/jsDoc';
 import WebpackDoc from './pages/webpackDoc';
 import ReactDoc from './pages/reactDoc';
 import Game from './pages/Game';
+// @ts-ignore
 import List from './pages/list';
 
 import Interview from './pages/interview';
@@ -37,5 +38,6 @@ ReactDom.render(
     <BrowserRouter>
         <App />
     </BrowserRouter>,
+    // @ts-ignore
     document.querySelector('#app')
 );

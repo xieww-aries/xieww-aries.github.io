@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Title from '../../components/common/Title';
+// @ts-ignore
 import ArrayIndex from '../../components/JsDoc/Index';
 import './style.scss';
 
