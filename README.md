@@ -48,7 +48,7 @@
       - `@types/react-css-modules`
   - 配置文件
     - tsconfig.json
-  - 配合 eslint
+  - 配合 eslint(https://segmentfault.com/a/1190000019661168)
     - `@typescript-eslint/parser`
       - ESLint的解析器，用于解析typescript，从而检查和规范Typescript代码
     - `@typescript-eslint/eslint-plugin`
