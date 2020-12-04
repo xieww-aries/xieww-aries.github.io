@@ -14,16 +14,24 @@
       - `eslint-loader`
       - `babel-eslint`(检测es6代码)
       - `eslint-plugin-react`(检测react代码)
+      - `eslint-plugin-react-hooks`(检测 react-hooks 代码)
   - 配置文件
       - .eslintrc(eslint配置文件)
       - .eslintignore(忽略的文件)
   - 配置教程：https://juejin.im/post/6844903475793379336
+
++ prettier 配置
+  - 依赖包
+    - `prettier`
+    - `eslint-plugin-prettier`
+    - `eslint-config-prettier`
 
 + husky 配置
   - 依赖包
       - `husky`(git hooks，git 钩子)
       - `lint-staged`(对 git 中变更的文件进行 lint 操作)
       - `pre-commit`(在每次提交前检测，如果检测失败则禁止提交)
+      - `@commitlint/cli`()
   - 配置文件
       - .huskyrc.json
       - .lintstagedrc.json
