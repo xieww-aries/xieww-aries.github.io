@@ -2,13 +2,9 @@ import React from 'react';
 import './style.scss';
 
 interface IProps {
-    title: string
+    title: string;
 }
 
 export default function Title(props: IProps) {
-    return (
-        <p styleName="common-title">
-            { props.title }
-        </p>
-    );
+    return <p styleName="common-title">{props.title}</p>;
 }

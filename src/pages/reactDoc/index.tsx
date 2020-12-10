@@ -12,7 +12,7 @@ export default function ReactDoc() {
     const [currentSelectedValue, handleSeletItem] = useState('index');
 
     let mainContent = null;
-    switch(currentSelectedValue) {
+    switch (currentSelectedValue) {
         default:
         case 'Index':
             mainContent = <Index />;
@@ -43,9 +43,7 @@ export default function ReactDoc() {
                     </li>
                 </ul>
             </div>
-            <div styleName="doc-main">
-                { mainContent }
-            </div>
+            <div styleName="doc-main">{mainContent}</div>
         </div>
     );
 }

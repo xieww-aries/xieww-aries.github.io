@@ -96,15 +96,8 @@ export function removeQuerys(...args) {
  * @param {boolean} ignoreCase 是否忽略大小写，默认不忽略
  * @return {String}
  */
-export function getParamFromUrl(
-    key,
-    defaultVal,
-    search = location.search,
-    ignoreCase = true
-) {
-    const regExp = ignoreCase
-        ? new RegExp(`[?|&]${key}=([^&]+)`, 'i')
-        : new RegExp(`[?|&]${key}=([^&]+)`);
+export function getParamFromUrl(key, defaultVal, search = location.search, ignoreCase = true) {
+    const regExp = ignoreCase ? new RegExp(`[?|&]${key}=([^&]+)`, 'i') : new RegExp(`[?|&]${key}=([^&]+)`);
     const match = regExp.exec(search);
     return match ? match[1] : defaultVal;
 }
@@ -119,9 +112,7 @@ export function getParamFromUrl(
 export function getParam(key, search = location.search) {
     const value = getParamFromUrl(key, '', search);
 
-    return typeof value !== 'undefined'
-        ? decodeURIComponent(value)
-        : '';
+    return typeof value !== 'undefined' ? decodeURIComponent(value) : '';
 }
 
 /**

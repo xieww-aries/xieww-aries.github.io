@@ -13,18 +13,10 @@ export default function JsDoc() {
     return (
         <div styleName="doc">
             <ul styleName="doc-nav">
-                <li
-                    key={'array'}
-                    styleName="nav-item"
-                    onClick={() => handleSelectItem('array')}
-                >
+                <li key={'array'} styleName="nav-item" onClick={() => handleSelectItem('array')}>
                     <Link to={`/js/array`}>Array</Link>
                 </li>
-                <li
-                    key={'object'}
-                    styleName="nav-item"
-                    onClick={() => handleSelectItem('object')}
-                >
+                <li key={'object'} styleName="nav-item" onClick={() => handleSelectItem('object')}>
                     <Link to={`/js/object`}>Object</Link>
                 </li>
             </ul>

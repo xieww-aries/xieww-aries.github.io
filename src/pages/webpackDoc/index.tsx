@@ -53,40 +53,26 @@ export default function WebpackDoc() {
 
                     {/* webpack编译原理 */}
                     <li title="webpack原理">
-                        <p
-                            key={'compile'}
-                            styleName="nav-item"
-                        >
+                        <p key={'compile'} styleName="nav-item">
                             <Link to={`/webpack/compile`}>编译原理</Link>
                         </p>
-                        <p
-                            key={'pack'}
-                            styleName="nav-item"
-                        >
+                        <p key={'pack'} styleName="nav-item">
                             <Link to={`/webpack/pack`}>打包原理</Link>
                         </p>
                     </li>
 
                     {/* webpack优化 */}
                     <li title="webpack优化">
-                        <p
-                            key={'speed'}
-                            styleName="nav-item"
-                        >
+                        <p key={'speed'} styleName="nav-item">
                             <Link to={`/webpack/speed`}>优化打包速度</Link>
                         </p>
-                        <p
-                            key={'size'}
-                            styleName="nav-item"
-                        >
+                        <p key={'size'} styleName="nav-item">
                             <Link to={`/webpack/size`}>优化打包体积</Link>
                         </p>
                     </li>
                 </ul>
             </div>
-            <div styleName="doc-main">
-                { mainContent }
-            </div>
+            <div styleName="doc-main">{mainContent}</div>
         </div>
     );
 }

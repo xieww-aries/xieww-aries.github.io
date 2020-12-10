@@ -1,7 +1,7 @@
 const path = require('path');
-const webpack = require('webpack');
+// const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
@@ -16,7 +16,7 @@ const rules = [
         test: /\.js[x]?$/,
         exclude: /node_modules/,
         use: [{
-            loader: 'eslint-loader', 
+            loader: 'eslint-loader',
             options: {
                 cache: true,
                 emitError: true,
@@ -95,7 +95,7 @@ const plugins = [
         filename: '[name].min.css'
     }),
     new HTMLWebpackPlugin({
-        title: 'development',   
+        title: 'development',
         template: 'demo/index.html'
     }),
     new CopyWebpackPlugin([

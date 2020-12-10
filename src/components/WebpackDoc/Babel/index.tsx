@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Title from '../../common/Title';
 
@@ -8,7 +8,7 @@ export default function Babel() {
     return (
         <div>
             <Title title={'Babel 知识点梳理'} />
-            I'm babel
+            I&acute;m babel
         </div>
     );
 }

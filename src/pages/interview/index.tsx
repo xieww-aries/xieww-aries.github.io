@@ -13,7 +13,7 @@ export default function interview() {
     const [currentSelectedValue, handleSelectItem] = useState('ThrottleDebounce');
 
     let mainContent = null;
-    switch(currentSelectedValue) {
+    switch (currentSelectedValue) {
         default:
         case 'ThrottleDebounce':
             mainContent = <ThrottleDebounce />;
@@ -30,22 +30,14 @@ export default function interview() {
         <div styleName="doc">
             <div styleName="doc-nav">
                 <ul>
-                    {
-                        data.map(({ route, name, key }) => (
-                            <li
-                                key={key}
-                                styleName="nav-item"
-                                onClick={() => handleSelectItem(key)}
-                            >
-                                <Link to={`/interview/${route}`}>{name}</Link>
-                            </li>
-                        ))
-                    }
+                    {data.map(({ route, name, key }) => (
+                        <li key={key} styleName="nav-item" onClick={() => handleSelectItem(key)}>
+                            <Link to={`/interview/${route}`}>{name}</Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
-            <div styleName="doc-main">
-                { mainContent }
-            </div>
+            <div styleName="doc-main">{mainContent}</div>
         </div>
     );
 }

@@ -1,29 +1,43 @@
 {
     "compilerOptions": {
-        "lib": ["esnext"],
+        "lib": [
+            "es6",
+            "dom",
+            "es2017"
+        ],
         "module": "es6",
         "moduleResolution": "node",
         "target": "es6",
         "jsx": "react-native",
         "sourceMap": true,
+        // 不生成输出文件
         "noEmit": true,
+        // 在表达式和声明上有隐含的 any 类型时报错
         "noImplicitAny": true,
+        // 保留 const和 enum声明
         "preserveConstEnums": true,
+        // 启用实验性的ES装饰器
         "experimentalDecorators": true,
+        // 允许从没有设置默认导出的模块中默认导入
         "allowSyntheticDefaultImports": true,
         "baseUrl": "./",
         "paths": {
             "@/*": ["./*"]
         },
         "skipLibCheck": true,
+        // 不允许switch的case语句贯穿
         "noFallthroughCasesInSwitch": true,
+        // 不是函数的所有返回路径都有返回值时报错
         "noImplicitReturns": true,
-        "esModuleInterop": true
+        // 允许从没有设置默认导出的模块中默认导入
+        "esModuleInterop": true,
+        // 阻止 --noImplicitAny 对缺少索引签名的索引对象报错
+        "suppressImplicitAnyIndexErrors": true
     },
     "include": [
         "./src/**/*.tsx",
         "./src/**/*.ts",
-        "./typings/**/*.d.ts", "src/pages/list/index.jsx", "src/components/JsDoc/Index/index.jsx"
+        "./typings/**/*.d.ts"
     ],
     "exclude": [
         "node_modules"

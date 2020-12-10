@@ -130,7 +130,7 @@ export default class ArrayIndex extends Component {
                         <tr>
                             <td>join()</td>
                             <td>将数组转为字符串（可指定分隔符号）</td>
-                            <td>arr.join("指定的分隔符号")</td>
+                            <td>arr.join(&quot;指定的分隔符号&quot;)</td>
                             <td>操作后的字符串</td>
                             <td>否</td>
                         </tr>

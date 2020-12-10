@@ -27,4 +27,4 @@ export const headerData = [
         name: 'Game',
         route: 'game'
     }
-];  
+];
