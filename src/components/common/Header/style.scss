@@ -1,18 +1,36 @@
 .head {
-    background: #FFFFFF;
+    background: #696969;
     display: flex;
     position: sticky;
     top: 0;
     z-index: 50;
-    box-shadow: 0 4px 16px -4px rgba(69,88,115,.2);
-    padding: 10px;
+    box-shadow: 0 4px 16px -4px #000000;
 
-    li {
-        margin-right: 20px;
+    .head-item {
         font-size: 16px;
+        padding: 10px 20px;
+        border-right: #ffffff 1px solid;
 
         &:last-child {
             margin-right: 0;
+        }
+
+        a {
+            color: #FFFFFF;
+            font-style: italic;
+        }
+    }
+
+    .active-li {
+        animation: 3s linear borderBottom;
+    }
+
+    @keyframes borderBottom {
+        from {
+            border-bottom: 0;
+        }
+        to {
+            border-bottom: 3px #000000 solid;
         }
     }
 }

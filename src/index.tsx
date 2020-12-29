@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Head from './components/common/Header';
+import Header from './components/common/Header';
 
 import Home from './pages/home';
 import JsDoc from './pages/jsDoc';
@@ -14,10 +14,11 @@ import Interview from './pages/interview';
 
 import './resource/reset.css';
 
-export default function App() {
+export default function App(props) {
+    console.log(111111, props);
     return (
         <div style={{ height: '100%' }}>
-            <Head />
+            <Header />
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/index" component={Home} />
@@ -33,9 +34,8 @@ export default function App() {
 }
 
 ReactDom.render(
-    <BrowserRouter>
+    <Router>
         <App />
-    </BrowserRouter>,
-    // @ts-ignore
+    </Router>,
     document.querySelector('#app')
 );
