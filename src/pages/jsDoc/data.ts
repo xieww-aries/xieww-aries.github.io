@@ -87,3 +87,14 @@ export const arrayFunctionList = [
         name: 'entries'
     }
 ];
+
+export const leftNavData = [
+    {
+        title: 'Array',
+        router: 'array'
+    },
+    {
+        title: 'Object',
+        router: 'object'
+    }
+];

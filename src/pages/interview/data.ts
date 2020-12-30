@@ -1,44 +1,30 @@
-export const data = [
-    // 继承
+export const leftNavData = [
     {
-        route: 'inherit',
-        name: 'Inherit(继承)',
-        key: 'Inherit'
+        title: 'Inherit(继承)',
+        router: 'inherit'
     },
-    // 节流和防抖
     {
-        route: 'throttledebounce',
-        name: 'throttle and debounce',
-        key: 'ThrottleDebounce'
+        title: 'throttle and debounce',
+        router: 'throttleDebounce'
     },
-    // 事件循环
     {
-        route: 'eventloop',
-        name: 'Eventloop',
-        key: 'Eventloop'
+        title: 'Event Loop',
+        router: 'eventloop'
     },
-    // Promise 及其实现
     {
-        route: 'promise',
-        name: 'Promise',
-        key: 'Promise'
+        title: 'Promise',
+        router: 'promise'
     },
-    // bind / call / apply 和 手动实现 bind
     {
-        route: 'bindDoc',
-        name: 'bind / call / apply 和 手动实现 bind',
-        key: 'BindDoc'
+        title: 'bind / call / apply 和 手动实现 bind',
+        router: 'bindDoc'
     },
-    // 装饰器
     {
-        route: 'decorator',
-        name: 'Decorator',
-        key: 'Decorator'
+        title: 'Decorator(装饰器)',
+        router: 'decorator'
     },
-    // Fiber
     {
-        route: 'fiber',
-        name: 'Fiber',
-        key: 'Fiber'
+        title: 'Fiber',
+        router: 'fiber'
     }
 ];

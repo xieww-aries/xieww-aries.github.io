@@ -14,8 +14,7 @@ import Interview from './pages/interview';
 
 import './resource/reset.css';
 
-export default function App(props) {
-    console.log(111111, props);
+export default function App() {
     return (
         <div style={{ height: '100%' }}>
             <Header />

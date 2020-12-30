@@ -1,42 +1,38 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import ThrottleDebounce from '../../components/Interview/ThrottleDebounce';
 import Fiber from '../../components/Interview/Fiber';
 import PromiseDoc from '../../components/Interview/PromiseDoc';
+import LeftNav from '../../components/common/LeftNav';
 
 import './style.scss';
 
-import { data } from './data';
+import { leftNavData } from './data';
 
 export default function interview() {
-    const [currentSelectedValue, handleSelectItem] = useState('ThrottleDebounce');
+    const [currentSelectedValue, handleSelectItem] = useState('throttleDebounce');
 
     let mainContent = null;
     switch (currentSelectedValue) {
         default:
-        case 'ThrottleDebounce':
+        case 'throttleDebounce':
             mainContent = <ThrottleDebounce />;
             break;
-        case 'Fiber':
+        case 'fiber':
             mainContent = <Fiber />;
             break;
-        case 'Promise':
+        case 'promise':
             mainContent = <PromiseDoc />;
             break;
     }
 
     return (
         <div styleName="doc">
-            <div styleName="doc-nav">
-                <ul>
-                    {data.map(({ route, name, key }) => (
-                        <li key={key} styleName="nav-item" onClick={() => handleSelectItem(key)}>
-                            <Link to={`/interview/${route}`}>{name}</Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+            <LeftNav
+                data={leftNavData}
+                firstRouter={'interview'}
+                handleSelectItem={handleSelectItem}
+            />
             <div styleName="doc-main">{mainContent}</div>
         </div>
     );

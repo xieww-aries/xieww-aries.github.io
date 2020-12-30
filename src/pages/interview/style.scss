@@ -1,20 +1,8 @@
 .doc {
-    min-height: 100%;
-    display: flex;
     border-radius: 3px;
 
-    .doc-nav {
-        width: 280px;
-        padding: 0;
-        margin-bottom: 0;
-
-        .nav-item {
-            text-align: center;
-        }
-    }
-
     .doc-main {
-        flex: 1;
         padding: 20px;
+        margin-left: 200px;
     }
 }

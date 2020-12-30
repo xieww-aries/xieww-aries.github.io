@@ -1,21 +1,9 @@
 .doc {
     min-height: 100%;
-    display: flex;
     border-radius: 3px;
 
-    .doc-nav {
-        flex: 1;
-        padding: 0;
-        margin-bottom: 0;
-        box-shadow: 2px 0 5px #CCC;  
-
-        .nav-item {
-            text-align: center;
-        }
-    }
-
     .doc-main {
-        flex: 5;
         padding: 20px;
+        margin-left: 200px;
     }
 }
