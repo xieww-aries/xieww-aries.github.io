@@ -2,6 +2,8 @@ import React from 'react';
 
 import Title from '../../common/Title';
 
+import './style.scss';
+
 export default function Index() {
     return (
         <div>

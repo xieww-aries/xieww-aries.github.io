@@ -8,7 +8,7 @@ import Title from '../../components/common/Title';
 export default function Home() {
     return (
         <div styleName="home">
-            <Title title={'我是首页'} />
+            <Title title={'目录'} />
             <Animation />
         </div>
     );
