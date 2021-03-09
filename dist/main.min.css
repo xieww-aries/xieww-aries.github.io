@@ -4,9 +4,10 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 50;
   -webkit-box-shadow: 0 4px 16px -4px #000000;
           box-shadow: 0 4px 16px -4px #000000; }
@@ -24,8 +25,8 @@
     border-bottom: 3px #000000 solid; }
 
 .style__home___Xx4NI {
-  min-height: 100%;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  margin-top: 47px; }
   .style__home___Xx4NI ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -222,12 +223,25 @@
           box-shadow: 2px 0 5px #CCC; }
   .style__doc-nav___1RP6f .style__nav-item___1ca8S {
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 10px;
     cursor: pointer;
-    font-style: italic; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
     .style__doc-nav___1RP6f .style__nav-item___1ca8S:last-child {
       margin-bottom: 0; }
+    .style__doc-nav___1RP6f .style__nav-item___1ca8S a {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    .style__doc-nav___1RP6f .style__nav-item___1ca8S .style__item-arrow___2DnF- {
+      width: 10px;
+      height: 10px;
+      margin-top: 7px;
+      background: #F00; }
 
 table {
   margin-bottom: 20px; }
@@ -243,15 +257,33 @@ table {
 
 .style__doc___1P6cG {
   min-height: 100%;
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin-top: 47px; }
   .style__doc___1P6cG .style__doc-main___1zNSW {
     padding: 20px;
     margin-left: 200px; }
 
+h2 {
+  font-size: 18px !important;
+  font-weight: bolder !important;
+  margin: 20px 0 !important; }
+
+h4 {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  margin: 10px 0 !important;
+  color: #666666;
+  font-style: italic; }
+
+p {
+  text-indent: 10px;
+  line-height: 24px; }
+
 
 
 .style__doc___1yVfi {
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin-top: 47px; }
   .style__doc___1yVfi .style__doc-nav___172iF {
     width: 280px;
     padding: 0;
@@ -265,10 +297,14 @@ table {
 
 
 .style__doc___16Z_1 {
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin-top: 47px; }
   .style__doc___16Z_1 .style__doc-main___jLKlA {
     padding: 20px;
     margin-left: 200px; }
+
+.style__game-box___1GH9H {
+  margin-top: 47px; }
 
 .style__movie-title___3sDfE {
   font-size: 25px;
@@ -293,7 +329,8 @@ table {
       text-align: center; }
 
 .style__doc___2_OBb {
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin-top: 47px; }
   .style__doc___2_OBb .style__doc-main___33HWq {
     padding: 20px;
     margin-left: 200px; }

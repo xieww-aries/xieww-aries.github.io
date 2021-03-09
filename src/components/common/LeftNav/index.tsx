@@ -17,6 +17,7 @@ export default function LeftNav(props) {
                         <Link to={`/${firstRouter}/${item.router}`}>
                             {item.title}
                         </Link>
+                        <div styleName="item-arrow" />
                     </li>
                 ))
             }

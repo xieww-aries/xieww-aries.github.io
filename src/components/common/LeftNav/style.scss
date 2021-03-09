@@ -11,12 +11,24 @@
 
     .nav-item {
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 10px;
         cursor: pointer;
+        display: flex;
 
         &:last-child {
             margin-bottom: 0;
+        }
+
+        a {
+            flex: 1;
+        }
+
+        .item-arrow {
+            width: 10px;
+            height: 10px;
+            margin-top: 7px;
+            background: #F00;
         }
     }
 }

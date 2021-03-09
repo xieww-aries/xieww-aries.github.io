@@ -8,23 +8,20 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  -webkit-box-shadow: 0 4px 16px -4px rgba(69, 88, 115, .2);
-          box-shadow: 0 4px 16px -4px rgba(69, 88, 115, .2); }
-  .style__head___2je9Z li {
-    margin-right: 20px;
+  -webkit-box-shadow: 0 4px 16px -4px #000000;
+          box-shadow: 0 4px 16px -4px #000000; }
+  .style__head___2je9Z .style__head-item___2k_23 {
     font-size: 16px;
-    padding: 10px;
-    border-bottom: 5px #000000 solid; }
-    .style__head___2je9Z li:last-child {
-      margin-right: 0; }
-    .style__head___2je9Z li a {
+    padding: 10px 20px;
+    border-right: #ffffff 1px solid; }
+    .style__head___2je9Z .style__head-item___2k_23:last-child {
+      margin-right: 0;
+      border-right: none; }
+    .style__head___2je9Z .style__head-item___2k_23 a {
       color: #FFFFFF;
-      font-weight: bold;
       font-style: italic; }
-  .style__head___2je9Z .style__slider-bottom___2Gvpi {
-    height: 5px;
-    background: #000000;
-    width: 50px; }
+  .style__head___2je9Z .style__active-li___19Ycf {
+    border-bottom: 3px #000000 solid; }
 
 .style__home___Xx4NI {
   min-height: 100%;
@@ -212,6 +209,26 @@
   font-weight: bold;
   font-style: italic; }
 
+.style__doc-nav___1RP6f {
+  width: 160px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 50;
+  padding: 20px;
+  background: #999999;
+  margin-bottom: 0;
+  -webkit-box-shadow: 2px 0 5px #CCC;
+          box-shadow: 2px 0 5px #CCC; }
+  .style__doc-nav___1RP6f .style__nav-item___1ca8S {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-style: italic; }
+    .style__doc-nav___1RP6f .style__nav-item___1ca8S:last-child {
+      margin-bottom: 0; }
+
 table {
   margin-bottom: 20px; }
   table th {
@@ -226,37 +243,14 @@ table {
 
 .style__doc___1P6cG {
   min-height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   border-radius: 3px; }
-  .style__doc___1P6cG .style__doc-nav___3SDgv {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding: 0;
-    margin-bottom: 0;
-    -webkit-box-shadow: 2px 0 5px #CCC;
-            box-shadow: 2px 0 5px #CCC; }
-    .style__doc___1P6cG .style__doc-nav___3SDgv .style__nav-item___CwtxX {
-      text-align: center; }
   .style__doc___1P6cG .style__doc-main___1zNSW {
-    -webkit-box-flex: 5;
-    -webkit-flex: 5;
-        -ms-flex: 5;
-            flex: 5;
-    padding: 20px; }
+    padding: 20px;
+    margin-left: 200px; }
 
 
 
 .style__doc___1yVfi {
-  min-height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   border-radius: 3px; }
   .style__doc___1yVfi .style__doc-nav___172iF {
     width: 280px;
@@ -265,33 +259,16 @@ table {
     .style__doc___1yVfi .style__doc-nav___172iF .style__nav-item___1DFLs {
       text-align: center; }
   .style__doc___1yVfi .style__doc-main___3qeFV {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding: 20px; }
+    padding: 20px;
+    margin-left: 200px; }
 
 
 
 .style__doc___16Z_1 {
-  min-height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   border-radius: 3px; }
-  .style__doc___16Z_1 .style__doc-nav___1tVC6 {
-    width: 280px;
-    padding: 0;
-    margin-bottom: 0; }
-    .style__doc___16Z_1 .style__doc-nav___1tVC6 .style__nav-item___3lw76 {
-      text-align: center; }
   .style__doc___16Z_1 .style__doc-main___jLKlA {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding: 20px; }
+    padding: 20px;
+    margin-left: 200px; }
 
 .style__movie-title___3sDfE {
   font-size: 25px;
@@ -316,24 +293,10 @@ table {
       text-align: center; }
 
 .style__doc___2_OBb {
-  min-height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   border-radius: 3px; }
-  .style__doc___2_OBb .style__doc-nav___1hVlp {
-    width: 280px;
-    padding: 0;
-    margin-bottom: 0; }
-    .style__doc___2_OBb .style__doc-nav___1hVlp .style__nav-item___3_Kh8 {
-      text-align: center; }
   .style__doc___2_OBb .style__doc-main___33HWq {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding: 20px; }
+    padding: 20px;
+    margin-left: 200px; }
 
 /*===== reset =====*/
 html,
