@@ -3,6 +3,7 @@ import React from 'react';
 export default function ThrottleDebounce() {
     return (
         <div>
+            <p>相关资料：</p>
             <a href="https://zhuanlan.zhihu.com/p/38313717">函数防抖与函数节流（司徒正美）</a>
             <br />
             <a href="https://github.com/mqyqingfeng/Blog/issues/26">跟着 underscore 学节流</a>
