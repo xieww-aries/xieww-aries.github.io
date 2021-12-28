@@ -6,7 +6,10 @@ import { headerData } from './headerData';
 import './style.scss';
 
 function Header(props) {
-    const activeIndex = headerData.findIndex(item => props.location.pathname.includes(item.route));
+    let activeIndex = headerData.findIndex(item => props.location.pathname.includes(item.route));
+    if (activeIndex < 0) activeIndex = 0;
+
+    console.log(process.env);
     return (
         <ul styleName="head">
             {headerData.map(({ name, route }, index) => (
