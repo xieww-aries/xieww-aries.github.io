@@ -238,10 +238,7 @@
           -ms-flex: 1;
               flex: 1; }
     .style__doc-nav___1RP6f .style__nav-item___1ca8S .style__item-arrow___2DnF- {
-      width: 10px;
-      height: 10px;
-      margin-top: 7px;
-      background: #F00; }
+      color: #f00; }
 
 table {
   margin-bottom: 20px; }
@@ -427,4 +424,31 @@ a {
   color: #000000;
   color: rgba(0, 0, 0, .87);
   text-decoration: none; }
+
+@font-face {
+  font-family: "iconfont";
+  /* Project id 3094384 */
+  src: url([object Module]) format("woff2"), url([object Module]) format("woff"), url([object Module]) format("truetype"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow-right:before {
+  content: "\e743"; }
+
+.icon-seleted:before {
+  content: "\e763"; }
+
+.icon-resonserate-fill:before {
+  content: "\e78a"; }
+
+.icon-Rightbutton-fill:before {
+  content: "\e78b"; }
+
+.icon-xinxibar_zhanghu:before {
+  content: "\e7c8"; }
 

@@ -84,6 +84,18 @@ const rules = [
                 loader: 'sass-loader'
             }
         ]
+    },
+    {
+        test: /\.(png|jpe?g|gif|svg|ttf|woff|woff2)(\?.*)?$/,
+        use: [
+            {
+                loader: 'url-loader',
+                options: {
+                    limit: 8192,
+                    esModule: false
+                }
+            }
+        ]
     }
 ];
 

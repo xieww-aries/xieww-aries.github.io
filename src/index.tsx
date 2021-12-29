@@ -13,6 +13,7 @@ import List from './pages/list';
 import Interview from './pages/interview';
 
 import './resource/reset.css';
+import './resource/iconfont.css';
 
 export default function App() {
     return (
