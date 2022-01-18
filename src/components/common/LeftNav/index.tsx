@@ -5,10 +5,11 @@ import './style.scss';
 
 export default function LeftNav(props) {
     const { data, firstRouter, handleSelectItem } = props;
+
     return (
         <ul styleName="doc-nav">
             {
-                data.map((item) => (
+                data.map(item => (
                     <li
                         key={item.title}
                         onClick={() => handleSelectItem(item.router)}

@@ -15,6 +15,7 @@
         margin-bottom: 10px;
         cursor: pointer;
         display: flex;
+        border-radius: 20px;
 
         &:last-child {
             margin-bottom: 0;
@@ -22,6 +23,10 @@
 
         a {
             flex: 1;
+        }
+
+        .avtive-item {
+            background: #666666;
         }
 
         .item-arrow {
