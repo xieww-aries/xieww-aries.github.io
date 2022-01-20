@@ -229,7 +229,8 @@
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    border-radius: 20px; }
     .style__doc-nav___1RP6f .style__nav-item___1ca8S:last-child {
       margin-bottom: 0; }
     .style__doc-nav___1RP6f .style__nav-item___1ca8S a {
@@ -237,8 +238,11 @@
       -webkit-flex: 1;
           -ms-flex: 1;
               flex: 1; }
+    .style__doc-nav___1RP6f .style__nav-item___1ca8S .style__avtive-item___1XGvI {
+      background: #666666; }
     .style__doc-nav___1RP6f .style__nav-item___1ca8S .style__item-arrow___2DnF- {
-      color: #f00; }
+      color: #ffffff;
+      font-size: 20px; }
 
 table {
   margin-bottom: 20px; }

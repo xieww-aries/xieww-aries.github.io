@@ -96,5 +96,9 @@ export const leftNavData = [
     {
         title: 'Object',
         router: 'object'
+    },
+    {
+        title: 'String',
+        router: 'string'
     }
 ];
