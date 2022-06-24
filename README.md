@@ -44,6 +44,7 @@
 
 + #### Typescript
   - https://blog.51cto.com/u_15069486/3468408?b=totalstatistic
+  - 使用babel编译还是ts-loader去编译：https://www.typescriptlang.org/docs/handbook/babel-with-typescript.html#babel-vs-tsc-for-typescript
   - 依赖包
     - `typescript`
     - eslint 相关包
