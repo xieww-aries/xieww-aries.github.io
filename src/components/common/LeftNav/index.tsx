@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './style.scss';
 
 export default function LeftNav(props) {
-    const { data, firstRouter, handleSelectItem } = props;
+    const { data, firstRouter, handleSelectItem, activeIndex } = props;
 
     return (
         <ul styleName="doc-nav">
@@ -13,7 +13,7 @@ export default function LeftNav(props) {
                     <li
                         key={item.title}
                         onClick={() => handleSelectItem(index)}
-                        styleName="nav-item"
+                        styleName={`nav-item ${activeIndex === index ? 'active' : ''}`}
                     >
                         <Link to={`/${firstRouter}/${item.router}`}>
                             {item.title}

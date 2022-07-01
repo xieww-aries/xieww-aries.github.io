@@ -43,6 +43,7 @@ export default function WebpackDoc() {
                 data={leftNavData}
                 firstRouter={'webpack'}
                 handleSelectItem={handleSelectItem}
+                activeIndex={activeIndex}
             />
             <div styleName="doc-main">{getMainContent()}</div>
         </div>

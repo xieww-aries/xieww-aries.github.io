@@ -42,6 +42,7 @@ export default function interview() {
                 data={leftNavData}
                 firstRouter={'interview'}
                 handleSelectItem={handleSelectItem}
+                activeIndex={activeIndex}
             />
             <div styleName="doc-main">{getMainContent()}</div>
         </div>

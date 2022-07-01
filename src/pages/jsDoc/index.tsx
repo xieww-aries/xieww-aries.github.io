@@ -40,6 +40,7 @@ export default function JsDoc() {
                 data={leftNavData}
                 handleSelectItem={handleSelectItem}
                 firstRouter={'js'}
+                activeIndex={activeIndex}
             />
             <div styleName="doc-main">
                 <Title title={`${leftNavData[activeIndex].title}方法`} />

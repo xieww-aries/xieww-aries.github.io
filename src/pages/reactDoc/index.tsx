@@ -33,6 +33,7 @@ export default function ReactDoc() {
                 data={leftNavData}
                 firstRouter={'react'}
                 handleSelectItem={handleSelectItem}
+                activeIndex={activeIndex}
             />
             <div styleName="doc-main">{getMainContent()}</div>
         </div>
