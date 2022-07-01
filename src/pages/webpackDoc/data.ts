@@ -21,7 +21,7 @@ export const leftNavData = [
     },
     {
         title: '打包原理',
-        router: 'pack'
+        router: 'principle'
     },
     {
         title: '优化打包速度',
