@@ -10,22 +10,22 @@ import { leftNavData } from './data';
 import './style.scss';
 
 export default function ReactDoc() {
-    // 当前列表选择项
-    const [currentSelectedValue, handleSelectItem] = useState('about');
+    const [activeIndex, handleSelectItem] = useState(() =>
+        leftNavData.findIndex(item => location.pathname.includes(item.router)) > 0 ?
+            leftNavData.findIndex(item => location.pathname.includes(item.router)) : 0
+    );
 
-    let mainContent = null;
-    switch (currentSelectedValue) {
-        default:
-        case 'about':
-            mainContent = <Index />;
-            break;
-        case 'lifecycle':
-            mainContent = <Lifecycle />;
-            break;
-        case 'hooks':
-            mainContent = <Hooks />;
-            break;
-    }
+    const getMainContent = () => {
+        switch (activeIndex) {
+            default:
+            case 0:
+                return <Index />;
+            case 1:
+                return <Lifecycle />;
+            case 2:
+                return <Hooks />;
+        }
+    };
 
     return (
         <div styleName="doc">
@@ -34,7 +34,7 @@ export default function ReactDoc() {
                 firstRouter={'react'}
                 handleSelectItem={handleSelectItem}
             />
-            <div styleName="doc-main">{mainContent}</div>
+            <div styleName="doc-main">{getMainContent()}</div>
         </div>
     );
 }

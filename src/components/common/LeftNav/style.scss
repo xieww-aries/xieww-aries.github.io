@@ -5,17 +5,22 @@
     left: 0;
     top: 50;
     padding: 20px;
-    background: #999999;
+    background: #bbbbbb;
     margin-bottom: 0;
     box-shadow: 2px 0 5px #CCC;  
 
     .nav-item {
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 10px;
         cursor: pointer;
         display: flex;
-        border-radius: 20px;
+        border-radius: 10px;
+        align-items: center;
+
+        &:hover {
+            background: #999999;
+        }
 
         &:last-child {
             margin-bottom: 0;
@@ -30,7 +35,7 @@
         }
 
         .item-arrow {
-            color: #ffffff;
+            display: inline-block;
             font-size: 20px;
         }
     }

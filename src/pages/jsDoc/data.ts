@@ -1,3 +1,22 @@
+export const leftNavData = [
+    {
+        title: 'Array',
+        router: 'array'
+    },
+    {
+        title: 'Object',
+        router: 'object'
+    },
+    {
+        title: 'String',
+        router: 'string'
+    },
+    {
+        title: 'ES6',
+        router: 'es6'
+    }
+];
+
 export const arrayFunctionList = [
     {
         name: 'unshift'
@@ -85,20 +104,5 @@ export const arrayFunctionList = [
     },
     {
         name: 'entries'
-    }
-];
-
-export const leftNavData = [
-    {
-        title: 'Array',
-        router: 'array'
-    },
-    {
-        title: 'Object',
-        router: 'object'
-    },
-    {
-        title: 'String',
-        router: 'string'
     }
 ];

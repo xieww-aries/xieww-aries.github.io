@@ -9,10 +9,10 @@ export default function LeftNav(props) {
     return (
         <ul styleName="doc-nav">
             {
-                data.map(item => (
+                data.map((item, index: number) => (
                     <li
                         key={item.title}
-                        onClick={() => handleSelectItem(item.router)}
+                        onClick={() => handleSelectItem(index)}
                         styleName="nav-item"
                     >
                         <Link to={`/${firstRouter}/${item.router}`}>

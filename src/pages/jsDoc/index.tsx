@@ -6,29 +6,33 @@ import LeftNav from '../../components/common/LeftNav';
 import ArrayIndex from '../../components/JsDoc/Array';
 import ObjectIndex from '../../components/JsDoc/Object';
 import StringIndex from '../../components/JsDoc/String';
+import Writing from '../../components/common/Writing';
 
 import { leftNavData } from './data';
 
 import './style.scss';
 
 export default function JsDoc() {
-    // 当前选中的数组方法，初始化默认为第一项
-    const [currentArrayFunction, handleSelectItem] = useState('array');
+    const [activeIndex, handleSelectItem] = useState(() =>
+        leftNavData.findIndex(item => location.pathname.includes(item.router)) > 0 ?
+            leftNavData.findIndex(item => location.pathname.includes(item.router)) : 0
+    );
 
-    let mainContent: any = null;
-    switch (currentArrayFunction) {
-        default:
-        case 'array':
-            mainContent = <ArrayIndex />;
-            break;
-        case 'object':
-            mainContent = <ObjectIndex />;
-            break;
-        case 'string':
-            mainContent = <StringIndex />;
-            break;
+    const getMainContent = () => {
+        switch (activeIndex) {
+            default:
+            case 0:
+                return <ArrayIndex />;
+            case 1:
+                return <ObjectIndex />;
+            case 2:
+                return <StringIndex />;
+            case 3:
+                return <Writing />;
+        }
+    };
 
-    }
+    console.log(222, leftNavData.findIndex(item => location.pathname.includes(item.router)));
 
     return (
         <div styleName="doc">
@@ -38,8 +42,8 @@ export default function JsDoc() {
                 firstRouter={'js'}
             />
             <div styleName="doc-main">
-                <Title title={`${currentArrayFunction}方法`} />
-                {mainContent}
+                <Title title={`${leftNavData[activeIndex].title}方法`} />
+                {getMainContent()}
             </div>
         </div>
     );
