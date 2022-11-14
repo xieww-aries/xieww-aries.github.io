@@ -1,0 +1,105 @@
+.wrapper {
+    width: 450px;
+    height: 200px;
+    background: #555555;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+
+    .outer {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background: #cccccc;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+
+
+        .mask {
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            background: orange;
+            transform-origin: top center;
+            transform: rotate(55deg);
+
+            .radius-box {
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                .radius {
+                    width: 25px;
+                    height: 25px;
+                    background: orange;
+                    position: absolute;
+                    left: 0;
+                    top: -12.5px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .inner {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        background: #666666;
+        margin: 0 auto;
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        z-index: 3;
+        overflow: hidden;
+
+        .arrow-box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .arrow {
+                width: 350px;
+                height: 175px;
+                position: absolute;
+                top: 175px;
+                left: 0;
+                z-index: 2;
+                background: #999999;
+                transform-origin: center top;
+                transform: rotate(55deg);
+            }
+
+            .anchor {
+                width: 150px;
+                height: 20px;
+                position: absolute;
+                left: 25px;
+                top: 165px;
+                z-index: 5;
+                background: pink;
+                border-radius: 10px 0 0 10px;
+                transform-origin: right center;
+                transform: rotate(55deg);
+            }
+
+            .inner-content {
+                width: 175px;
+                height: 175px;
+                border-radius: 50%;
+                background: #cccccc;
+                margin: 0 auto;
+                position: absolute;
+                z-index: 10;
+                left: 87.5px;
+                top: 87.5px;
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+    }
+}
