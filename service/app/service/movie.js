@@ -14,6 +14,7 @@ class NewsService extends Service {
                 page_start: 0
             }
         });
+        console.log('~~~~~~~~~~', dataList);
 
         return dataList.data.subjects.map(res => res);
     }

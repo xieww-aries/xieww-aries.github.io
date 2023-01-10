@@ -73,7 +73,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -86,8 +86,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -110,7 +110,7 @@
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
-      "tmpdir": "/var/folders/xg/rb44pkg90r38n5mlyq0fb6mh0000gn/T/egg-multipart-tmp/service",
+      "tmpdir": "/var/folders/c6/b8g0cph94dnb94y5791d9qww0000gp/T/egg-multipart-tmp/service",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
@@ -133,14 +133,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/app/public",
+      "dir": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/app/view",
+      "root": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
@@ -185,9 +185,9 @@
         "egg-static": "^2.2.0"
       }
     },
-    "baseDir": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service",
-    "HOME": "/Users/xieww",
-    "rundir": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/run",
+    "baseDir": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service",
+    "HOME": "/Users/xieweiwei21",
+    "rundir": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -217,7 +217,7 @@
       }
     },
     "logger": {
-      "dir": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/logs/service",
+      "dir": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/logs/service",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -296,8 +296,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-session",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -309,8 +309,8 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-security",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-security",
       "version": "2.5.0"
     },
     "jsonp": {
@@ -322,8 +322,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-jsonp",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -335,8 +335,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-onerror",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -346,8 +346,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-i18n",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -357,8 +357,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-watcher",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -368,8 +368,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-schedule",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -381,8 +381,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-multipart",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-multipart",
       "version": "2.7.1"
     },
     "development": {
@@ -396,8 +396,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-development",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -409,8 +409,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-logrotator",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -420,8 +420,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-static",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -431,8 +431,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-view",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-view",
       "version": "2.1.2"
     },
     "nunjucks": {
@@ -445,8 +445,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/config/plugin.js",
-      "path": "/Users/xieww/Desktop/xww/xieww-aries.github.io/service/node_modules/egg-view-nunjucks",
+      "from": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/config/plugin.js",
+      "path": "/Users/xieweiwei21/Desktop/personal/project/xieww.github.io/service/node_modules/egg-view-nunjucks",
       "version": "2.2.0"
     }
   }
