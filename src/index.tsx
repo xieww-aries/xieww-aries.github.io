@@ -16,26 +16,26 @@ import './resource/reset.css';
 import './resource/iconfont.css';
 
 export default function App() {
-    return (
-        <div style={{ height: '100%' }}>
-            <Header />
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/index" component={Home} />
-                <Route path="/js" component={JsDoc} />
-                <Route path="/webpack" component={WebpackDoc} />
-                <Route path="/react" component={ReactDoc} />
-                <Route path="/interview" component={Interview} />
-                <Route path="/list" component={List} />
-                <Route path="/game" component={Game} />
-            </Switch>
-        </div>
-    );
+	return (
+		<div style={{ height: '100%' }}>
+			<Header />
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route exact path="/index" component={Home} />
+				<Route path="/js" component={JsDoc} />
+				<Route path="/webpack" component={WebpackDoc} />
+				<Route path="/react" component={ReactDoc} />
+				<Route path="/interview" component={Interview} />
+				<Route path="/list" component={List} />
+				<Route path="/game" component={Game} />
+			</Switch>
+		</div>
+	);
 }
 
 ReactDom.render(
-    <Router>
-        <App />
-    </Router>,
-    document.querySelector('#app')
+	<Router>
+		<App />
+	</Router>,
+	document.querySelector('#app')
 );

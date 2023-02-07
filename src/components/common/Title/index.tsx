@@ -6,5 +6,5 @@ interface IProps {
 }
 
 export default function Title(props: IProps) {
-    return <p styleName="common-title">{props.title}</p>;
+	return <p styleName="common-title">{props.title}</p>;
 }

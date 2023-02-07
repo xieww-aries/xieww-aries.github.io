@@ -5,18 +5,18 @@
  * @return {Object}
  */
 export function serializeUrl(url) {
-    const result = {};
-    const urlList = (url || '').split('?');
-    if (urlList.length > 1) {
-        const map = urlList[1].split('&');
-        for (let i = 0, len = map.length; i < len; i++) {
-            const strList = map[i].split('=');
-            if (strList.length > 1) {
-                result[strList[0]] = strList[1];
-            }
-        }
-    }
-    return result;
+	const result = {};
+	const urlList = (url || '').split('?');
+	if (urlList.length > 1) {
+		const map = urlList[1].split('&');
+		for (let i = 0, len = map.length; i < len; i++) {
+			const strList = map[i].split('=');
+			if (strList.length > 1) {
+				result[strList[0]] = strList[1];
+			}
+		}
+	}
+	return result;
 }
 
 /**
@@ -26,16 +26,16 @@ export function serializeUrl(url) {
  * @return {String}
  */
 export function deserializeUrl(opts) {
-    const searchList = [];
+	const searchList = [];
 
-    for (const key in opts) {
-        const value = typeof opts[key] === 'undefined' ? '' : opts[key];
-        searchList.push(`${key}=${value}`);
-    }
+	for (const key in opts) {
+		const value = typeof opts[key] === 'undefined' ? '' : opts[key];
+		searchList.push(`${key}=${value}`);
+	}
 
-    const search = searchList.join('&');
+	const search = searchList.join('&');
 
-    return search;
+	return search;
 }
 
 /**
@@ -46,8 +46,8 @@ export function deserializeUrl(opts) {
  * @return {String}
  */
 export function appendQuery(url, query) {
-    if (query === '' || query === undefined) return url;
-    return `${url}&${query}`.replace(/[&?]{1,2}/, '?');
+	if (query === '' || query === undefined) return url;
+	return `${url}&${query}`.replace(/[&?]{1,2}/, '?');
 }
 
 /**
@@ -59,11 +59,11 @@ export function appendQuery(url, query) {
  * @return {String}
  */
 export function updateQuery(url, key, value) {
-    if (key === '' || key === undefined) return url;
-    if (value === undefined) return url;
+	if (key === '' || key === undefined) return url;
+	if (value === undefined) return url;
 
-    const reg = new RegExp(`([?&])?${key}=([^&])*`);
-    return url.replace(reg, `$1${key}=${value}`);
+	const reg = new RegExp(`([?&])?${key}=([^&])*`);
+	return url.replace(reg, `$1${key}=${value}`);
 }
 
 /**
@@ -74,16 +74,16 @@ export function updateQuery(url, key, value) {
  * @return {String}
  */
 export function removeQuery(url, key) {
-    if (key === '' || key === undefined) return url;
+	if (key === '' || key === undefined) return url;
 
-    const reg = new RegExp(`([?&])?${key}=[^&]*`);
-    return url.replace(reg, '').replace(/[&?]{1,2}/, '?');
+	const reg = new RegExp(`([?&])?${key}=[^&]*`);
+	return url.replace(reg, '').replace(/[&?]{1,2}/, '?');
 }
 
 export function removeQuerys(...args) {
-    const [url, ...keyList] = args;
+	const [url, ...keyList] = args;
 
-    return keyList.reduce((acc, curr) => removeQuery(acc, curr), url);
+	return keyList.reduce((acc, curr) => removeQuery(acc, curr), url);
 }
 
 /**
@@ -97,9 +97,9 @@ export function removeQuerys(...args) {
  * @return {String}
  */
 export function getParamFromUrl(key, defaultVal, search = location.search, ignoreCase = true) {
-    const regExp = ignoreCase ? new RegExp(`[?|&]${key}=([^&]+)`, 'i') : new RegExp(`[?|&]${key}=([^&]+)`);
-    const match = regExp.exec(search);
-    return match ? match[1] : defaultVal;
+	const regExp = ignoreCase ? new RegExp(`[?|&]${key}=([^&]+)`, 'i') : new RegExp(`[?|&]${key}=([^&]+)`);
+	const match = regExp.exec(search);
+	return match ? match[1] : defaultVal;
 }
 
 /**
@@ -110,9 +110,9 @@ export function getParamFromUrl(key, defaultVal, search = location.search, ignor
  * @return {String}
  */
 export function getParam(key, search = location.search) {
-    const value = getParamFromUrl(key, '', search);
+	const value = getParamFromUrl(key, '', search);
 
-    return typeof value !== 'undefined' ? decodeURIComponent(value) : '';
+	return typeof value !== 'undefined' ? decodeURIComponent(value) : '';
 }
 
 /**
@@ -124,9 +124,9 @@ export function getParam(key, search = location.search) {
  * @return {string}
  */
 export function prependQuery(key, value, url) {
-    let search = url || window.location.search;
-    if (key && value) {
-        search = `?${key}=${value}&${search.replace(/\?/, '')}`;
-    }
-    return search;
+	let search = url || window.location.search;
+	if (key && value) {
+		search = `?${key}=${value}&${search.replace(/\?/, '')}`;
+	}
+	return search;
 }

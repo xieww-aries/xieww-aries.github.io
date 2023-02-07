@@ -4,7 +4,7 @@
   "description": "this is Aries personal website",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
     "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
