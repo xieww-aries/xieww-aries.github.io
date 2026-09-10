@@ -35,8 +35,6 @@ export default function WebpackDoc() {
 				return <Writing />;
 		}
 	};
-	console.log(111, activeIndex);
-
 	return (
 		<div styleName="doc">
 			<LeftNav

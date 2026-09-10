@@ -7,21 +7,19 @@ export default function LeftNav(props) {
 	const { data, firstRouter, handleSelectItem, activeIndex } = props;
 
 	return (
-		<ul styleName="doc-nav">
-			{
-				data.map((item, index: number) => (
+		<nav styleName="doc-nav">
+			<p styleName="nav-label">Contents</p>
+			<ul>
+				{data.map((item, index: number) => (
 					<li
 						key={item.title}
 						onClick={() => handleSelectItem(index)}
-						styleName={`nav-item ${activeIndex === index ? 'active' : ''}`}
+						styleName={activeIndex === index ? 'nav-item active' : 'nav-item'}
 					>
-						<Link to={`/${firstRouter}/${item.router}`}>
-							{item.title}
-						</Link>
-						<span styleName="item-arrow" className="iconfont icon-arrow-right"></span>
+						<Link to={`/${firstRouter}/${item.router}`}>{item.title}</Link>
 					</li>
-				))
-			}
-		</ul>
+				))}
+			</ul>
+		</nav>
 	);
 }

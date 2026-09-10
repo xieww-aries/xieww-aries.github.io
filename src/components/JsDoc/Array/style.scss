@@ -1,18 +1,25 @@
 table {
-    margin-bottom: 20px;
-    color: #333333;
-    border-color: #808080;
+    margin-bottom: 0;
+    color: var(--text);
     border-collapse: collapse;
 
     th {
-        padding: 5px;
-        text-align: center;
+        padding: 12px 14px;
+        text-align: left;
         white-space: nowrap;
-        font-weight: bold;
-        font-style: italic;
+        font-weight: 600;
+        font-style: normal;
     }
+
     td {
-        padding: 5px;
-        text-align: center;
+        padding: 12px 14px;
+        text-align: left;
+        font-size: 13px;
+    }
+
+    td:nth-child(2) {
+        font-family: var(--font-mono);
+        color: var(--accent-2);
+        white-space: nowrap;
     }
 }

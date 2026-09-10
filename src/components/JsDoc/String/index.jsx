@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
-// import './style.scss';
-
-export default class ArrayIndex extends Component {
+export default class StringIndex extends Component {
 	render() {
 		return (
-			<div>我是String</div>
+			<div className="empty-note">
+				<strong>String</strong>
+				这部分笔记还在整理。
+			</div>
 		);
 	}
 }

@@ -1,17 +1,10 @@
-.game-page {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 32px var(--page-pad) 80px;
-}
-
-.game-box {
-    padding: 72px 24px;
+.writing {
+    padding: 56px 24px;
     text-align: center;
     color: var(--text-muted);
     background: var(--surface);
     border: 1px dashed var(--border-strong);
     border-radius: var(--radius);
-    box-shadow: var(--shadow);
 
     strong {
         display: block;

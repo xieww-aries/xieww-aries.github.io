@@ -7,19 +7,24 @@ import Title from '../../components/common/Title';
 
 export default function List() {
 	const [movieList] = useState([...listData]);
-	const goToDetail = (url: string) => (location.href = url);
+	const goToDetail = (url: string) => {
+		window.open(url, '_blank', 'noopener,noreferrer');
+	};
+
 	return (
-		<div>
+		<div styleName="list-page">
 			<Title title="电影列表" />
 			<ul styleName="movie-box">
 				{movieList.length > 0 &&
-                    movieList.map((item) => (
-                    	<li key={item.id} onClick={goToDetail.bind(this, item.url)}>
-                    		<img src={item.cover} />
-                    		<p>电影名称：{item.title}</p>
-                    		<p>电影评分：{item.rate}</p>
-                    	</li>
-                    ))}
+					movieList.map(item => (
+						<li key={item.id} onClick={() => goToDetail(item.url)} styleName="movie-card">
+							<div styleName="poster">
+								<img src={item.cover} alt="" />
+								<span styleName="rate">{item.rate}</span>
+							</div>
+							<p styleName="movie-title">{item.title}</p>
+						</li>
+					))}
 			</ul>
 		</div>
 	);

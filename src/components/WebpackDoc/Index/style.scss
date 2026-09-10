@@ -1,18 +1,20 @@
 h2 {
-    font-size: 18px !important;
-    font-weight: bolder !important;
-    margin: 20px 0 !important;
+    font-size: 22px;
+    font-weight: 650;
+    margin: 28px 0 12px;
+    font-family: var(--font-display);
 }
 
 h4 {
-    font-size: 16px !important;
-    font-weight: bold !important;
-    margin: 10px 0 !important;
-    color: #666666;
-    font-style: italic;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 16px 0 8px;
+    color: var(--accent);
+    font-style: normal;
 }
 
 p {
-    text-indent:  10px;
-    line-height: 24px;
+    text-indent: 0;
+    line-height: 1.75;
+    color: var(--text-muted);
 }

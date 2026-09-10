@@ -1,10 +1,18 @@
 .doc {
-    min-height: 100%;
-    border-radius: 3px;
-    margin-top: 47px;
+    min-height: calc(100vh - var(--header-h));
 
     .doc-main {
-        padding: 20px;
-        margin-left: 200px;
+        padding: 32px var(--page-pad) 80px;
+        margin-left: var(--sidebar-w);
+        max-width: 1080px;
+    }
+}
+
+@media (max-width: 860px) {
+    .doc {
+        .doc-main {
+            margin-left: 0;
+            padding-top: 132px;
+        }
     }
 }

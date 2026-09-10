@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import './resource/reset.css';
+import './resource/iconfont.css';
+
 import Header from './components/common/Header';
 
 import Home from './pages/home';
@@ -12,23 +15,22 @@ import Game from './pages/Game';
 import List from './pages/list';
 import Interview from './pages/interview';
 
-import './resource/reset.css';
-import './resource/iconfont.css';
-
 export default function App() {
 	return (
-		<div style={{ height: '100%' }}>
+		<div className="app-shell">
 			<Header />
-			<Switch>
-				<Route exact path="/" component={Home} />
-				<Route exact path="/index" component={Home} />
-				<Route path="/js" component={JsDoc} />
-				<Route path="/webpack" component={WebpackDoc} />
-				<Route path="/react" component={ReactDoc} />
-				<Route path="/interview" component={Interview} />
-				<Route path="/list" component={List} />
-				<Route path="/game" component={Game} />
-			</Switch>
+			<main className="app-main">
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route exact path="/index" component={Home} />
+					<Route path="/js" component={JsDoc} />
+					<Route path="/webpack" component={WebpackDoc} />
+					<Route path="/react" component={ReactDoc} />
+					<Route path="/interview" component={Interview} />
+					<Route path="/list" component={List} />
+					<Route path="/game" component={Game} />
+				</Switch>
+			</main>
 		</div>
 	);
 }

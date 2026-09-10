@@ -5,11 +5,12 @@ export default function Lifecycle() {
 	return (
 		<div>
 			<Title title={'React Lifecycle'} />
-			<p>
-                文档地址：
-				<a href="https://segmentfault.com/a/1190000016617400">https://segmentfault.com/a/1190000016617400</a>
-			</p>
-			<p>流程指引图：https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/</p>
+			<div className="link-stack">
+				<a href="https://segmentfault.com/a/1190000016617400">生命周期文档整理</a>
+				<a href="https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/">
+					React 生命周期流程图
+				</a>
+			</div>
 		</div>
 	);
 }

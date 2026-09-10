@@ -1,26 +1,36 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, withRouter, RouteComponentProps } from 'react-router-dom';
 
 import { headerData } from './headerData';
 
 import './style.scss';
 
-function Header(props) {
-	let activeIndex = headerData.findIndex(item => props.location.pathname.includes(item.route));
-	if (activeIndex < 0) activeIndex = 0;
+function isActive(pathname: string, route: string) {
+	if (route === 'index') {
+		return pathname === '/' || pathname.startsWith('/index');
+	}
+	return pathname === `/${route}` || pathname.startsWith(`/${route}/`);
+}
 
-	console.log(process.env);
+function Header(props: RouteComponentProps) {
+	const { pathname } = props.location;
+
 	return (
-		<ul styleName="head">
-			{headerData.map(({ name, route }, index) => (
-				<li
-					key={index}
-					styleName={activeIndex === index ? 'head-item active-li' : 'head-item'}
-				>
-					<Link to={`/${route}`}>{name}</Link>
-				</li>
-			))}
-		</ul>
+		<header styleName="head">
+			<Link to="/" styleName="brand">
+				<span styleName="mark">A</span>
+				Aries
+			</Link>
+			<nav styleName="nav-wrap">
+				<ul styleName="nav">
+					{headerData.map(({ name, route }) => (
+						<li key={route} styleName={isActive(pathname, route) ? 'item active' : 'item'}>
+							<Link to={`/${route}`}>{name}</Link>
+						</li>
+					))}
+				</ul>
+			</nav>
+		</header>
 	);
 }
 

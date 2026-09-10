@@ -1,30 +1,93 @@
 .head {
-    background: #696969;
-    display: flex;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 50;
-    box-shadow: 0 4px 16px -4px #000000;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    height: var(--header-h);
+    padding: 0 28px;
+    box-sizing: border-box;
+    background: rgba(14, 16, 20, 0.78);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 
-    .head-item {
-        font-size: 16px;
-        padding: 10px 20px;
-        border-right: #ffffff 1px solid;
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        color: var(--text);
+        font-family: var(--font-display);
+        font-size: 20px;
+        font-weight: 650;
+        letter-spacing: 0.04em;
 
-        &:last-child {
-            margin-right: 0;
-            border-right: none;
-        }
-
-        a {
-            color: #FFFFFF;
-            font-style: italic;
+        &:hover {
+            color: var(--text);
         }
     }
 
-    .active-li {
-        border-bottom: 3px #000000 solid;
+    .mark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 8px;
+        background: var(--accent);
+        color: #1a140c;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .nav-wrap {
+        flex: 1;
+        min-width: 0;
+        overflow-x: auto;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        min-width: max-content;
+    }
+
+    .item {
+        a {
+            display: block;
+            padding: 8px 14px;
+            color: var(--text-muted);
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 999px;
+        }
+
+        a:hover {
+            color: var(--text);
+            background: rgba(255, 255, 255, 0.04);
+        }
+    }
+
+    .active a {
+        color: #1a140c;
+        background: var(--accent);
+    }
+
+    .active a:hover {
+        color: #1a140c;
+        background: #e8c07a;
+    }
+}
+
+@media (max-width: 860px) {
+    .head {
+        gap: 16px;
+        padding: 0 16px;
     }
 }
