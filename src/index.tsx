@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './resource/reset.css';
 import './resource/iconfont.css';
@@ -14,30 +14,35 @@ import ReactDoc from './pages/reactDoc';
 import Game from './pages/Game';
 import List from './pages/list';
 import Interview from './pages/interview';
+import Changelog from './pages/changelog';
 
 export default function App() {
 	return (
 		<div className="app-shell">
 			<Header />
 			<main className="app-main">
-				<Switch>
-					<Route exact path="/" component={Home} />
-					<Route exact path="/index" component={Home} />
-					<Route path="/js" component={JsDoc} />
-					<Route path="/webpack" component={WebpackDoc} />
-					<Route path="/react" component={ReactDoc} />
-					<Route path="/interview" component={Interview} />
-					<Route path="/list" component={List} />
-					<Route path="/game" component={Game} />
-				</Switch>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/index" element={<Home />} />
+					<Route path="/js/*" element={<JsDoc />} />
+					<Route path="/webpack/*" element={<WebpackDoc />} />
+					<Route path="/react/*" element={<ReactDoc />} />
+					<Route path="/interview/*" element={<Interview />} />
+					<Route path="/list" element={<List />} />
+					<Route path="/game" element={<Game />} />
+					<Route path="/changelog" element={<Changelog />} />
+				</Routes>
 			</main>
 		</div>
 	);
 }
 
-ReactDom.render(
-	<Router>
-		<App />
-	</Router>,
-	document.querySelector('#app')
-);
+const rootEl = document.querySelector('#app');
+
+if (rootEl) {
+	createRoot(rootEl).render(
+		<Router>
+			<App />
+		</Router>
+	);
+}

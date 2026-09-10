@@ -33,5 +33,10 @@ export const headerData = [
 		name: 'Game',
 		route: 'game',
 		desc: '实验性小游戏'
+	},
+	{
+		name: 'Log',
+		route: 'changelog',
+		desc: '版本更新记录'
 	}
 ];

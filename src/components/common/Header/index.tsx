@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter, RouteComponentProps } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { headerData } from './headerData';
 
@@ -12,8 +12,8 @@ function isActive(pathname: string, route: string) {
 	return pathname === `/${route}` || pathname.startsWith(`/${route}/`);
 }
 
-function Header(props: RouteComponentProps) {
-	const { pathname } = props.location;
+export default function Header() {
+	const { pathname } = useLocation();
 
 	return (
 		<header styleName="head">
@@ -33,5 +33,3 @@ function Header(props: RouteComponentProps) {
 		</header>
 	);
 }
-
-export default withRouter(Header);

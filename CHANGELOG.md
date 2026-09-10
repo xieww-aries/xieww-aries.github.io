@@ -1,0 +1,25 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [2.0.0] - 2026-09-10
+
+### Features
+
+- 站点 UI 重做为深色笔记风格，补充首页目录、文档侧栏和空状态
+- 增加 Changelog 页面与 `npm run changelog` / `npm run release` 版本日志能力
+
+### Improvements
+
+- 工程升级到 Node 20：Webpack 5、React 18、React Router 6、TypeScript 5
+- 用 Dart Sass、postcss-preset-env 替换已停止维护的 node-sass / cssnext
+- Husky 9 接管 git hooks，ESLint 8 适配当前工具链
+
+## [1.0.0] - 2020-12-01
+
+### Features
+
+- 个人站点初版：JavaScript / Webpack / React / Interview 笔记与电影列表

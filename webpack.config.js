@@ -1,152 +1,143 @@
 const path = require('path');
-// const webpack = require('webpack');
+const fs = require('fs');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
+const genericNames = require('generic-names');
 
-const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
-const smp = new SpeedMeasurePlugin();
+const generateScopedName = genericNames('[name]__[local]___[hash:base64:5]', {
+	context: process.cwd()
+});
 
-const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const cssLoaderModules = {
+	namedExport: false,
+	exportLocalsConvention: 'asIs',
+	getLocalIdent: (context, _localIdentName, localName) =>
+		generateScopedName(localName, context.resourcePath)
+};
 
-const rules = [
+class CopyToEggPublicPlugin {
+	apply(compiler) {
+		compiler.hooks.afterEmit.tap('CopyToEggPublicPlugin', () => {
+			const from = path.resolve(__dirname, 'dist');
+			const to = path.resolve(__dirname, 'service/app/public/dist');
+			if (!fs.existsSync(from)) return;
+			fs.mkdirSync(to, { recursive: true });
+			fs.cpSync(from, to, { recursive: true });
+		});
+	}
+}
+
+const cssLoaders = (withModules) => [
+	MiniCssExtractPlugin.loader,
 	{
-		enforce: 'pre',
-		test: /\.js[x]?$/,
-		exclude: /node_modules/,
-		use: [{
-			loader: 'eslint-loader',
-			options: {
-				cache: true,
-				emitError: true,
-				emitWarning: true,
-				fix: true
+		loader: 'css-loader',
+		options: withModules
+			? {
+				modules: cssLoaderModules,
+				sourceMap: true
 			}
-		}]
+			: undefined
 	},
 	{
-		test: /\.(js|jsx|ts|tsx)$/,
-		use: [
-			{
-				loader: 'babel-loader'
-			}
-		],
-		exclude: /node_modules/
-	},
-	// 处理非 css module / node_modules下样式的 配置
-	{
-		test: /\.(scss|css)$/,
-		include: [
-			path.resolve(__dirname, 'node_modules'),
-			path.resolve(__dirname, 'src/resource')
-		],
-		use: [
-			{
-				loader: MiniCssExtractPlugin.loader
-			},
-			{
-				loader: 'css-loader'
-			},
-			{
-				loader: 'postcss-loader'
-			},
-			{
-				loader: 'sass-loader',
-				options: {
-					implementation: require('sass')
-				}
-			}
-		]
-	},
-	// css module 配置
-	{
-		test: /\.(scss|css)$/,
-		exclude: [
-			path.resolve(__dirname, 'node_modules'),
-			path.resolve(__dirname, 'src/resource')
-		],
-		use: [
-			{
-				loader: MiniCssExtractPlugin.loader
-			},
-			{
-				loader: 'css-loader',
-				options: {
-					modules: {
-						mode: 'local',
-						localIdentName: '[name]__[local]___[hash:base64:5]'
-					},
-					sourceMap: true
-				}
-			},
-			{
-				loader: 'postcss-loader'
-			},
-			{
-				loader: 'sass-loader',
-				options: {
-					implementation: require('sass')
-				}
-			}
-		]
+		loader: 'postcss-loader'
 	},
 	{
-		test: /\.(png|jpe?g|gif|svg|ttf|woff|woff2)(\?.*)?$/,
-		use: [
-			{
-				loader: 'url-loader',
-				options: {
-					limit: 8192,
-					esModule: false
-				}
-			}
-		]
+		loader: 'sass-loader'
 	}
 ];
 
-const plugins = [
-	new ProgressBarPlugin(),
-	// new CleanWebpackPlugin(),
-	// 提取样式
-	new MiniCssExtractPlugin({
-		filename: '[name].min.css'
-	}),
-	new HTMLWebpackPlugin({
-		title: 'development',
-		template: 'demo/index.html'
-	}),
-	new CopyWebpackPlugin([
-		{
-			from: path.resolve(__dirname, 'dist/**/*'),
-			to: path.resolve(__dirname, 'service/app/public')
-		}
-	])
-];
+module.exports = (_env, argv) => {
+	const isProd = argv.mode === 'production';
 
-module.exports = smp.wrap({
-	entry: path.resolve(__dirname, 'src/index.tsx'),
-	output: {
-		publicPath: '/',
-		path: path.resolve(__dirname, 'dist'),
-		filename: 'bundle.js'
-	},
-	resolve: {
-		// 以下配置可以在引用文件时省略后缀名
-		extensions: ['.js', '.jsx', '.ts', '.tsx', '.css', '.scss']
-	},
-	devServer: {
-		contentBase: './',
-		historyApiFallback: {
-			index: 'dist/index.html',
-			js: 'dist/index.html',
-			webpack: 'dist/index.html',
-			react: 'dist/index.html',
-			list: 'dist/index.html'
+	return {
+		mode: isProd ? 'production' : 'development',
+		devtool: isProd ? false : 'source-map',
+		entry: path.resolve(__dirname, 'src/index.tsx'),
+		output: {
+			clean: true,
+			publicPath: '/',
+			path: path.resolve(__dirname, 'dist'),
+			filename: 'bundle.js'
+		},
+		resolve: {
+			extensions: ['.js', '.jsx', '.ts', '.tsx', '.css', '.scss']
+		},
+		devServer: {
+			hot: true,
+			open: true,
+			port: 8080,
+			historyApiFallback: true,
+			static: {
+				directory: path.resolve(__dirname)
+			}
+		},
+		module: {
+			rules: [
+				{
+					test: /\.(js|jsx|ts|tsx)$/,
+					exclude: /node_modules/,
+					use: ['babel-loader']
+				},
+				{
+					test: /\.(scss|css)$/,
+					include: [
+						path.resolve(__dirname, 'node_modules'),
+						path.resolve(__dirname, 'src/resource')
+					],
+					use: cssLoaders(false)
+				},
+				{
+					test: /\.(scss|css)$/,
+					exclude: [
+						path.resolve(__dirname, 'node_modules'),
+						path.resolve(__dirname, 'src/resource')
+					],
+					use: cssLoaders(true)
+				},
+				{
+					test: /\.md$/,
+					type: 'asset/source'
+				},
+				{
+					test: /\.(png|jpe?g|gif|svg|ttf|woff|woff2)(\?.*)?$/,
+					type: 'asset',
+					parser: {
+						dataUrlCondition: {
+							maxSize: 8192
+						}
+					}
+				}
+			]
+		},
+		plugins: [
+			new ESLintPlugin({
+				extensions: ['js', 'jsx', 'ts', 'tsx'],
+				context: path.resolve(__dirname, 'src'),
+				failOnError: isProd,
+				lintDirtyModulesOnly: !isProd
+			}),
+			new MiniCssExtractPlugin({
+				filename: '[name].min.css'
+			}),
+			new HTMLWebpackPlugin({
+				title: 'Aries · Notes',
+				template: 'demo/index.html'
+			}),
+			new CopyWebpackPlugin({
+				patterns: [
+					{
+						from: path.resolve(__dirname, 'CHANGELOG.md'),
+						to: 'CHANGELOG.md',
+						noErrorOnMissing: true
+					}
+				]
+			}),
+			new CopyToEggPublicPlugin()
+		],
+		performance: {
+			hints: false
 		}
-	},
-	module: {
-		rules
-	},
-	plugins
-});
+	};
+};

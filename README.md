@@ -2,6 +2,19 @@
 
 ## 页面地址: https://xieww-aries.github.io
 
+## 环境
+- Node.js >= 20（见 `.nvmrc`）
+
+## 常用命令
+```bash
+npm install
+npm run dev          # webpack-dev-server，默认 http://localhost:8080
+npm run build
+npm run lint
+npm run changelog    # 根据约定式提交追加 CHANGELOG.md
+npm run release      # 升版本 + 写 changelog + 打 tag
+```
+
 ## 工程化
 + #### React scss 中 CSS modules 的实现
   - 使用 `babel-plugin-react-css-modules` 插件
@@ -11,8 +24,7 @@
 + #### ESlint 配置
   - 依赖包
       - `eslint`
-      - `eslint-loader`
-      - `babel-eslint`(检测es6代码)
+      - `eslint-webpack-plugin`
       - `eslint-plugin-react`(检测react代码)
       - `eslint-plugin-react-hooks`(检测 react-hooks 代码)
   - 配置文件
@@ -33,14 +45,14 @@
       - `pre-commit`(在每次提交前检测，如果检测失败则禁止提交)
       - `@commitlint/cli`()
   - 配置文件
-      - .huskyrc.json
+      - .husky/
       - .lintstagedrc.json
-      - commitlint.config.js(commit提交规范)
+      - commitlint.config.js / .versionrc.js
+      - CHANGELOG.md
 
 + #### react-router
   - 依赖包
-    - `react-router`
-    - `react-router-dom`
+    - `react-router-dom` v6
 
 + #### Typescript
   - https://blog.51cto.com/u_15069486/3468408?b=totalstatistic
@@ -69,6 +81,6 @@
   - [x] eslint
   - [x] husky
   - [x] typescript
+  - [x] Node 20 / Webpack 5
+  - [x] CHANGELOG
   - [ ] static page add
-  - [ ] webpack optimization
-  - [ ] node optimization

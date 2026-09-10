@@ -10,7 +10,7 @@ import './style.scss';
 
 import { leftNavData } from './data';
 
-export default function interview() {
+export default function Interview() {
 	const [activeIndex, handleSelectItem] = useState(() =>
 		leftNavData.findIndex(item => location.pathname.includes(item.router)) > 0 ?
 			leftNavData.findIndex(item => location.pathname.includes(item.router)) : 0
