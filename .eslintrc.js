@@ -105,6 +105,7 @@ module.exports = {
 
 		// Prevent variables used in JSX to be marked as unused
 		'react/jsx-uses-vars': 2,
+		'react/no-unknown-property': [2, { ignore: ['styleName'] }],
 		// Prevent missing props validation in a React component definition
 		'react/prop-types': 0,
 		// Prevent missing displayName in a React component definition
