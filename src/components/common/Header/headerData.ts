@@ -15,6 +15,11 @@ export const headerData = [
 		desc: '旅行、城市与日常的照片'
 	},
 	{
+		name: 'Map',
+		route: 'map',
+		desc: '可拖动缩放的中国与世界地图'
+	},
+	{
 		name: 'Software',
 		route: 'software',
 		desc: '前端与后端技术笔记'

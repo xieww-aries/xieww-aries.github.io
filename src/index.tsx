@@ -17,6 +17,7 @@ import ReactDoc from './pages/reactDoc';
 import Game from './pages/Game';
 import Snake from './pages/Game/snake';
 import Tetris from './pages/Game/tetris';
+import MapExplorer from './pages/map';
 import Interview from './pages/interview';
 import Changelog from './pages/changelog';
 import Resume from './pages/resume';
@@ -55,6 +56,7 @@ export default function App() {
 					<Route path="/game" element={<Game />} />
 					<Route path="/game/snake" element={<Snake />} />
 					<Route path="/game/tetris" element={<Tetris />} />
+					<Route path="/map" element={<MapExplorer />} />
 					<Route path="/resume" element={<Resume />} />
 					<Route path="/album" element={<Album />} />
 					<Route path="/changelog" element={<Changelog />} />
