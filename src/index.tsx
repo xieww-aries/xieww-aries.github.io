@@ -12,6 +12,8 @@ import JsDoc from './pages/jsDoc';
 import WebpackDoc from './pages/webpackDoc';
 import ReactDoc from './pages/reactDoc';
 import Game from './pages/Game';
+import Snake from './pages/Game/snake';
+import Tetris from './pages/Game/tetris';
 import List from './pages/list';
 import Interview from './pages/interview';
 import Changelog from './pages/changelog';
@@ -30,6 +32,8 @@ export default function App() {
 					<Route path="/interview/*" element={<Interview />} />
 					<Route path="/list" element={<List />} />
 					<Route path="/game" element={<Game />} />
+					<Route path="/game/snake" element={<Snake />} />
+					<Route path="/game/tetris" element={<Tetris />} />
 					<Route path="/changelog" element={<Changelog />} />
 				</Routes>
 			</main>

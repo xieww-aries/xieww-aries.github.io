@@ -32,7 +32,7 @@ export const headerData = [
 	{
 		name: 'Game',
 		route: 'game',
-		desc: '实验性小游戏'
+		desc: '贪吃蛇与俄罗斯方块'
 	},
 	{
 		name: 'Log',

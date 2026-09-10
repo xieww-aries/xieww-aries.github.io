@@ -1,0 +1,57 @@
+.dpad {
+    display: grid;
+    grid-template-columns: repeat(3, 64px);
+    grid-template-rows: repeat(3, 64px);
+    gap: 8px;
+    justify-content: center;
+}
+
+.extra {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    max-width: 280px;
+    margin: 12px auto 0;
+}
+
+.pad-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    border: 1px solid var(--border-strong);
+    border-radius: 14px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+
+    &:active {
+        background: var(--surface-hover);
+        border-color: var(--accent);
+        color: var(--accent);
+    }
+}
+
+.up {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.left {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.right {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.down {
+    grid-column: 2;
+    grid-row: 3;
+}

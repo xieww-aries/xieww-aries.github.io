@@ -1,0 +1,21 @@
+.preview {
+    padding: 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    p {
+        margin: 0 0 10px;
+        color: var(--text-muted);
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    canvas {
+        display: block;
+        margin: 0 auto;
+        background: #0c0e12;
+        border-radius: 10px;
+    }
+}
