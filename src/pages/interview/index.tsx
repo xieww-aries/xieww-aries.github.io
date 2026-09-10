@@ -40,7 +40,7 @@ export default function Interview() {
 		<div styleName="doc">
 			<LeftNav
 				data={leftNavData}
-				firstRouter={'interview'}
+				firstRouter={'software/frontend/interview'}
 				handleSelectItem={handleSelectItem}
 				activeIndex={activeIndex}
 			/>

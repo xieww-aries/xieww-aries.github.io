@@ -37,7 +37,7 @@ export default function JsDoc() {
 			<LeftNav
 				data={leftNavData}
 				handleSelectItem={handleSelectItem}
-				firstRouter={'js'}
+				firstRouter={'software/frontend/js'}
 				activeIndex={activeIndex}
 			/>
 			<div styleName="doc-main">

@@ -39,7 +39,7 @@ export default function WebpackDoc() {
 		<div styleName="doc">
 			<LeftNav
 				data={leftNavData}
-				firstRouter={'webpack'}
+				firstRouter={'software/frontend/webpack'}
 				handleSelectItem={handleSelectItem}
 				activeIndex={activeIndex}
 			/>

@@ -15,24 +15,9 @@ export const headerData = [
 		desc: '旅行、城市与日常的照片'
 	},
 	{
-		name: 'Javascript',
-		route: 'js',
-		desc: 'Array / Object / String 方法笔记'
-	},
-	{
-		name: 'Webpack',
-		route: 'webpack',
-		desc: '构建流程、Loader 与 Plugin'
-	},
-	{
-		name: 'React',
-		route: 'react',
-		desc: '生命周期与 Hooks 梳理'
-	},
-	{
-		name: 'Interview',
-		route: 'interview',
-		desc: '高频面试题整理'
+		name: 'Software',
+		route: 'software',
+		desc: '前端与后端技术笔记'
 	},
 	{
 		name: 'Game',

@@ -31,7 +31,7 @@ export default function ReactDoc() {
 		<div styleName="doc">
 			<LeftNav
 				data={leftNavData}
-				firstRouter={'react'}
+				firstRouter={'software/frontend/react'}
 				handleSelectItem={handleSelectItem}
 				activeIndex={activeIndex}
 			/>

@@ -1,0 +1,87 @@
+.hub {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 32px var(--page-pad) 80px;
+}
+
+.lead {
+    margin: -8px 0 28px;
+    max-width: 36em;
+    color: var(--text-muted);
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.back:hover {
+    color: var(--accent);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 22px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    color: inherit;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        border-color: rgba(212, 160, 84, 0.45);
+        background: var(--surface-hover);
+        color: inherit;
+    }
+}
+
+.kicker {
+    color: var(--accent-2);
+    font-family: var(--font-mono);
+    font-size: 12px;
+}
+
+.name {
+    margin: 16px 0 8px;
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 650;
+}
+
+.desc {
+    flex: 1;
+    margin: 0 0 16px;
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.go {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.card:hover .go {
+    color: #e8c07a;
+}
+
+@media (max-width: 720px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
