@@ -14,9 +14,10 @@ import ReactDoc from './pages/reactDoc';
 import Game from './pages/Game';
 import Snake from './pages/Game/snake';
 import Tetris from './pages/Game/tetris';
-import List from './pages/list';
 import Interview from './pages/interview';
 import Changelog from './pages/changelog';
+import Resume from './pages/resume';
+import Album from './pages/album';
 
 export default function App() {
 	return (
@@ -30,10 +31,11 @@ export default function App() {
 					<Route path="/webpack/*" element={<WebpackDoc />} />
 					<Route path="/react/*" element={<ReactDoc />} />
 					<Route path="/interview/*" element={<Interview />} />
-					<Route path="/list" element={<List />} />
 					<Route path="/game" element={<Game />} />
 					<Route path="/game/snake" element={<Snake />} />
 					<Route path="/game/tetris" element={<Tetris />} />
+					<Route path="/resume" element={<Resume />} />
+					<Route path="/album" element={<Album />} />
 					<Route path="/changelog" element={<Changelog />} />
 				</Routes>
 			</main>

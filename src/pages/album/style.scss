@@ -1,0 +1,246 @@
+.page {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 32px var(--page-pad) 80px;
+}
+
+.lead {
+    margin: -8px 0 24px;
+    max-width: 36em;
+    color: var(--text-muted);
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 24px;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 36px;
+    padding: 0 14px;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+
+    em {
+        color: var(--accent-2);
+        font-family: var(--font-mono);
+        font-size: 11px;
+        font-style: normal;
+    }
+
+    &:hover {
+        border-color: var(--accent);
+        color: var(--text);
+    }
+}
+
+.active {
+    border-color: transparent;
+    background: var(--accent);
+    color: #1a140c;
+
+    em {
+        color: #1a140c;
+    }
+
+    &:hover {
+        border-color: transparent;
+        background: #e8c07a;
+        color: #1a140c;
+    }
+}
+
+.masonry {
+    columns: 3;
+    column-gap: 16px;
+}
+
+.card {
+    display: block;
+    width: 100%;
+    margin: 0 0 16px;
+    overflow: hidden;
+    padding: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    break-inside: avoid;
+    cursor: pointer;
+    text-align: left;
+    color: inherit;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        border-color: rgba(212, 160, 84, 0.45);
+        color: inherit;
+    }
+}
+
+.meta {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px 14px;
+
+    strong {
+        color: var(--text);
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    em {
+        color: var(--accent-2);
+        font-family: var(--font-mono);
+        font-size: 12px;
+        font-style: normal;
+        white-space: nowrap;
+    }
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 80px 48px;
+    background: rgba(8, 10, 14, 0.88);
+    backdrop-filter: blur(10px);
+}
+
+.close,
+.nav {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-strong);
+    background: rgba(27, 31, 39, 0.88);
+    color: var(--text);
+    cursor: pointer;
+
+    &:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+    }
+}
+
+.close {
+    top: 20px;
+    right: 24px;
+    height: 36px;
+    padding: 0 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.nav {
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 1;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.frame {
+    max-width: min(1080px, 100%);
+    margin: 0;
+}
+
+.frame img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100vh - 160px);
+    margin: 0 auto;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    background: #0c0e12;
+}
+
+.caption {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 14px;
+    color: var(--text-muted);
+
+    strong {
+        color: var(--text);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    span {
+        font-family: var(--font-mono);
+        font-size: 12px;
+        color: var(--accent-2);
+    }
+}
+
+@media (max-width: 960px) {
+    .masonry {
+        columns: 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .masonry {
+        columns: 1;
+    }
+
+    .lightbox {
+        padding: 72px 16px 24px;
+    }
+
+    .nav {
+        top: auto;
+        bottom: 18px;
+        transform: none;
+    }
+
+    .prev {
+        left: 16px;
+    }
+
+    .next {
+        right: 16px;
+    }
+
+    .frame img {
+        max-height: calc(100vh - 180px);
+    }
+}

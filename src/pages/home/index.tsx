@@ -16,7 +16,7 @@ export default function Home() {
 					<p styleName="eyebrow">Personal Knowledge Base</p>
 					<h1 styleName="title">Aries 的前端笔记本</h1>
 					<p styleName="lead">
-						把 JavaScript、Webpack、React 和面试题整理成一份随时可翻的笔记，顺手收藏电影，也留一块实验场。
+						把 JavaScript、Webpack、React 和面试题整理成一份随时可翻的笔记，也留一块实验场。
 					</p>
 				</div>
 				<div styleName="visual">

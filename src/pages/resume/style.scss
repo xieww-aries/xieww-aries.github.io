@@ -1,0 +1,384 @@
+.page {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 36px var(--page-pad) 88px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 32px;
+    align-items: start;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--border);
+}
+
+.identity {
+    min-width: 0;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.name {
+    margin: 0 0 12px;
+    font-family: var(--font-display);
+    font-size: 52px;
+    font-weight: 650;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+}
+
+.role,
+.status,
+.job-title,
+.project-summary {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.role,
+.job-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.status {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.dot {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.intent,
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.intent {
+    margin: 18px 0 0;
+    padding: 0;
+}
+
+.intent li,
+.tags li {
+    padding: 4px 10px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid rgba(212, 160, 84, 0.22);
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.contacts {
+    display: grid;
+    gap: 12px;
+}
+
+.contacts li {
+    display: grid;
+    gap: 2px;
+}
+
+.contacts span {
+    color: var(--text-muted);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.contacts a,
+.contacts em {
+    color: var(--text);
+    font-style: normal;
+    font-size: 14px;
+    word-break: break-all;
+}
+
+.contacts a:hover {
+    color: var(--accent);
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.primary,
+.ghost {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary {
+    border: 0;
+    background: var(--accent);
+    color: #1a140c;
+
+    &:hover {
+        background: #e8c07a;
+        color: #1a140c;
+    }
+}
+
+.ghost {
+    border: 1px solid var(--border-strong);
+    background: transparent;
+    color: var(--text);
+
+    &:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+    }
+}
+
+.section {
+    margin-top: 36px;
+}
+
+.heading {
+    margin: 0 0 18px;
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 650;
+}
+
+.skills {
+    display: grid;
+    gap: 16px;
+}
+
+.skill-group {
+    padding: 16px 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.skill-label {
+    margin: 0 0 10px;
+    color: var(--text-muted);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.timeline {
+    display: grid;
+    gap: 28px;
+}
+
+.job {
+    position: relative;
+    padding-left: 22px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 10px;
+        bottom: 0;
+        width: 1px;
+        background: var(--border-strong);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 13px;
+        height: 13px;
+        border: 2px solid var(--accent);
+        border-radius: 50%;
+        background: var(--bg);
+    }
+}
+
+.job-head,
+.edu,
+.project-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.company {
+    margin: 0 0 4px;
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 650;
+}
+
+.period {
+    margin: 0;
+    color: var(--accent-2);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.summary,
+.highlights {
+    margin: 12px 0 0;
+}
+
+.summary li,
+.highlights li {
+    position: relative;
+    margin: 0 0 8px;
+    padding-left: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.summary li::before,
+.highlights li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.project {
+    margin-top: 14px;
+    padding: 16px 18px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.project-name {
+    margin: 0 0 6px;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.project .tags {
+    margin: 12px 0 0;
+}
+
+.project .highlights {
+    margin-top: 12px;
+}
+
+.edu {
+    padding: 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+@media (max-width: 860px) {
+    .hero,
+    .job-head,
+    .project-head,
+    .edu {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .period {
+        white-space: normal;
+    }
+
+    .job {
+        padding-left: 0;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}
+
+@media print {
+    :global(.head) {
+        display: none !important;
+    }
+
+    :global(.app-main) {
+        padding-top: 0 !important;
+    }
+
+    .page {
+        max-width: none;
+        padding: 0;
+        color: #1a140c;
+    }
+
+    .name,
+    .company,
+    .heading,
+    .project-name,
+    .contacts a,
+    .contacts em {
+        color: #1a140c;
+    }
+
+    .hero,
+    .aside,
+    .skill-group,
+    .project,
+    .edu {
+        background: transparent;
+        border-color: #ddd;
+        box-shadow: none;
+    }
+
+    .actions {
+        display: none;
+    }
+
+    .job::before {
+        background: #ccc;
+    }
+}

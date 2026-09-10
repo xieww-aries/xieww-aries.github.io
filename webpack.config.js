@@ -131,6 +131,11 @@ module.exports = (_env, argv) => {
 						from: path.resolve(__dirname, 'CHANGELOG.md'),
 						to: 'CHANGELOG.md',
 						noErrorOnMissing: true
+					},
+					{
+						from: path.resolve(__dirname, 'static'),
+						to: 'static',
+						noErrorOnMissing: true
 					}
 				]
 			}),
