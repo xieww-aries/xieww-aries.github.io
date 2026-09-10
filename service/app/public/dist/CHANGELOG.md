@@ -10,6 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Features
 
 - Game 页增加贪吃蛇与俄罗斯方块，记录本机最高分
+- 增加 Resume 页，整理个人简历的阅读版展示
+- 增加 Album 页，按相册浏览照片并支持大图查看
+
+### Improvements
+
+- 按最新简历更新状态、京东项目与下载 PDF
+- 移除电影 List 页面与导航入口
 
 ## [2.0.0] - 2026-09-10
 
