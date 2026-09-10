@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Features
 
+- 增加 Map 页，提供可拖动缩放的中国省级地图与世界地图
 - Game 页增加贪吃蛇与俄罗斯方块，记录本机最高分
 - 增加 Resume 页，整理个人简历的阅读版展示
 - 增加 Album 页，按相册浏览照片并支持大图查看
