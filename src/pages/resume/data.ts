@@ -1,3 +1,7 @@
+export const resumePassword = 'aries';
+
+export const resumeUnlockKey = 'aries-resume-unlocked';
+
 export const profile = {
 	name: '谢伟伟',
 	title: '前端开发工程师',

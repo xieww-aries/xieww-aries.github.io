@@ -1,3 +1,7 @@
+export const albumPassword = 'aries';
+
+export const albumUnlockKey = 'aries-album-unlocked';
+
 export type AlbumId = 'travel' | 'city' | 'life';
 
 export interface Album {

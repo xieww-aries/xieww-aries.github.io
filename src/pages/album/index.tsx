@@ -1,10 +1,11 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 
+import PageGate, { LockButton } from '../../components/common/PageGate';
 import Title from '../../components/common/Title';
-import { albums, photos } from './data';
+import { albumPassword, albumUnlockKey, albums, photos } from './data';
 import './style.scss';
 
-export default function Album() {
+function AlbumBody({ onLock }: { onLock: () => void }) {
 	const [activeAlbum, setActiveAlbum] = useState<(typeof albums)[number]['id']>('all');
 	const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -52,7 +53,10 @@ export default function Album() {
 
 	return (
 		<div styleName="page">
-			<Title title="Album" />
+			<div styleName="head">
+				<Title title="Album" />
+				<LockButton onClick={onLock} />
+			</div>
 			<p styleName="lead">旅行、城市和日常里留下来的画面，点开可以看大图。</p>
 			<ul styleName="filters">
 				{albums.map(album => (
@@ -63,7 +67,9 @@ export default function Album() {
 							onClick={() => setActiveAlbum(album.id)}
 						>
 							{album.name}
-							<em>{album.id === 'all' ? photos.length : photos.filter(photo => photo.album === album.id).length}</em>
+							<em>
+								{album.id === 'all' ? photos.length : photos.filter(photo => photo.album === album.id).length}
+							</em>
 						</button>
 					</li>
 				))}
@@ -110,10 +116,7 @@ export default function Album() {
 					>
 						‹
 					</button>
-					<figure
-						styleName="frame"
-						onClick={event => event.stopPropagation()}
-					>
+					<figure styleName="frame" onClick={event => event.stopPropagation()}>
 						<img src={activePhoto.src} alt={activePhoto.alt} />
 						<figcaption styleName="caption">
 							<strong>{activePhoto.caption}</strong>
@@ -134,5 +137,19 @@ export default function Album() {
 				</div>
 			) : null}
 		</div>
+	);
+}
+
+export default function Album() {
+	return (
+		<PageGate
+			title="Album"
+			lead="相册需要口令才能查看。"
+			submitLabel="进入相册"
+			password={albumPassword}
+			storageKey={albumUnlockKey}
+		>
+			{lock => <AlbumBody onLock={lock} />}
+		</PageGate>
 	);
 }

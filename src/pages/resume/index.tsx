@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 
-import { education, jobs, profile, skillGroups } from './data';
+import PageGate, { LockButton } from '../../components/common/PageGate';
+import { education, jobs, profile, resumePassword, resumeUnlockKey, skillGroups } from './data';
 import './style.scss';
 
-export default function Resume() {
+function ResumeBody({ onLock }: { onLock: () => void }) {
 	useEffect(() => {
 		const previous = document.title;
 		document.title = `${profile.name} · ${profile.title}`;
@@ -16,7 +17,10 @@ export default function Resume() {
 		<div styleName="page">
 			<section styleName="hero">
 				<div styleName="identity">
-					<p styleName="eyebrow">Resume</p>
+					<div styleName="hero-top">
+						<p styleName="eyebrow">Resume</p>
+						<LockButton onClick={onLock} />
+					</div>
 					<h1 styleName="name">{profile.name}</h1>
 					<p styleName="role">
 						<span>{profile.title}</span>
@@ -131,5 +135,19 @@ export default function Resume() {
 				</div>
 			</section>
 		</div>
+	);
+}
+
+export default function Resume() {
+	return (
+		<PageGate
+			title="Resume"
+			lead="简历需要口令才能查看。"
+			submitLabel="查看简历"
+			password={resumePassword}
+			storageKey={resumeUnlockKey}
+		>
+			{lock => <ResumeBody onLock={lock} />}
+		</PageGate>
 	);
 }

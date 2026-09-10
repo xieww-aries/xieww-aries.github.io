@@ -4,6 +4,18 @@
     padding: 32px var(--page-pad) 80px;
 }
 
+.head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+
+    button {
+        margin-top: 8px;
+        flex-shrink: 0;
+    }
+}
+
 .lead {
     margin: -8px 0 24px;
     max-width: 36em;
