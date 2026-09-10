@@ -152,7 +152,7 @@ export default function Snake() {
 	useEffect(() => {
 		if (status !== 'running') {
 			paint();
-			return;
+			return undefined;
 		}
 		let raf = 0;
 		let last = performance.now();

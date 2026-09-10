@@ -182,7 +182,7 @@ export default function Tetris() {
 	useEffect(() => {
 		if (view.status !== 'running') {
 			paint();
-			return;
+			return undefined;
 		}
 		let raf = 0;
 		const loop = (now: number) => {

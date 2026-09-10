@@ -15,6 +15,7 @@
     "prepare": "husky",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
     "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "typecheck": "tsc --noEmit",
     "dev": "webpack serve --mode development",
     "build": "webpack --mode production",
     "changelog": "commit-and-tag-version --skip.bump --skip.commit --skip.tag",

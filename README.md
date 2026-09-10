@@ -11,6 +11,7 @@ npm install
 npm run dev          # webpack-dev-server，默认 http://localhost:8080
 npm run build
 npm run lint
+npm run typecheck    # tsc --noEmit，只做类型检查不产出文件
 npm run changelog    # 根据约定式提交追加 CHANGELOG.md
 npm run release      # 升版本 + 写 changelog + 打 tag
 ```
@@ -57,6 +58,7 @@ npm run release      # 升版本 + 写 changelog + 打 tag
 + #### Typescript
   - https://blog.51cto.com/u_15069486/3468408?b=totalstatistic
   - 使用babel编译还是ts-loader去编译：https://www.typescriptlang.org/docs/handbook/babel-with-typescript.html#babel-vs-tsc-for-typescript
+  - 代码由 babel 编译，类型检查单独走 `npm run typecheck`（`tsconfig.json` 为 `noEmit`），并在 `.husky/pre-push` 中拦截
   - 依赖包
     - `typescript`
     - eslint 相关包
