@@ -57,9 +57,12 @@ module.exports = (_env, argv) => {
 		entry: path.resolve(__dirname, 'src/index.tsx'),
 		output: {
 			clean: true,
-			publicPath: '/',
+			// 产物提交到仓库并由 GitHub Pages 以 /dist/ 前缀访问，'auto' 让运行时
+			// 从 bundle.js 自身的 url 反推 publicPath，异步 chunk 才能落在 /dist/ 下
+			publicPath: 'auto',
 			path: path.resolve(__dirname, 'dist'),
-			filename: 'bundle.js'
+			filename: 'bundle.js',
+			chunkFilename: '[name].chunk.js'
 		},
 		resolve: {
 			extensions: ['.js', '.jsx', '.ts', '.tsx', '.css', '.scss']
@@ -119,7 +122,8 @@ module.exports = (_env, argv) => {
 				lintDirtyModulesOnly: !isProd
 			}),
 			new MiniCssExtractPlugin({
-				filename: '[name].min.css'
+				filename: '[name].min.css',
+				chunkFilename: '[name].chunk.css'
 			}),
 			new HTMLWebpackPlugin({
 				title: 'Aries · Notes',

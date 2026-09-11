@@ -55,6 +55,15 @@ npm run release      # 升版本 + 写 changelog + 打 tag
   - 依赖包
     - `react-router-dom` v6
 
++ #### 路由懒加载与代码分割
+  - `src/index.tsx` 中首屏只保留 Home，其余路由用 `React.lazy` + `Suspense` 按需加载，过渡态见 `src/components/common/RouteFallback`
+  - 用 `webpackChunkName` 魔法注释把同组路由合并成一个 chunk，避免碎片请求：
+    `software` / `docs` / `games` / `map` / `resume` / `album` / `changelog`
+  - `output.publicPath` 必须是 `'auto'`：产物由 GitHub Pages 以 `/dist/` 前缀访问，
+    运行时才能从 `bundle.js` 自身地址反推出 chunk 的正确路径，改成 `/` 会导致异步 chunk 404
+  - `dist/index.html` 由 html-webpack-plugin 生成（相对路径），仓库根目录的
+    `index.html` / `404.html` 才是 Pages 实际入口，两者需手动保持一致
+
 + #### Typescript
   - https://blog.51cto.com/u_15069486/3468408?b=totalstatistic
   - 使用babel编译还是ts-loader去编译：https://www.typescriptlang.org/docs/handbook/babel-with-typescript.html#babel-vs-tsc-for-typescript
