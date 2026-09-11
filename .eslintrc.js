@@ -36,7 +36,8 @@ module.exports = {
 	},
 	rules: {
 		indent: [2, 'tab', { SwitchCase: 1 }],
-		quotes: [2, 'single', { allowTemplateLiterals: true }],
+		// avoidEscape：CSP 指令值（"'self'"）这类含单引号的字符串允许用双引号包裹
+		quotes: [2, 'single', { avoidEscape: true, allowTemplateLiterals: true }],
 		semi: [2, 'always'],
 		curly: [2, 'multi-line'],
 		'array-bracket-spacing': [2, 'never'],
@@ -78,5 +79,26 @@ module.exports = {
 		'@typescript-eslint/ban-ts-comment': 0,
 		'@typescript-eslint/no-var-requires': 0,
 		'@typescript-eslint/no-unused-vars': 2
-	}
+	},
+	overrides: [
+		{
+			// service 是纯 Node 端代码，不需要 React 与浏览器环境
+			files: ['service/**/*.ts'],
+			env: {
+				browser: false,
+				node: true,
+				es2022: true
+			},
+			parserOptions: {
+				ecmaVersion: 2022,
+				sourceType: 'module',
+				ecmaFeatures: {}
+			},
+			rules: {
+				'react/react-in-jsx-scope': 0,
+				'react/jsx-uses-react': 0,
+				'react/jsx-uses-vars': 0
+			}
+		}
+	]
 };

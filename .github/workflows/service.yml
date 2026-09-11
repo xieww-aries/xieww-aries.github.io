@@ -1,0 +1,153 @@
+name: Service CI & Publish
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'service/**'
+      - 'src/**'
+      - 'static/**'
+      - 'demo/**'
+      - 'webpack.config.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'Dockerfile'
+      - '.dockerignore'
+      - 'docker-compose.yml'
+      - '.github/workflows/service.yml'
+  pull_request:
+    paths:
+      - 'service/**'
+      - 'src/**'
+      - 'webpack.config.js'
+      - 'Dockerfile'
+      - '.github/workflows/service.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+# 同一分支只保留一次构建，新推送取消进行中的旧任务
+concurrency:
+  group: service-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  IMAGE_NAME: ${{ github.repository }}-service
+
+jobs:
+  verify:
+    name: Lint / Typecheck / Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      - name: Install root dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Install service dependencies
+        run: npm ci
+        working-directory: service
+
+      - name: Lint
+        run: npm run lint:ci
+
+      - name: Typecheck (web + service)
+        run: npm run typecheck:all
+
+      - name: Build web
+        run: npm run build
+
+      - name: Build service
+        run: npm run build:service
+
+  image:
+    name: Build image & smoke test
+    needs: verify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: false
+          load: true
+          tags: ${{ env.IMAGE_NAME }}:ci
+          build-args: |
+            GIT_COMMIT=${{ github.sha }}
+            BUILD_TIME=${{ github.run_id }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      # 起容器打真实请求，确保镜像里的 SPA 与 API 都能对外服务
+      - name: Smoke test
+        run: |
+          docker run -d --rm --name aries-smoke -p 7001:7001 ${{ env.IMAGE_NAME }}:ci
+          for i in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:7001/api/health >/dev/null 2>&1 && break
+            sleep 1
+          done
+          echo "--- /api/health ---"
+          curl -fsS http://127.0.0.1:7001/api/health
+          echo
+          echo "--- /api/site/info ---"
+          curl -fsS http://127.0.0.1:7001/api/site/info
+          echo
+          curl -fsS -o /dev/null -w "GET / -> %{http_code}\n" http://127.0.0.1:7001/
+          curl -fsS -o /dev/null -w "GET /bundle.js -> %{http_code}\n" http://127.0.0.1:7001/bundle.js
+          curl -fsS -o /dev/null -w "GET 深链 -> %{http_code}\n" http://127.0.0.1:7001/software/frontend/react/hooks
+          docker stop aries-smoke
+
+  publish:
+    name: Publish image to GHCR
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Resolve tags
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ env.IMAGE_NAME }}
+          tags: |
+            type=sha,format=long
+            type=raw,value=latest
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            GIT_COMMIT=${{ github.sha }}
+            BUILD_TIME=${{ github.run_id }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

@@ -1,5 +1,4 @@
 const path = require('path');
-const fs = require('fs');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -16,18 +15,6 @@ const cssLoaderModules = {
 	getLocalIdent: (context, _localIdentName, localName) =>
 		generateScopedName(localName, context.resourcePath)
 };
-
-class CopyToEggPublicPlugin {
-	apply(compiler) {
-		compiler.hooks.afterEmit.tap('CopyToEggPublicPlugin', () => {
-			const from = path.resolve(__dirname, 'dist');
-			const to = path.resolve(__dirname, 'service/app/public/dist');
-			if (!fs.existsSync(from)) return;
-			fs.mkdirSync(to, { recursive: true });
-			fs.cpSync(from, to, { recursive: true });
-		});
-	}
-}
 
 const cssLoaders = (withModules) => [
 	MiniCssExtractPlugin.loader,
@@ -70,8 +57,17 @@ module.exports = (_env, argv) => {
 		devServer: {
 			hot: true,
 			open: true,
-			port: 8080,
+			// 8080 常被本机其他应用（如企业微信）占用，默认换到 9000，仍可用 WEB_PORT 覆盖
+			port: Number(process.env.WEB_PORT || 9000),
 			historyApiFallback: true,
+			// 本地全栈联调：把 /api 打到 service（npm run dev:all 会同时起两端）
+			proxy: [
+				{
+					context: ['/api'],
+					target: 'http://127.0.0.1:7001',
+					changeOrigin: true
+				}
+			],
 			static: {
 				directory: path.resolve(__dirname)
 			}
@@ -151,8 +147,7 @@ module.exports = (_env, argv) => {
 						noErrorOnMissing: true
 					}
 				]
-			}),
-			new CopyToEggPublicPlugin()
+			})
 		],
 		performance: {
 			hints: false

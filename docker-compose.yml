@@ -1,0 +1,18 @@
+services:
+    aries-web:
+        build:
+            context: .
+            args:
+                GIT_COMMIT: ${GIT_COMMIT:-local}
+                BUILD_TIME: ${BUILD_TIME:-unknown}
+        image: aries-web:local
+        container_name: aries-web
+        ports:
+            - '7001:7001'
+        environment:
+            NODE_ENV: production
+            HOST: 0.0.0.0
+            PORT: 7001
+            LOG_LEVEL: info
+            TRUST_PROXY: 'true'
+        restart: unless-stopped

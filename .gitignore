@@ -1,11 +1,12 @@
 node_modules
+service/node_modules
 
-# 构建产物：由 GitHub Actions 在云端构建并发布到 Pages，不再入库
+# 构建产物：前端由 GitHub Actions 构建并发布到 Pages，service 由 tsc 产出
 dist/
-service/app/public/dist/
+service/dist/
 
-# egg 运行时产物
-service/logs/
-service/run/
+# 本地环境变量
+.env
+.env.local
 
 .DS_Store

@@ -1,22 +1,29 @@
 {
-  "name": "service",
-  "version": "1.0.0",
-  "description": "node server",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "egg-bin dev"
+  "name": "aries-web-service",
+  "version": "2.0.0",
+  "description": "Aries 个人站点的服务端：托管 SPA 产物并提供 /api 接口",
+  "main": "dist/index.js",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
   },
-  "author": "xieww",
-  "license": "ISC",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\""
+  },
   "dependencies": {
-    "egg": "^2.22.2",
-    "egg-view-nunjucks": "^2.2.0",
-    "moment": "^2.24.0"
+    "@fastify/compress": "^9.2.0",
+    "@fastify/helmet": "^13.1.1",
+    "@fastify/static": "^10.1.3",
+    "fastify": "^5.12.3"
   },
   "devDependencies": {
-    "egg-bin": "^4.13.0",
-    "egg-static": "^2.2.0"
+    "@types/node": "^20.19.43",
+    "pino-pretty": "^13.1.3",
+    "tsx": "^4.23.13",
+    "typescript": "^5.9.3"
   }
 }

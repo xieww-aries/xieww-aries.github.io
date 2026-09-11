@@ -1,0 +1,21 @@
+.git
+.github
+.husky
+.vscode
+.idea
+.DS_Store
+
+node_modules
+**/node_modules
+
+# 产物在镜像内重新构建，避免把本地脏产物带进去
+dist
+service/dist
+
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+.env
+.env.local
+*.log
