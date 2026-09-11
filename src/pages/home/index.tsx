@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { headerData } from '../../components/common/Header/headerData';
 import Animation from '../../components/Home/3DAnimation';
+import ServiceStatus from '../../components/Home/ServiceStatus';
 
 import './style.scss';
 
@@ -18,6 +19,7 @@ export default function Home() {
 					<p styleName="lead">
 						把前端与后端笔记整理成一份随时可翻的知识库，也留一块实验场。
 					</p>
+					<ServiceStatus />
 				</div>
 				<div styleName="visual">
 					<Animation />

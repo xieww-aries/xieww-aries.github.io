@@ -1,5 +1,5 @@
 /**
- * 取得打包产物的目录，兼容 GitHub Pages 根目录与 egg 的 public/dist 部署
+ * 取得打包产物的目录，兼容 GitHub Pages 根目录与 service 自定义静态前缀的部署
  *
  * @return {string}
  */
