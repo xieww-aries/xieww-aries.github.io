@@ -16,6 +16,17 @@ npm run changelog    # 根据约定式提交追加 CHANGELOG.md
 npm run release      # 升版本 + 写 changelog + 打 tag
 ```
 
+## 部署
+线上由 GitHub Actions 构建并发布，构建产物不入库（`dist/` 已写进 `.gitignore`）。
+
+- 工作流 `.github/workflows/deploy.yml`：push 到 `master` 触发
+  `npm ci` → `lint` → `typecheck` → `build` → 上传 `dist/` → 发布到 Pages
+- 前置设置（仅需一次）：仓库 Settings → Pages → Build and deployment → Source 选 **GitHub Actions**。
+  没切换就推送，Pages 会因为没有可服务的分支内容而整站 404
+- SPA 深链回退由构建产出的 `dist/404.html` 承担，Pages 对未知路径返回它
+- `service/app/public/dist/` 由 `CopyToEggPublicPlugin` 在每次 build 后同步，同样不入库；
+  要用 egg 起服务端时先在仓库根执行一次 `npm run build`
+
 ## 工程化
 + #### React scss 中 CSS modules 的实现
   - 使用 `babel-plugin-react-css-modules` 插件
@@ -59,10 +70,10 @@ npm run release      # 升版本 + 写 changelog + 打 tag
   - `src/index.tsx` 中首屏只保留 Home，其余路由用 `React.lazy` + `Suspense` 按需加载，过渡态见 `src/components/common/RouteFallback`
   - 用 `webpackChunkName` 魔法注释把同组路由合并成一个 chunk，避免碎片请求：
     `software` / `docs` / `games` / `map` / `resume` / `album` / `changelog`
-  - `output.publicPath` 必须是 `'auto'`：产物由 GitHub Pages 以 `/dist/` 前缀访问，
-    运行时才能从 `bundle.js` 自身地址反推出 chunk 的正确路径，改成 `/` 会导致异步 chunk 404
-  - `dist/index.html` 由 html-webpack-plugin 生成（相对路径），仓库根目录的
-    `index.html` / `404.html` 才是 Pages 实际入口，两者需手动保持一致
+  - `output.publicPath` 为 `'auto'`：运行时从 `bundle.js` 自身地址反推 chunk 路径，
+    同一份产物在 Pages 站点根（`/`）和 egg 的 `/public/dist/` 下都能正确加载
+  - html-webpack-plugin 单独指定 `publicPath: '/'`，让 `dist/index.html` 和 `dist/404.html`
+    以绝对路径引资源。`404.html` 会在任意深度的路径下被返回，用相对路径会解析到错误的子目录
 
 + #### Typescript
   - https://blog.51cto.com/u_15069486/3468408?b=totalstatistic

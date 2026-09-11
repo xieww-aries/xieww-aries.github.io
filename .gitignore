@@ -1,1 +1,11 @@
 node_modules
+
+# 构建产物：由 GitHub Actions 在云端构建并发布到 Pages，不再入库
+dist/
+service/app/public/dist/
+
+# egg 运行时产物
+service/logs/
+service/run/
+
+.DS_Store

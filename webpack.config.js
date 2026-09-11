@@ -127,7 +127,16 @@ module.exports = (_env, argv) => {
 			}),
 			new HTMLWebpackPlugin({
 				title: 'Aries · Notes',
-				template: 'demo/index.html'
+				template: 'demo/index.html',
+				publicPath: '/'
+			}),
+			// SPA 深链回退页：Pages 对未知路径返回 404.html 但浏览器地址不变，
+			// 资源必须写成绝对路径，否则会被解析到当前路径的子目录下
+			new HTMLWebpackPlugin({
+				title: 'Aries · Notes',
+				template: 'demo/index.html',
+				filename: '404.html',
+				publicPath: '/'
 			}),
 			new CopyWebpackPlugin({
 				patterns: [
